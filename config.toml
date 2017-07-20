@@ -1,0 +1,12 @@
+baseURL = "https://kawax.biz/"
+languageCode = "ja-jp"
+title = "kawax.biz"
+theme = "amp"
+copyright = "© kawax"
+canonifyurls = true
+
+[params]
+  description = "kawax名義ではあまり活動してない"
+
+[social]
+  github = "kawax"
