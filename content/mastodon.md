@@ -1,7 +1,7 @@
 ---
 title: "マストドン"
 date: 2017-07-23T22:31:43+09:00
-categories: [""]
+categories: ["Mastodon"]
 draft: false
 ---
 
