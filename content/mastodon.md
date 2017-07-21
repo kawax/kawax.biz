@@ -1,5 +1,5 @@
 ---
-title: "マストドン"
+title: "Mastodon"
 date: 2017-07-23T22:31:43+09:00
 categories: ["Mastodon"]
 draft: false
