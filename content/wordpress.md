@@ -22,3 +22,12 @@ draft: false
 
 ## SSL
 AWS Certificate Managerで対応可。
+
+## ログ
+不正ログイン試行が大量に来るのでアクセスログはCloudWatch Logsで記録。
+
+## サーバー監視
+CloudWatchやMackerel
+
+## 通知
+色々な通知先はChatWork
