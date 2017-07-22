@@ -6,7 +6,7 @@ draft: false
 ---
 
 
-## 構成
+### 構成
 
 - AWS
 - EC2 Container Service (Docker)
@@ -18,11 +18,11 @@ draft: false
 - SES
 
 
-## 運用
+### 運用
 GitLabに置いてローカルからgit push→GitLab CI→AWSへデプロイで簡単にアップデート。  
 マストドンはアップデートしやすい環境を整えておくのが大事。
 
 
-## コントリビュート
+### コントリビュート
 マストドン本体にもプルリクしたいけどRailsはあまり使わない、Reactはちょっとできる程度なので機能追加は1回だけ。
 

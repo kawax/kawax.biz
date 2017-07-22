@@ -11,7 +11,7 @@ draft: false
 
 1台のEC2で100以上のWordPress動かしてる…。
 
-## セキュリティ
+### セキュリティ
 - Wordfence
 - Crazy Bone
 - WordPress本体もプラグインもテーマも常時自動アップデート
@@ -20,14 +20,14 @@ draft: false
 
 実際の所WordPress本体やプラグインが原因で不正アクセス成功されたことはない。ほとんどは簡単なパスワード使ってる管理者が原因。99%は人災。
 
-## SSL
+### SSL
 AWS Certificate Managerで対応可。
 
-## ログ
+### ログ
 不正ログイン試行が大量に来るのでアクセスログはCloudWatch Logsで記録。
 
-## サーバー監視
+### サーバー監視
 CloudWatchやMackerel
 
-## 通知
+### 通知
 色々な通知先はChatWork
