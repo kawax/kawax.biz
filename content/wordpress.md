@@ -9,7 +9,7 @@ draft: false
 
 `EC2 - ELB - CloudFront - Route53`
 
-1台のEC2で100以上のWordPress動かしてる…。
+1台のEC2で100以上のWordPress動かしてる…。普通はこんな無茶なことしないので同じ規模で動かしてる事例は探してもない。
 
 ### セキュリティ
 - Wordfence
