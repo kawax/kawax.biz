@@ -1,9 +1,11 @@
 baseURL = "https://kawax.biz/"
-languageCode = "ja-jp"
+languageCode = "ja"
+defaultContentLanguage = "ja"
 title = "kawax.biz"
 theme = "amp"
 copyright = "© kawax"
 canonifyurls = true
+hasCJKLanguage = true
 
 [params]
   description = "kawax名義ではあまり活動してない。"
