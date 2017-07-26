@@ -9,3 +9,4 @@ draft: false
 - Hugo https://gohugo.io/
 - AMP Theme https://themes.gohugo.io/amp/
 - Netlify https://www.netlify.com/
+- https://www.netlifycms.org/
