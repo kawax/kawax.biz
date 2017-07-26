@@ -15,6 +15,5 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "タイトル", name: "title", widget: "string"}
       - {label: "スラッグ", name: "slug", widget: "string"}
       - {label: "投稿日", name: "date", widget: "datetime"}
-      - {label: "抜粋", name: "description", widget: "text", required: false}
       - {label: "画像", name: "image", widget: "image", required: false}
       - {label: "本文", name: "body", widget: "markdown"}
