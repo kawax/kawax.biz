@@ -8,3 +8,4 @@ image: /img/netlify-cms-logo.svg
 Netlify CMS テスト
 
 
+![undefined](/img/netlify-cms-logo.svg)
