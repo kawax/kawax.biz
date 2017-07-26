@@ -5,7 +5,7 @@ categories: [""]
 draft: false
 ---
 
-電話とか直接会うとか要求してきたら即お断り。
+電話とか直接会うとか要求してきたら即お断り。遠くの法人企業とも会わずに何年も仕事できてる。
 
 - kawaxbiz@gmail.com
 - ChatWork https://www.chatwork.com/kawax
