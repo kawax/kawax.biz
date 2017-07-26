@@ -14,7 +14,7 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
     fields: # The fields each document in this collection have
       - {label: "タイトル", name: "title", widget: "string"}
-      - {label: "スラッグ", name: "slug", widget: "string", default: "post"}
+      - {label: "スラッグ", name: "slug", widget: "string", default: "{{year}}-{{month}}-{{day}}-post"}
       - {label: "投稿日", name: "date", widget: "datetime"}
       - {label: "画像", name: "image", widget: "image", required: false}
       - {label: "本文", name: "body", widget: "markdown"}
