@@ -9,9 +9,9 @@ draft: false
 
 基本的にはすべて最新バージョンだけどAndroidはNexusが終了して次がなくて困ってる状態。
 
-- Mac
+- Mac (MacBook Pro)
 - Windows
-- iOS
-- Android
+- iOS (iPad Pro)
+- Android (Nexus)
 
 当然ながらUNIX系も。最初に触ったのは確かSolarisだったはず…。
