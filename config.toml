@@ -9,6 +9,10 @@ hasCJKLanguage = true
 
 [params]
   description = "kawax名義ではあまり活動してない。"
+  googleanalytics = "UA-103456590-1" # optional
 
 [social]
   github = "kawax"
+
+[blackfriday]
+  hrefTargetBlank = true
