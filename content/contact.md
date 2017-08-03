@@ -7,11 +7,12 @@ draft: false
 
 基本的にはチャットのみ。完全リモートで当たり前の時代。
 
+<!--more-->
+
 - ChatWork https://www.chatwork.com/kawax
 - Slack
 - kawaxbiz@gmail.com (受信のみ)
 
-<!--more-->
  
 ### こんな会社とは関わってはいけない
 
