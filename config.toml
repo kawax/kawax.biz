@@ -16,3 +16,4 @@ hasCJKLanguage = true
 
 [blackfriday]
   hrefTargetBlank = true
+  extensions = ["hardLineBreak"]
