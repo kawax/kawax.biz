@@ -7,6 +7,8 @@ draft: false
 
 ブログもしくはポートフォリオ的なものとしてHugoでサイトを作っておく。
 
+<!--more-->
+
 - Hugo https://gohugo.io/
-- AMP Theme https://themes.gohugo.io/amp/
+- AMP Theme https://themes.gohugo.io/amp/ AMP対応のテーマを選んだけど微妙な箇所も。
 - Netlify https://www.netlify.com/

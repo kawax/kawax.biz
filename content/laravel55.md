@@ -126,3 +126,4 @@ https://readouble.com/laravel/5.4/ja/requests.html#retrieving-input
 ## Mail Fake
 `Mail::assertSent`から`Mail::assertQueued`に変更する。
 テスト失敗するのですぐ気付く。
+こういうのが使ってなければ影響がない変更。
