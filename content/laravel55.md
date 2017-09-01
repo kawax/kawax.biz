@@ -95,6 +95,8 @@ https://github.com/laravel/laravel/blob/master/composer.json
 5.4での変更で`vendor/autoload.php`を読み込むだけになってた。
 https://github.com/laravel/laravel/commit/8914be5fc864ebc6877be38ff3502997e0c62761
 
+（追記）残したまま5.5にしてみたけど大丈夫だった。
+
 ## Package Discovery
 5.5リリース前に書こうと思ってて間に合わなかった機能。
 地味ながら便利になる。
@@ -113,3 +115,14 @@ https://readouble.com/laravel/5.4/ja/requests.html#retrieving-input
 細かい部分は使ってなければ影響はないので後はプロジェクト次第…。
   
 依存パッケージの少ない小さいプロジェクトで5.5にしてみたけど問題なく終わった。
+
+## もう少し追記
+他も移行作業してたら引っ掛かった箇所。
+
+## Exception Format
+エラー時のJSONのフォーマットが変わってるのでJS側でエラーメッセージ表示してるなら修正が必要かも。
+修正が面倒で5.4と同じフォーマットに戻したいならドキュメント通りに。
+
+## Mail Fake
+`Mail::assertSent`から`Mail::assertQueued`に変更する。
+テスト失敗するのですぐ気付く。
