@@ -130,3 +130,6 @@ https://readouble.com/laravel/5.4/ja/requests.html#retrieving-input
 `Mail::assertSent`から`Mail::assertQueued`に変更する。
 テスト失敗するのですぐ気付く。
 こういうのが使ってなければ影響がない変更。
+
+## 速度
+5.5移行をいくつか進めたけどやっぱりはっきり分かるほど表示速度アップしてるような…。
