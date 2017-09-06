@@ -1,7 +1,7 @@
 ---
 title: "Hugo"
 date: 2017-07-21T17:01:16+09:00
-categories: [""]
+categories: ["Hugo"]
 draft: false
 ---
 
