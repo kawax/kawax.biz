@@ -1,5 +1,5 @@
 ---
-title: "[WIP]AWS"
+title: "AWS"
 date: 2017-07-24T18:53:11+09:00
 categories: ["AWS"]
 draft: false

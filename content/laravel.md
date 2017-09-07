@@ -1,5 +1,5 @@
 ---
-title: "[WIP]Laravel"
+title: "Laravel"
 date: 2017-07-22T17:10:53+09:00
 categories: ["Laravel"]
 draft: false
