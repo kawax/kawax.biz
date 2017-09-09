@@ -6,7 +6,9 @@ draft: false
 ---
 
 Laravel を動かせるサーバーの管理を楽にするサービス。
+
 <!--more-->
+
 https://forge.laravel.com/
 
 ## サーバーの用意
@@ -21,6 +23,7 @@ AWS の Lightsail に `Ubuntu 16.04` だけインストールしたインスタ�
 画面のデザインはよく変わるようなので画像はなし。
 
 ## Custom VPS
+
 - Name: なんでも
 - Size(RAM): なんでも。2 としか入力されてないけど `2GB` の意味なはず…。
 - IP Address: サーバーのIP。Lightsail で設定した Static IP
@@ -47,6 +50,7 @@ Forge 側では Active Servers に追加したサーバーが表示される。
 サーバーの準備ができたので次はサイトの追加。デフォルトでは `phpinfo()` だけのページが作られていて IP アドレスでアクセスしてみれば表示できる。
 
 サーバーのページを見れば `New Site` があるのでドメインを入力して ADD SITE
+
 - Root Domain: ドメイン
 - Project Type: General PHP / Laravel
 - Web Directory: /public
@@ -58,9 +62,11 @@ Active Sites に追加される。
 まず GitHub の認証を済ませておく。
 
 サイトのページに `Git Repository` と `WordPress` があるので Git を選ぶ。
+
 - Provider: GitHub
 - Repository
 - Branch: master
+
 `Install Composer Dependencies` は Laravel なのでオン。
 
 デプロイされたら他の設定。
@@ -94,6 +100,7 @@ Lightsail の場合、Lightsail 側の Networking 設定で HTTPS を追加。�
 `Quick Deploy` をオンにすれば git push でそのままデプロイされるけど Travis CI でテストを挟みたい場合。`Quick Deploy` はオフのまま。
 
 Travis の Environment Variables で Forge の Deployment Trigger URL を設定。
+
 - Name: なんでも。FORGE
 - Value: https://forge.laravel.com/servers/ ...
 
