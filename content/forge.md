@@ -147,3 +147,23 @@ Create Server で AWS と Custom VPS が選べるようになってる。
 EC2 と キーペアと VPC が新しく作られる。AWS で使うなら既存の VPC に入れて RDS 使ったりしたいのでこれはちょっと違う。削除機能を試して終わり。EC2 と キーペアは削除されたけど VPC は残ったまま。VPC だけ手動で削除。
 
 EC2 使うなら普通に新しく起動して Custom VPS と同じようにセットアップすれば良さそう。 
+
+## EC2 + GitLab
+次に普通に建てた EC2(Ubuntu) に GitLab のプライベートリポジトリからのデプロイを試す。
+
+Install Repository の画面で Custom を選べば SSH key を追加するように書いてあるので GitLab 側のユーザー設定で SSH Keys を追加。
+
+- Provider: Custom
+- Repository: `ssh://〜 .git` の URL を指定。
+
+エラーが出た場合は…？ 色々やってたら解決してたので原因は不明。キーのパーミッションを変えたり。最終的は EC2 内で直接 `git clone` して成功すれば forge からでも成功するはず。
+
+```
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+clone できれば後は同じ。GitLab CI でテストしてトリガー URL からデプロイ実行。
