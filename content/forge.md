@@ -1,7 +1,7 @@
 ---
 title: "Laravel Forge + Amazon Lightsail"
 date: 2017-09-09T12:18:49+09:00
-categories: ["Laravel", "AWS]
+categories: ["Laravel", "AWS"]
 draft: false
 ---
 
