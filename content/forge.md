@@ -18,7 +18,7 @@ AWS の Lightsail に `Ubuntu 16.04` だけインストールしたインスタ�
 前にアメリカのリージョンで手動で設定して使っていた。東京リージョンへの変更は簡単にはできないので今回は Forge を使ってみる。`Ubuntu 16.04` が使える VPS ならどこのでも使えるはず。
 
 ## 登録
-登録後最初の circle がどうこうの画面はスキップ。
+登録後最初の circle がどうこうの画面はスキップ。AWS の Lightsail だけど AWS も選択せずにとにかくスキップ。
 
 画面のデザインはよく変わるようなので画像はなし。
 
@@ -39,7 +39,11 @@ Provision Command と Database Password が表示されるのでどこかに控�
 
 ssh でログイン後
 ```bash
-sudo wget -O forge.sh https ...
+sudo su
+```
+
+```bash
+wget -O forge.sh https ...
 ```
 
 root で Provision Command をコピペして実行すれば色々とダウンロードしてサーバーがセットアップされる。
@@ -109,11 +113,10 @@ Travis の Environment Variables で Forge の Deployment Trigger URL を設定�
 ```
 after_success:
    - curl -s "$FORGE";
-
 ```
 
 ## Deploy Script
-`composer install` に `--no-dev` がないので追加しておく。
+`composer install` に `--no-dev` がないので追加しておく。Laravel Dusk などが原因で install でエラーになる場合は `Install Composer Dependencies` をオフにして一度デプロイした後、Deploy Script を変更して再度デプロイすれば解決。
 
 DB 使ってないなら migrate 部分を削除かコメント。
 ```bash
@@ -131,3 +134,16 @@ Travis でも通知できるけど Forge を使うほうが簡単かも。
 
 ## 感想
 Forge はかなり楽。VPS 1台でいいような小さいサイトならこれで良さそう。
+
+## AWS 版
+Lightsail は個人用の小さいサイトだけど業務でも使えるように AWS 版も試す。EC2 にセットアップする形。
+
+まず My Account → Server Providers で Amazon のアカウントを追加。Profile Name は識別用なのでなんでも。IAM ユーザーの Access Key と Secret Key を入力。EC2 を操作できる権限が必要なはず。
+
+Create Server で AWS と Custom VPS が選べるようになってる。
+
+...
+
+EC2 と キーペアと VPC が新しく作られる。AWS で使うなら既存の VPC に入れて RDS 使ったりしたいのでこれはちょっと違う。削除機能を試して終わり。EC2 と キーペアは削除されたけど VPC は残ったまま。VPC だけ手動で削除。
+
+EC2 使うなら普通に新しく起動して Custom VPS と同じようにセットアップすれば良さそう。 
