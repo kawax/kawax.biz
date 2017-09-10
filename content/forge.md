@@ -63,7 +63,7 @@ Active Sites に追加される。
 
 
 ## GitHub からデプロイ
-まず GitHub の認証を済ませておく。
+まず GitHub の認証を済ませておく。My Account → Source Control
 
 サイトのページに `Git Repository` と `WordPress` があるので Git を選ぶ。
 
@@ -80,6 +80,11 @@ Active Sites に追加される。
 
 ## Queue
 必要なら設定。自力で Supervisor の設定は結構大変だけど Forge なら簡単なのでキュー使ったことない人はこれを機に使ってみるといいかもしれない。
+
+AWS の SQS を使う場合
+
+- Connection: sqs
+- Queue: `config/queue.php` の `'queue' => 'your-queue-name',` で設定したキュー名。
 
 ## SSL
 LetsEncrypt で SSL 対応の設定。先にドメインで正常に表示できてないと設定失敗するので後から。
@@ -135,7 +140,7 @@ Travis でも通知できるけど Forge を使うほうが簡単かも。
 ## 感想
 Forge はかなり楽。VPS 1台でいいような小さいサイトならこれで良さそう。
 
-## AWS 版
+## 追加の AWS 版
 Lightsail は個人用の小さいサイトだけど業務でも使えるように AWS 版も試す。EC2 にセットアップする形。
 
 まず My Account → Server Providers で Amazon のアカウントを追加。Profile Name は識別用なのでなんでも。IAM ユーザーの Access Key と Secret Key を入力。EC2 を操作できる権限が必要なはず。
@@ -148,8 +153,8 @@ EC2 と キーペアと VPC が新しく作られる。AWS で使うなら既存
 
 EC2 使うなら普通に新しく起動して Custom VPS と同じようにセットアップすれば良さそう。 
 
-## EC2 + GitLab
-次に普通に建てた EC2(Ubuntu) に GitLab のプライベートリポジトリからのデプロイを試す。
+## EC2 + GitLab(自分で運用版)
+次に普通に建てた EC2(Ubuntu) に GitLab のプライベートリポジトリからのデプロイを試す。Source Control にある GitLab は gitlab.com なので別。WordPress を自分のサーバーで動かすのと .com 版の違いと同じ関係。
 
 Install Repository の画面で Custom を選べば SSH key を追加するように書いてあるので GitLab 側のユーザー設定で SSH Keys を追加。
 
@@ -167,3 +172,6 @@ and the repository exists.
 ```
 
 clone できれば後は同じ。GitLab CI でテストしてトリガー URL からデプロイ実行。
+
+## Bitbucket
+認証しておけばGitHub と同じように使える。
