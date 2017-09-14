@@ -11,6 +11,8 @@ Laravel を動かせるサーバーの管理を楽にするサービス。
 
 https://forge.laravel.com/
 
+実際は Laravel 以外にも使える。
+
 ## サーバーの用意
 
 AWS の Lightsail (普通の定額制VPS) に `Ubuntu 16.04` だけインストールしたインスタンスを起動。メモリ 1GB 以上を選んだほうがいいはず。Static IP を設定しておく。ssh でログインできる所まで確認できればOK。

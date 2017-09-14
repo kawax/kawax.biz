@@ -8,7 +8,7 @@ canonifyurls = true
 hasCJKLanguage = true
 
 [params]
-  description = "kawax名義ではあまり活動してない。"
+  description = ""
   googleanalytics = "UA-103456590-1" # optional
 
 [social]
