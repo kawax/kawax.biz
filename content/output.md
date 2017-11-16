@@ -8,4 +8,5 @@ draft: false
 最近はteratail等で回答したりしている。  
 https://teratail.com/users/kawax  
 
-その他はQiitaなど。
+その他はQiitaなど。  
+https://qiita.com/kawax
