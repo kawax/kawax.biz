@@ -1,9 +1,11 @@
 ---
 title: "そろそろ WordPress でも git や composer が当たり前になって欲しい"
-date: 2017-12-10T11:33:45+09:00
+date: 2017-12-06T11:33:45+09:00
 categories: ["WordPress"]
 draft: false
 ---
+
+<!--more-->
 
 普段 Laravel などで git や composer を使ってると WordPress はもうひたすらにつらい。
 テーマ変更してFTPでアップとかすると何この20世紀…。
