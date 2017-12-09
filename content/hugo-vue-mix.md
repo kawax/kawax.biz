@@ -5,8 +5,6 @@ categories: ["Hugo", "Vue.js", "Laravel"]
 draft: false
 ---
 
-<!--more-->
-
 ## 目的
 Hugo サイト内で少しだけ動的な機能が欲しい。
 
