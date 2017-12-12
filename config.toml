@@ -6,7 +6,7 @@ theme = "hemingway2"
 copyright = "© kawax"
 canonifyurls = true
 hasCJKLanguage = true
-description = "テーマ変更(2017/12)"
+description = ""
 googleanalytics = "UA-103456590-1"
 
 [params]
