@@ -6,7 +6,7 @@ theme = "hemingway2"
 copyright = "© kawax"
 canonifyurls = true
 hasCJKLanguage = true
-description = ""
+description = "テーマ変更(2017/12)"
 googleanalytics = "UA-103456590-1"
 
 [params]
@@ -30,6 +30,10 @@ style = "github"
 [[params.social]]
 url = "https://github.com/kawax"
 fa_icon = "fa-github"
+
+[[params.social]]
+url = "https://qiitadon.com/@kawax"
+fa_icon = "fa-quora"
 
 [[params.social]]
 url = "/index.xml"
