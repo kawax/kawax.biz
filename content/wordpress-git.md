@@ -160,6 +160,13 @@ ForgeのDeploy Scriptでwp-cli使えばさらに処理を挟めるはず。
 
 Forge を使わない場合はgit pullとcomposer installすればいいだけなので各自のやり方で。
 
+## セキュリティの副産物
+WPへの攻撃は大体 `wp-login.php` や `wp-content` 以下決め打ちなのでbedrockの構造なら攻撃が激減する。
+ログインURLはさらにプラグインで変更してるので不正ログイン試行さえほとんどなくなった。
+
+ALBならAWS WAFが直接使えるので最近追加されたマネージドルールが使える。（古いELBではCloudFrontも必要だった。）
+https://dev.classmethod.jp/cloud/aws/aws-reinvent2017-waf-managed-rule-try/
+
 ## 終わり
 書ききれなかった部分でも色々あるはずだけどとりあえずこんな感じでやれば「いつもの」ができる。
 ローカルサーバーにHomestead、js/cssビルドにMixでガチガチにLaravel流にしてるけどテーマにBlade使うのはさすがに他の人が触れないのでやめた。
