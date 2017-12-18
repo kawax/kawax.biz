@@ -93,3 +93,7 @@ Route::match(['get', 'post'], '/botman', 'BotManController@handle');
 webhook で指定するのは `/botman` のURL。
 
 どっちかを使うかは別にどっちでもいいはずだけどたぶん botman.php。`/botman` へのリクエストで BotMan が発動(listen)、実際の動作の細かいことは botman.php。
+
+## 開発
+困るのは開発時。ローカルサーバーでは当然 webhook は飛んで来ないのでやりにくい。
+コマンド作るのを試してみたいという人がもしいれば ChatWork に参加して botman-chatwork-project のほうにプルリク送れば試せるようにする。
