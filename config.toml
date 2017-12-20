@@ -28,6 +28,10 @@ style = "github"
 languages = ["php", "javascript"]
 
 [[params.social]]
+url = "/contact/"
+fa_icon = "fa-envelope-o"
+
+[[params.social]]
 url = "https://github.com/kawax"
 fa_icon = "fa-github"
 
