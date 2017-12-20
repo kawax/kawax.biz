@@ -91,6 +91,8 @@ webhook で指定するのは `/botman` のURL。
 
 どっちかを使うかは別にどっちでもいいはずだけどたぶん botman.php。`/botman` へのリクエストで BotMan が発動(listen)、実際の動作の細かいことは botman.php。
 
+もう少し調べるとちょっと違ったかも。 botman.php に書いた方は常に有効。コントローラーの方はルーティングから発動した場合のみ有効。つまり `/botman` とは別に `/slack` を作り SlackController に書いた動作は `/slack` から呼び出された場合にのみ有効。
+
 ## 開発
 困るのは開発時。ローカルサーバーでは当然 webhook は飛んで来ないのでやりにくい。
 コマンド作るのを試してみたいという人がもしいれば ChatWork に参加して botman-chatwork-project のほうにプルリク送れば試せるようにする。
