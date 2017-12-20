@@ -96,3 +96,33 @@ webhook で指定するのは `/botman` のURL。
 ## 開発
 困るのは開発時。ローカルサーバーでは当然 webhook は飛んで来ないのでやりにくい。
 コマンド作るのを試してみたいという人がもしいれば ChatWork に参加して botman-chatwork-project のほうにプルリク送れば試せるようにする。
+
+## ドライバー
+独自ドライバーを作りたい場合、Slack は複雑なので HipChat 辺りを参考にするといい。  
+https://github.com/botman/driver-hipchat
+
+`class HipChatDriver extends HttpDriver` なので HttpDriver を見る。
+
+https://github.com/botman/botman/blob/master/src/Drivers/HttpDriver.php
+
+`abstract class HttpDriver implements DriverInterface`
+
+DriverInterface はこれなので必要なメソッドを用意すればいい。  
+https://github.com/botman/botman/blob/master/src/Interfaces/DriverInterface.php
+
+重要そうなのは
+
+- buildPayload() : HTTPリクエストから必要なデータを取得。
+- matchesRequest() : say() はドライバー指定してるけど hears() はしてない。どのドライバーを使うか判定するのは matchesRequest。これで true を返したドライバーが使われる。
+- buildServicePayload() : bot から投稿するデータを用意するメソッド。この後 `sendPayload()` で実際に送信。
+
+## Slack から ChatWork
+実現したかったのは Chat bot ではなく Slack にしか対応してない通知を ChatWork にも流すことなんだ…。  
+
+自分で使う用だけど一応誰でも使えるようにはなっている。  
+https://botman.kawax.biz/
+
+1. ChatWork アカウントでログイン。ChatWork用のSocialiteは先にさっと作っていた。ログインに使うだけなので最低限の情報しか取得しないし token さえ保存してない。OAuth の token は期限短いので使いにくそう。
+2. 連携設定で投稿先の ChatWork ルームID、APIトークンを設定。Webhook URLが作られる。
+3. Slack 側の Outgoing Webhook でこのWebhook URLを設定する。
+
