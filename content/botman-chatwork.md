@@ -126,3 +126,4 @@ https://botman.kawax.biz/
 2. 連携設定で投稿先の ChatWork ルームID、APIトークンを設定。Webhook URLが作られる。
 3. Slack 側の Outgoing Webhook でこのWebhook URLを設定する。
 
+当然ずっと使える保証はないので必要なら自分で動かしたほうがいい。そもそもこれだけなら他にも方法はあるはず。
