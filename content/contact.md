@@ -18,16 +18,31 @@ https://scouty.co.jp/ みたいな所からスカウトメールが来るので�
 
 ## Netlify のフォーム
 <form name="contact" netlify>
-  <p>
-    <label>名前: <input type="text" name="name"></label>   
-  </p>
-  <p>
-    <label>メール: <input type="email" name="email"></label>
-  </p>
-  <p>
-    <label>メッセージ: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">送信</button>
-  </p>
+  <div class="field">
+    <label class="label">名前</label>
+    <div class="control">
+      <input name="name" class="input" type="text" required>
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">メール</label>
+    <div class="control">
+      <input name="email" class="input" type="email" required>
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">メッセージ</label>
+    <div class="control">
+      <textarea name="message" class="textarea" required></textarea>
+    </div>
+  </div>
+  
+  <div class="field">
+    <div class="control">
+        <button class="button is-primary">送信</button>
+    </div>
+  </div>
+
 </form>
