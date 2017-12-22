@@ -15,3 +15,19 @@ draft: false
 
 ### 条件
 https://scouty.co.jp/ みたいな所からスカウトメールが来るので一応書いておくと「一度も会わないこと」が条件。面接からなんて無駄な時間を使う気はないので具体的なプロジェクトがあって依頼したい場合のみメールしてください。
+
+## Netlify のフォーム
+<form name="contact" netlify>
+  <p>
+    <label>名前: <input type="text" name="name"></label>   
+  </p>
+  <p>
+    <label>メール: <input type="email" name="email"></label>
+  </p>
+  <p>
+    <label>メッセージ: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">送信</button>
+  </p>
+</form>
