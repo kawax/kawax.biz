@@ -127,3 +127,5 @@ https://botman.kawax.biz/
 3. Slack 側の Outgoing Webhook でこのWebhook URLを設定する。
 
 当然ずっと使える保証はないので必要なら自分で動かしたほうがいい。そもそもこれだけなら他にも方法はあるはず。
+
+Outgoing Webhook で届くのは `text` のみで `attachments` は含まれないので全部そのまま流すのは無理そう。
