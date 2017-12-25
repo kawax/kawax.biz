@@ -10,5 +10,6 @@ draft: false
 <!--more-->
 
 - Hugo https://gohugo.io/
-- AMP Theme https://themes.gohugo.io/amp/ AMP対応のテーマを選んだけど微妙な箇所も。
+- <del>AMP Theme https://themes.gohugo.io/amp/ AMP対応のテーマを選んだけど微妙な箇所も。</del>
+- Hemingway2 https://themes.gohugo.io/hemingway2/ Qiitaに書いてたような記事もこっちに持ってきたので見やすさ優先でテーマ変更。
 - Netlify https://www.netlify.com/
