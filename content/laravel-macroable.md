@@ -69,6 +69,24 @@ echo (new Foo)->my();
     }
 ```
 
+もしくはこの方法  
+https://github.com/laravel/framework/blob/a55c4bf892d4cdcd0213218fe77076c4a1b6969c/src/Illuminate/Support/Optional.php
+
+```php
+    use Macroable {
+        __call as macroCall;
+    }
+    
+    public function __call($method, $parameters)
+    {
+        if (static::hasMacro($method)) {
+            return $this->macroCall($method, $parameters);
+        }
+        
+        //
+    }
+```
+
 自分のアプリ内だけで使うならこんなことする必要はなくて、これが便利なのは他の人も使う場合。
 
 ## 自作パッケージで使う
