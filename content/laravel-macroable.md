@@ -69,6 +69,8 @@ echo (new Foo)->my();
     }
 ```
 
+自分のアプリ内だけで使うならこんなことする必要はなくて、これが便利なのは他の人も使う場合。
+
 ## 自作パッケージで使う
 
 composer.json に
@@ -77,3 +79,4 @@ composer.json に
 ```
 と指定しておけば `Illuminate\Support\Traits\Macroable` が使える。
 
+使う側が好きなように拡張できる。
