@@ -98,3 +98,5 @@ composer.json に
 と指定しておけば `Illuminate\Support\Traits\Macroable` が使える。
 
 使う側が好きなように拡張できる。
+
+Macroable に Laravel 依存な部分はないので Laravel 以外でも使える。
