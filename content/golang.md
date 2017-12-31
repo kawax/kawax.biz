@@ -1,5 +1,5 @@
 ---
-title: "Golang を始める"
+title: "[WIP]Golang を始める"
 date: 2017-12-27T19:41:59+09:00
 categories: ["golang"]
 draft: false
