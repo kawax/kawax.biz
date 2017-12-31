@@ -94,3 +94,47 @@ GOOS=linux GOARCH=amd64 go build
 ```
 
 ここまでできればLaravelから使う用は作れるのでひとまず終わり。
+
+## golang に class はない
+別記事作らず追記していけばいいかな。
+
+class はないけど代わりに `構造体(struct)` を使う。
+
+```go
+func Foo struct {
+    name string
+}
+```
+
+`name` はプロパティ。
+メソッドの追加は
+
+```go
+func (foo Foo) GetName() string {
+    return foo.name
+}
+```
+
+`(foo Foo)` はレシーバ。確か Objective-C がこの辺りの用語をきっちり使っていてレシーバと呼んでいた。
+
+
+セッター。レシーバをポインタにしないと変更できない。
+
+```go
+func (foo *Foo) SetName(name string) {
+    foo.name = name
+}
+```
+
+Go にもポインタはあるけど C ほど難しくはないらしい。久しぶりのコンパイル言語なので C とか Objective-C とか遥か昔の知識を掘り出す必要がある感じ…。
+
+public/private は先頭が大文字か小文字かで決まる。この場合の `GetName()` は public、 `name` は private。
+
+コンストラクタは `New` を名前に付ける。
+```go
+func NewFoo(name string) *Foo {
+    return &Foo{name: name}
+}
+```
+
+この辺りは慣れていくしかない。
