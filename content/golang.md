@@ -60,12 +60,12 @@ mkdir -p $GOPATH/src/github.com/kawax
 
 ```
 mkdir $GOPATH/src/github.com/kawax/go-hello
-cd ~/Sites/go/src/github.com/kawax/go-hello
+cd $GOPATH/src/github.com/kawax/go-hello
 ```
 
 hello.go を作って
 
-```
+```go
 package main
 
 import "fmt"
