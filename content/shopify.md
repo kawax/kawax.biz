@@ -38,3 +38,11 @@ Shopify App は別サーバーで動いてるウェブサイトでしかない�
 開発中はローカルサーバーでも問題ない。httpsは必須。App Storeに公開しなくても使える。多少警告は出るけど。`This app is not listed in the Shopify App Store. Contact the app developer for support.`
 
 アプリを作ってAPIで商品情報取得まではできたので後はなんでもできる。
+
+## Private Apps
+上で作ったアプリは公開すればどのストアでも使える。プライベートアプリは一つのストア専用。  
+Shopify Appとして公開するための機能が不要でAPI Keyとパスワードを使っていきなりAPIを使える。  
+自分のストアに対してAPIで何かしたいだけならこっちのほうが簡単。
+
+非公開でアプリ使うことをプライベートアプリと言ってるのかと思ったけど違った。  
+「アプリ管理」の下の方に小さく `Working with a developer on your shop? Manage private apps` と書いてあるだけなので気付かなかった。
