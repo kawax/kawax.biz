@@ -33,7 +33,7 @@ Shopify 側のパートナーダッシュボード
 - Development stores: 開発用のストアを作る
 - Apps: アプリを作る。
 
-Shopify App は別サーバーで動いてるウェブサイトでしかない。
+Shopify App は別サーバーで動いてるウェブサイトでしかない。普通にOAuthで認証。Shopify のダッシュボードから表示してるだけ。
 
 開発中はローカルサーバーでも問題ない。httpsは必須。App Storeに公開しなくても使える。多少警告は出るけど。`This app is not listed in the Shopify App Store. Contact the app developer for support.`
 
