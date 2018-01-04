@@ -39,10 +39,20 @@ Shopify App は別サーバーで動いてるウェブサイトでしかない�
 
 アプリを作ってAPIで商品情報取得まではできたので後はなんでもできる。
 
+<img src="/img/shopify/shopify1.png">
+
 ## Private Apps
+- https://help.shopify.com/manual/apps/private-apps
+
 上で作ったアプリは公開すればどのストアでも使える。プライベートアプリは一つのストア専用。  
 Shopify Appとして公開するための機能が不要でAPI Keyとパスワードを使っていきなりAPIを使える。  
 自分のストアに対してAPIで何かしたいだけならこっちのほうが簡単。
 
 非公開でアプリ使うことをプライベートアプリと言ってるのかと思ったけど違った。  
 「アプリ管理」の下の方に小さく `Working with a developer on your shop? Manage private apps` と書いてあるだけなので気付かなかった。
+
+## App Proxy
+- https://github.com/ohmybrew/laravel-shopify/wiki/App-Proxies
+- https://help.shopify.com/api/tutorials/application-proxies
+
+ストアのドメイン下でアプリを表示できる。ShopifyのAPI関係なくてもブログでもなんでも表示できるわけだから活用方法は色々ある。
