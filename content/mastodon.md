@@ -2,7 +2,7 @@
 title: "Mastodon"
 date: 2017-07-23T22:31:43+09:00
 categories: ["Mastodon"]
-draft: false
+draft: true
 ---
 
 2017年4月頃シュッと立てた。
@@ -37,4 +37,3 @@ https://tootlog.com/
 
 - Laravel
 - Vue.js
-- ElasticBeanstalk
