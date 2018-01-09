@@ -2,7 +2,7 @@
 title: "AWSサービスのみでマストドンのデプロイ"
 date: 2018-01-09T00:02:55+09:00
 categories: ["Mastodon", "AWS"]
-draft: true
+draft: false
 ---
 
 GitLab→ecs-cliでECSへという状態からAWSのサービスのみを使ったデプロイへ。
