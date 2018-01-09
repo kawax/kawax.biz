@@ -30,6 +30,7 @@ https://github.com/ohmybrew/laravel-shopify
 https://github.com/ohmybrew/laravel-shopify/wiki
 
 Shopify 側のパートナーダッシュボード
+
 - Development stores: 開発用のストアを作る
 - Apps: アプリを作る。
 
