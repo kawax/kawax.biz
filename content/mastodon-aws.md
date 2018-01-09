@@ -137,13 +137,13 @@ phases:
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
       - echo "[{\"name\":\"${IMAGE_NAME}\",\"imageUri\":\"${REPOSITORY_URI}:${IMAGE_TAG}\"}]" > imagedefinitions.json
-      - ./ecs-cli compose -c $ECS_CLUSTER -f aws-migrate.yml --project-name ecscompose-service-mastodon-migrate up
-      - ./ecs-cli compose -c $ECS_CLUSTER -f aws-web.yml --project-name ecscompose-service-mastodon-web service up --timeout 10
-      - ./ecs-cli compose -c $ECS_CLUSTER -f aws-api.yml --project-name ecscompose-service-mastodon-api service up --timeout 10
+      - ./ecs-cli compose -c $ECS_CLUSTER -f aws-migrate.yml --project-name mastodon-migrate up
+      - ./ecs-cli compose -c $ECS_CLUSTER -f aws-web.yml --project-name mastodon-web service up --timeout 10 --target-group-arn $ALB_WEB_ARN --container-name $ALB_WEB_NAME --container-port 3000
+      - ./ecs-cli compose -c $ECS_CLUSTER -f aws-api.yml --project-name mastodon-api service up --timeout 10 --target-group-arn $ALB_API_ARN --container-name $ALB_API_NAME --container-port 4000
 artifacts:
     files: imagedefinitions.json
-
 ```
+
 ### CodePipeline を使う場合のメモ
 マストドンだとwebとapiの2つをECSサービスで動かしてるので最後の Deploy 部分で並列に実行する。パイプライン作成時にはできないので一度作ってから変更。
 
