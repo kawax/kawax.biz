@@ -25,7 +25,7 @@ category = "categories"
 
 [params.highlight]
 style = "github"
-languages = ["php", "javascript", "go"]
+languages = ["php", "javascript", "go", "yaml"]
 
 [[params.social]]
 url = "/contact/"
