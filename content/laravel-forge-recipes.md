@@ -54,3 +54,13 @@ mv wp-cli.phar /usr/local/bin/wp
 
 wp --info
 ```
+
+## Install Mackerel
+
+Ubuntu 16.04用のコマンドをそのままコピペすればいい。
+
+User : root
+
+```bash
+wget -q -O - https://mackerel.io/file/script/setup-all-apt-v2.sh | MACKEREL_APIKEY='' sh
+```
