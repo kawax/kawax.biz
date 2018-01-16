@@ -138,3 +138,9 @@ func NewFoo(name string) *Foo {
 ```
 
 この辺りは慣れていくしかない。
+
+## Lambda 対応開始 2018-01-16
+早い…。何も準備できてないので node.js で作ってたのを作り直す所から始めるのが良さそう。
+
+- https://aws.amazon.com/jp/about-aws/whats-new/2018/01/aws-lambda-supports-go/
+- https://aws.amazon.com/jp/blogs/compute/announcing-go-support-for-aws-lambda/
