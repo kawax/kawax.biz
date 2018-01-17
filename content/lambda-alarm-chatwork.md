@@ -13,7 +13,8 @@ SNSイベントを受け取って ChatWork に投稿するだけなので簡単�
 https://github.com/kawax/lambda-alarm-chatwork
 
 ## 注意点
-公式のドキュメントが間違ってる。  
+公式のドキュメントが間違ってる。すぐに直るだろうけど。上のURLが現時点。  
+https://github.com/aws/aws-lambda-go/blob/6e2e37798efbb1dfd8e9c6681702e683a6046517/events/README_SNS.md  
 https://github.com/aws/aws-lambda-go/blob/master/events/README_SNS.md
 
 ```go
