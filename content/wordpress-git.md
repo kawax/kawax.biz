@@ -85,6 +85,8 @@ Forge なら
 cd /home/forge/example.com/; /usr/local/bin/wp cron event run --due-now
 ```
 
+（追記）その後の様子を見る限り wp-cron.php だけで問題なく動作している。
+
 ## テーマ
 gitリポジトリ内に全部入れる。
 
