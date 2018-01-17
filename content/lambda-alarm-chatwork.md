@@ -32,7 +32,7 @@ func handler(ctx context.Context, events.SnsEvent snsEvent) {
 ```
 
 引数部分が逆。
-`snsEvent events.SnsEvent`
+`snsEvent events.SNSEvent`
 
 大文字。
 `record.SNS`
