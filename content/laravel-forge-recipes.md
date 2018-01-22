@@ -64,3 +64,12 @@ User : root
 ```bash
 wget -q -O - https://mackerel.io/file/script/setup-all-apt-v2.sh | MACKEREL_APIKEY='' sh
 ```
+
+## apt upgrade
+
+User : root
+
+```bash
+apt update
+apt upgrade -y
+```
