@@ -33,3 +33,5 @@ class AppServiceProvider extends ServiceProvider
 ```
 
 5.5で設定してても大丈夫なので今のうちにしておけば後で気にしなくていい。
+
+（追記）でもこれ `views/vendor/pagination` でカスタムページネーションを使ってる場合も必要になるような…。影響が大きいので5.6リリースまでに変更されるかもしれない。
