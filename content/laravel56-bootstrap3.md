@@ -35,3 +35,21 @@ class AppServiceProvider extends ServiceProvider
 5.5で設定してても大丈夫なので今のうちにしておけば後で気にしなくていい。
 
 （追記）でもこれ `views/vendor/pagination` でカスタムページネーションを使ってる場合も必要になるような…。影響が大きいので5.6リリースまでに変更されるかもしれない。
+
+## （さらに追記）実際にやってみた
+こういうのは試してみないと分からないので5.6.x-devとBootstrap3で試した。
+結果としては **5.6のBootstrap4用のページネーションで問題なく表示できる**
+Bootstrap3->4での変化がclassを追加するだけなので3では意味のないclassが付いてるだけなので影響はない。
+5.6でBootstrap3を使い続ける場合でもページネーションのことは気にしなくていい。
+
+
+カスタムページネーションを使ってる場合には影響がある。
+5.5では `views/vendor/pagination/default.blade.php` に置けば使われたけど5.6ではAppServiceProviderでの設定も必要。
+
+```php
+Paginator::defaultView('vendor.pagination.default');
+```
+
+ファイル名を `bootstrap-4.blade.php` にしてもいいけどBootstrap4使ってないのにこの名前は違和感。
+
+ということは…Laravel側の `bootstrap-4.blade.php` を `default.blade.php` にしてもらえれば全部綺麗に収まる。
