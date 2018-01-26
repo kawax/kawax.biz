@@ -15,10 +15,7 @@ draft: false
 
 電話や Skype は何があろうと絶対に使わない。もはやスマホの SIM に通話機能自体ない。
 
-### 条件
-https://scouty.co.jp/ みたいな所からスカウトメールが来るので一応書いておくと「一度も会わないこと」が条件。面接からなんて無駄な時間を使う気はないので具体的なプロジェクトがあって依頼したい場合のみメールしてください。
-
-## Netlify のフォーム
+## フォーム
 <form name="contact" netlify>
   <div class="field">
     <label class="label">名前</label>
