@@ -36,8 +36,6 @@ Paginator::defaultView('pagination::bootstrap-4');
 Paginator::defaultSimpleView('pagination::simple-bootstrap-4');
 ```
 
-bootstrap4をカスタムページネーションで使ってる場合は影響あり。初期から使ってたならありえる。
-
 ### bootstrap3
 少し対応作業が必要。でも実際は何もしなくても問題ないのでほとんどの人は気付かず使いそう。
 
