@@ -5,15 +5,42 @@ categories: ["Contact"]
 draft: false
 ---
 
-基本的にはチャットのみ。完全リモートで当たり前の時代。
-
-<!--more-->
+基本的にはチャットのみ。フルリモートで当たり前の時代。
 
 - ChatWork https://www.chatwork.com/kawax
 - Slack
 - kawaxbiz@gmail.com
 
 電話や Skype は何があろうと絶対に使わない。もはやスマホの SIM に通話機能自体ない。
+
+## 今やりたいこと
+- Laravel
+- AWSを全力で使える規模のシステムの運用
+- Vue.js
+- Golang
+
+## 今やってること
+- Laravel + Vue.js での開発
+- AWS
+- 大量のWordPressの運用
+- Railsアプリの運用
+
+## 昔やってたこと
+- C
+- Perl
+- クロスプラットフォームツールでのMac/Windowsアプリ開発。まだ残ってるけど頻繁に名前が変わって今は読み方もよく分からないものに。
+- 現Xcode。当時はProject Builder/Interface Builder。
+- Zend Framework
+- AngularJS ver1
+- スマホアプリのサーバーサイド
+
+## 使用OS
+基本的にはすべて最新バージョンだけどAndroidはNexusが終了してどうなるか分からない。
+
+- Mac
+- Windows
+- iOS (iPad Pro)
+- Android (Nexus)
 
 ## フォーム
 <form name="contact" netlify>
