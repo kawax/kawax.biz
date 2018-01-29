@@ -1,6 +1,6 @@
 ---
 title: "連絡手段"
-date: 2017-07-22T14:51:40+09:00
+date: 2018-01-29T14:51:40+09:00
 categories: ["Contact"]
 draft: false
 ---
