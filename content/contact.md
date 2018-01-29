@@ -13,7 +13,7 @@ draft: false
 
 電話や Skype は何があろうと絶対に使わない。もはやスマホの SIM に通話機能自体ない。
 
-## 今やりたいこと
+## 今やりたいこと(2018)
 - Laravel
 - AWSを全力で使える規模のシステムの運用
 - Vue.js
@@ -27,9 +27,11 @@ draft: false
 
 ## 昔やってたこと
 - C
-- Perl
+- Perl。CGI時代。
+- PHP3~4~5初期。素のPHP時代。
 - クロスプラットフォームツールでのMac/Windowsアプリ開発。まだ残ってるけど頻繁に名前が変わって今は読み方もよく分からないものに。
 - 現Xcode。当時はProject Builder/Interface Builder。Objective-Cの頃。
+- Movable Type。ブログ誕生の頃。今考えるとPerl+PHPのシステム。
 - Zend Framework ver1。他PHPのフレームワーク。
 - AngularJS ver1。node.js登場後のフロント周りはgrunt、CoffeeScript時代から色々使って今はなるべくシンプルな方向に。
 - スマホアプリのサーバーサイド
