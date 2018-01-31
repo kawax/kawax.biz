@@ -26,6 +26,13 @@ https://forge.besnappy.com/laravel-forge#servers-5454
 `45.55.0.0/16` `104.236.0.0/16` で許可。  
 もちろん一時的にSSHしたい時は自分のIPを許可すればいい。
 
+### 2018-01-31
+変更の案内が出ていた。
+
+```
+Forge IP Addresses: We are upgrading our servers soon! If you use IP whitelisting, please add our new addresses: 159.203.161.246 and 159.203.163.240.
+```
+
 ## Amazon Time Sync Service
 時刻同期を Amazon Time Sync Service を使うように設定。ついでにタイムゾーンを `Asia/Tokyo` に。
 
