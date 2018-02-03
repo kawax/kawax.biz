@@ -1,5 +1,5 @@
 ---
-title: "Laravel Forge Recipes"
+title: "[WIP]Laravel Forge Recipes"
 date: 2018-01-11T00:54:32+09:00
 categories: ["Laravel"]
 draft: false

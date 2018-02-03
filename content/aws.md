@@ -2,7 +2,7 @@
 title: "AWS"
 date: 2017-07-24T18:53:11+09:00
 categories: ["AWS"]
-draft: false
+draft: true
 ---
 
 AWSをいつから使ってるかはもう忘れた…。2013年よりは前。ほぼ一人で毎日管理してるので大体のことはできようになった。

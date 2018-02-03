@@ -1,5 +1,5 @@
 ---
-title: "[WIP]Shopify"
+title: "Shopify"
 date: 2018-01-02T19:26:54+09:00
 categories: ["Shopify"]
 draft: false
@@ -14,7 +14,7 @@ https://www.shopify.jp/partners
 開発者向けの情報。APIは普通なので読めば大体分かった。  
 https://developers.shopify.com/
 
-Laravel 用の Shopily App パッケージも見つけた。APIパッケージもいくつかあるし十分普及してそう。  
+Laravel 用の Shopily App パッケージも見つけた。Laravel はなんでもあるなぁ…。APIパッケージもいくつかあるし十分普及してそう。  
 https://github.com/ohmybrew/laravel-shopify
 
 `netlify` とか `shopify` とかこのネーミングはどこから流行ってるんだろう…。
