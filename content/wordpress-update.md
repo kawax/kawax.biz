@@ -25,6 +25,6 @@ https://gigazine.net/news/20180206-google-wordpress-accelerate-speed/
 こういうのは声の大きい人が言い出さないと広まらないけど何もないと始まらないのでまずサイトだけ作った。
 
 古いWordPressをアップデートしようキャンペーン  
-https://wordpress-update.info/
+https://wp-update.info/
 
 最初は参加者を集める所から。
