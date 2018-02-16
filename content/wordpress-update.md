@@ -28,3 +28,6 @@ https://gigazine.net/news/20180206-google-wordpress-accelerate-speed/
 https://wp-update.info/
 
 最初は参加者を集める所から。
+
+## ドメイン変更
+商標的な意味でドメインに「WordPress」は使えなかったので変更。gitからデプロイ、DBは別、とか今なら当然やるべきことをやってたのでドメイン変更するような移動でも一瞬で終わった。
