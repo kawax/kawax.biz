@@ -2,7 +2,7 @@
 title: "Laravel5.6の準備"
 date: 2018-01-27T13:34:06+09:00
 categories: ["Laravel"]
-draft: false
+draft: true
 ---
 
 目立った新機能はないけど本当に来月出るのかな…？と思うけど今のLaravelの開発は半年ごとのリリースは決まってて
