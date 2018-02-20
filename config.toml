@@ -36,7 +36,7 @@ url = "https://github.com/kawax"
 fa_icon = "fa-github"
 
 [[params.social]]
-url = "https://qiitadon.com/@kawax"
+url = "https://qiita.com/kawax"
 fa_icon = "fa-quora"
 
 [[params.social]]
