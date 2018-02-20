@@ -40,6 +40,8 @@ draft: false
 - AngularJS ver1。node.js登場後のフロント周りはgrunt、CoffeeScript時代から色々使って今はなるべくシンプルな方向に。
 - スマホアプリのサーバーサイド
 
+色々なサービスにバラバラなIDで登録してるのでkawax名義での活動記録はGitHubに登録した2012年以降くらいしかない。今でもメインのIDは別。
+
 ## 使用OS
 基本的にはすべて最新バージョンだけどAndroidはNexusが終了してどうなるか分からない。
 
