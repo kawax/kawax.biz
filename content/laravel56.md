@@ -15,6 +15,8 @@ draft: false
 5.6にしたらその後もバージョンアップを追い続けることになる。
 
 ## 準備
+- https://readouble.com/laravel/5.6/ja/releases.html
+- https://readouble.com/laravel/5.6/ja/upgrade.html
 - https://laravel.com/docs/5.6/releases
 - https://laravel.com/docs/5.6/upgrade
 - https://github.com/laravel/laravel/compare/5.5...master
