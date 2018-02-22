@@ -17,7 +17,7 @@ class LogManager implements LoggerInterface
 ドキュメントに書いてあるのでその通りにするだけ。  
 https://readouble.com/laravel/5.6/ja/logging.html
 
-プロジェクト内で使うだけなら`app`下に作って使えばいいけど別プロジェクトでも使えるようにcomposerパッケージにした。
+プロジェクト内で使うだけなら`app`下に作って使えばいいけど別プロジェクトでも使えるようにcomposerパッケージにした。必要なのは`via`で指定するclassだけなのでServiceProviderもFacadeも不要でシンプル。
 
 デモプロジェクト  
 https://github.com/kawax/laravel-logger-project
@@ -30,5 +30,7 @@ ChatWork
 https://github.com/kawax/laravel-logger-chatwork  
 全部ChatWorkに流すと多すぎだけどログレベルが高い場合のみSlackに流す例が載ってたのでそれならChatWorkもありだろうと判断。ChatWork用のMonolog Handlerがなさそうだったのでそこも適当に作った。
 
-composerでインストールして`config/logging.php`と`.env`で設定するだけ。  
+使い方はcomposerでインストールして`config/logging.php`と`.env`で設定するだけ。  
 5.6からの`stack`チャンネルで複数同時に流せるのでCloudWatch Logsには全部流しつつ重要なログだけチャットに流すことができる。
+
+ChatWorkへの通知にはNotification使ってたけどLogでも十分かもしれない。
