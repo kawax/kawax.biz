@@ -20,7 +20,10 @@ AWSのEC2+RDSだけどVPSで1台にDBも入れてる環境でもいいはず。
 サーバー2つとサイト2つの状態。
 
 - example.com(server-1)
-- example.com(server-2)
+- example.com(server-2) まだ表示できない。
+
+## SSL
+Let's Encryptなら、`Clone Certificate`でserver-1から持ってくるだけで使える。
 
 ## ネットワーク設定
 DB、Redis、memcachedはserver-1のものを使う。
@@ -30,16 +33,13 @@ server-2のNetwork→Server Networkに`server-1`があるので選択してUpdat
 > Below is a list of all of the other servers this server may access. In other words, this server's network! This makes it a breeze to use a connected server as a separate database, cache, or queue box.
 
 これで具体的に何をやっているかというと`ufw`で必要なポートを許可している。
-server-1のIPのみ許可。
+server-2のIPのみ許可。
 
 Network設定ページ下部のActive Firewall Rulesに出てこないけどやってることは同じ。
 
 これでserver-2からでもDBやRedisのHOSTにserver-1のIPを指定すれば接続できるようになる。
 
 AWSの場合はセキュリティグループでも必要なポートを許可する。Redisなら`6379`、memcachedなら`11211`など。
-
-## SSL
-Let's Encryptなら、`Clone Certificate`でserver-1から持ってくるだけで使える。
 
 ## Environment
 サーバー設定で接続できるようになったのでserver-2のサイト側でEnvironmentの設定を変更。  
