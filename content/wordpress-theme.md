@@ -49,7 +49,7 @@ add_action('widgets_init', create_function('', 'return register_widget("TextArea
 - `{}`を1行で書きたがる変な癖。CSSでもこんなだった。
 - extract。逆のcompactはよく使うけどextractは危険…。
 - create_function
-- そもそもこれ何のためのウィジェットなんだ…。テキストウィジェットでショートコード使うためにわざわざこんな無駄なことしてる…？`add_filter('widget_text', 'do_shortcode');`の1行で済むんだけど…。
+- そもそもこれ何のためのウィジェットなんだ…。テキストウィジェットでショートコード使うためにわざわざこんな無駄なことしてる…？`add_filter('widget_text', 'do_shortcode');`の1行で済むんだけど…。→その後変更してTextArea2は削除。
 
 class使ってるのはここだけなのでどこかからコピペしてるだけだろう…。
 コンストラクタはPHP7.0で非推奨になってPHP8でもまだエラーになるだけらしい。削除でいいのでは…。
