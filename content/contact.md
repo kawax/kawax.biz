@@ -30,10 +30,11 @@ draft: false
 - Railsアプリの運用
 
 ## 昔やってたこと
-- C
-- Perl。CGI時代。
-- PHP3~4~5初期。素のPHP時代。
+- C。大学で習っただけなので理解はしてないけど基礎としてずっと役に立ってる。
+- Perl。CGI時代。htmlもこの辺だけど「日本語ができる」と同レベルなので書くまでもない。
+- PHP3~4~5初期。素のPHP時代。この頃に仕事で使ってなくて良かった。
 - クロスプラットフォームツールでのMac/Windowsアプリ開発。まだ残ってるけど頻繁に名前が変わって今は読み方もよく分からないものに。
+- アプリを公開してそのサイトをPHPで作ってた時代。その後Mac OS Xへの変化もあり特定のOSでしか動かないアプリよりwebのほうがいいとなっていく。
 - 現Xcode。当時はProject Builder/Interface Builder。Objective-Cの頃。
 - Movable Type。ブログ誕生の頃。今考えるとPerl+PHPのシステム。
 - Zend Framework ver1。他PHPのフレームワーク。
