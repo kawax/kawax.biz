@@ -5,16 +5,10 @@ categories: ["Contact"]
 draft: false
 ---
 
-基本的にはチャットのみ。フルリモートで当たり前の時代。
+チャットのみで受け付け。
 
 - ChatWork https://www.chatwork.com/kawax
 - Slack
-- kawaxbiz@gmail.com
-
-電話や Skype は何があろうと絶対に使わない。もはやスマホの SIM に通話機能自体ない。
-リモートOKと言いつつ最初に面談を要求する会社の相手はしない。今まで関わった会社はどことも一度も会ったことない。
-
-このくらい書いておかないと理解してない問い合わせが来る。
 
 ## 今やりたいこと(2018)
 - Laravel
