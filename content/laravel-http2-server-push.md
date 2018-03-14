@@ -33,3 +33,13 @@ php artisan vendor:publish
 ```
 
 Mixのcss/jsは自動で追加される。他にも追加したいならserver-push.phpで設定するか、動的に設定したいなら`pushImage()` `pushScript()` `pushStyle()`のヘルパーを使う。
+
+## Netlify
+ついでに他も調査。  
+https://www.netlify.com/blog/2017/07/18/http/2-server-push-on-netlify/
+
+NetlifyはHugoなら`/static/_headers`に書けばいい。
+
+## WordPress
+プラグインで対応できるけどまだどれがいいとかはない。  
+ここで実験していく。https://wp-update.info/
