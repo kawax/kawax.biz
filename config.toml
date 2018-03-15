@@ -40,5 +40,9 @@ url = "https://qiita.com/kawax"
 fa_icon = "fa-quora"
 
 [[params.social]]
+url = "https://twitter.com/kawaxbiz"
+fa_icon = "fa-twitter"
+
+[[params.social]]
 url = "/index.xml"
 fa_icon = "fa-rss"
