@@ -5,11 +5,10 @@ categories: ["Contact"]
 draft: false
 ---
 
-チャットのみで受け付け。
-
 - ChatWork https://www.chatwork.com/kawax
 - Slack
 
+<!--
 ## 今やりたいこと(2018)
 - Laravel
 - AWSを全力で使える規模のシステムの運用
@@ -45,6 +44,8 @@ draft: false
 - Windows
 - iOS (iPad Pro)
 - Android (Nexus)
+
+-->
 
 ## フォーム
 <form name="contact" netlify>
