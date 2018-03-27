@@ -80,7 +80,7 @@ https://github.com/laravel/framework/tree/5.6/src/Illuminate/Auth/Console/stubs/
 2. Homestead
 3. make:auth
 
-主な工程はこの3つだけ。
+主な工程はこの3つだけ。何回新規に作ったか忘れるくらい作ってるので無駄なことはしない。
 
 これで基本的なアプリはできてるので後はおまけ。
 
@@ -103,6 +103,8 @@ yarn prod
 https://readouble.com/laravel/5.6/ja/frontend.html#writing-vue-components
 Vue.js使うなら`resources/assets/js/components`にVueコンポーネントを作って`app.js`で登録すればLaravelのview内でどこでも使える。
 Laravel+Vue.jsはここから始めればいい。最初からSPAなんて目指すとたぶん挫折する。
+
+最初からこれだけ用意されてるのになぜか無視してVueコンポーネント使ってない会社を見かけるけどなんでそんな無意味なことをやってるのか全く理解できない。Vueコンポーネント使えば`{{}}`問題もないしScoped CSSも使えるしで一番良い。ベストプラクティスを無視してはいけない。
 
 ## composer.json
 `barryvdh/laravel-debugbar`とか`barryvdh/laravel-ide-helper`とかいつも使ってるものの追加。
