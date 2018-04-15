@@ -48,32 +48,4 @@ draft: false
 -->
 
 ## フォーム
-<form name="contact" netlify>
-  <div class="field">
-    <label class="label">名前</label>
-    <div class="control">
-      <input name="name" class="input" type="text" required>
-    </div>
-  </div>
-
-  <div class="field">
-    <label class="label">メール</label>
-    <div class="control">
-      <input name="email" class="input" type="email" required>
-    </div>
-  </div>
-
-  <div class="field">
-    <label class="label">メッセージ</label>
-    <div class="control">
-      <textarea name="message" class="textarea" required></textarea>
-    </div>
-  </div>
-  
-  <div class="field">
-    <div class="control">
-        <button class="button is-primary">送信</button>
-    </div>
-  </div>
-
-</form>
+スパムが多いので削除。
