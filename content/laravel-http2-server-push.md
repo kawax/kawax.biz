@@ -17,6 +17,8 @@ https://github.com/tomschlick/laravel-http2-server-push
 composer require tomschlick/laravel-http2-server-push
 ```
 
+（v0.1.6時点ではLaravel5.6でインストールできないので`dev-master`で指定。）
+
 Auto-discovery対応してるのでServiceProvider追加は不要。
 
 `app/Http/Kernel.php`に追加
