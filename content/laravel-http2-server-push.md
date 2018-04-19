@@ -45,3 +45,13 @@ NetlifyはHugoなら`/static/_headers`に書けばいい。
 ## WordPress
 プラグインで対応できるけどまだどれがいいとかはない。  
 ここで実験していく。https://wp-update.info/
+
+## nginxの設定
+その後Ubuntuで使えるようになったのは1.13.12。
+nginx側の設定としては以下を追加するだけ。
+
+```
+http2_push_preload on;
+```
+
+実際に対応してみるとすでに十分速いのであまり変わらなかった。Server Pushするファイルを増やせば変わるかも。
