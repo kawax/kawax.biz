@@ -36,6 +36,8 @@ php artisan vendor:publish
 
 Mixのcss/jsは自動で追加される。他にも追加したいならserver-push.phpで設定するか、動的に設定したいなら`pushImage()` `pushScript()` `pushStyle()`のヘルパーを使う。
 
+Mixで`version()`を使ってると若干おかしいので使わないようにする。
+
 ## Netlify
 ついでに他も調査。  
 https://www.netlify.com/blog/2017/07/18/http/2-server-push-on-netlify/
