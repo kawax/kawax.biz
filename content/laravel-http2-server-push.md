@@ -36,7 +36,9 @@ php artisan vendor:publish
 
 Mixのcss/jsは自動で追加される。他にも追加したいならserver-push.phpで設定するか、動的に設定したいなら`pushImage()` `pushScript()` `pushStyle()`のヘルパーを使う。
 
-Mixで`version()`を使ってると若干おかしいので使わないようにする。
+Mixで`version()`を使ってると少しだけ上手く動かない。
+Mixの`app.js?id=aaaa`に対応できてないので自分でパッチ当てて使う。
+https://github.com/kawax/laravel-http2-server-push/commit/71450921b562e57c714c1b0ce89e025cb37fe8ae
 
 ## Netlify
 ついでに他も調査。  
