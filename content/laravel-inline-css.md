@@ -26,5 +26,17 @@ https://readouble.com/laravel/5.6/ja/blade.html#extending-blade
 Blade拡張を集めたパッケージを調べたらそれでも`'`を削除してた。仕様だ。
 https://github.com/appstract/laravel-blade-directives/blob/47424072001279063e69fd117e4fe1c1e4e5ce2d/src/DirectivesRepository.php#L35
 
+```php
+    public static function stripQuotes($expression)
+    {
+        return str_replace("'", '', $expression);
+    }
+```
+
 そしてここで`@inline`があるのに気付く。自分で作らなくてもこれ使えばいい。
 https://github.com/appstract/laravel-blade-directives#inline
+
+
+インラインにすべきは小さいCSSファイルとクリティカルCSSなのでapp.cssをまるごとインラインにするのは良くない。
+かと言ってクリティカルCSSを手動で分離なんてやるわけないのでインラインCSSは使える方法じゃなさそう。
+やはりServer Pushか。
