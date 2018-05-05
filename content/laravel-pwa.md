@@ -5,7 +5,7 @@ categories: ["Laravel"]
 draft: false
 ---
 
-##　前提
+## 前提
 SPAではないLaravel5.6+Vue.jsなプロジェクト。
 
 動作確認はPCとAndroidのChrome。Lighthouse。
