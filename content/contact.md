@@ -9,7 +9,7 @@ draft: false
 - Slack
 - kawaxbiz@gmail.com
 
-「電話」や「常駐」は一発アウトのNGワード。20年くらいネット上だけで仕事してるのでそんな時代遅れなことはしない。
+「電話」や「常駐」は一発アウトのNGワード。
 
 ## 今やりたいこと(2018)
 - Laravel
@@ -37,6 +37,10 @@ draft: false
 - スマホアプリのサーバーサイド
 
 色々なサービスにバラバラなIDで登録してるのでkawax名義での活動記録はGitHubに登録した2012年以降くらいしかない。今でもメインのIDは別。
+
+- https://github.com/kawax
+- https://qiita.com/kawax
+- https://teratail.com/users/kawax
 
 ## 使用OS
 基本的にはすべて最新バージョンだけどAndroidはNexusが終了してどうなるか分からない。
