@@ -100,7 +100,7 @@ Vue.jsでの有効／無効とか
 https://github.com/cretueusebiu/laravel-web-push-demo/blob/master/resources/assets/js/components/NotificationsDemo.vue
 分かりにくいけど大体はそのまま使って自分のプロジェクト用に少し書き換えれば済む。
 
-テスト用の通知作っておいたほうのが良かった。事前準備さえできていればLaravelの通知としてシンプルに使える。
+テスト用の通知作っておいたほうのが良かった。事前準備さえできていればLaravelの通知としてシンプルに使える。結局面倒なのはLaravel以外の部分。
 
 ```php
 <?php
