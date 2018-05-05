@@ -100,6 +100,62 @@ Vue.jsでの有効／無効とか
 https://github.com/cretueusebiu/laravel-web-push-demo/blob/master/resources/assets/js/components/NotificationsDemo.vue
 分かりにくいけど大体はそのまま使って自分のプロジェクト用に少し書き換えれば済む。
 
+テスト用の通知作っておいたほうのが良かった。事前準備さえできていればLaravelの通知としてシンプルに使える。
+
+```php
+<?php
+
+namespace App\Notifications;
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Notifications\Notification;
+use Illuminate\Contracts\Queue\ShouldQueue;
+
+use NotificationChannels\WebPush\WebPushMessage;
+use NotificationChannels\WebPush\WebPushChannel;
+
+class WebPushTest extends Notification implements ShouldQueue
+{
+    use Queueable;
+
+    /**
+     * Create a new notification instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * Get the notification's delivery channels.
+     *
+     * @param  mixed  $notifiable
+     * @return array
+     */
+    public function via($notifiable)
+    {
+        return [WebPushChannel::class];
+    }
+
+    /**
+     * @param $notifiable
+     * @param $notification
+     *
+     * @return mixed
+     */
+    public function toWebPush($notifiable, $notification)
+    {
+        return (new WebPushMessage)->title('WebPush')
+                                   ->body('test');
+    }
+}
+```
+
+（当たり前にキュー使ってるけどこういう通知+キューをLaravel以外で作るとどれだけ無駄な手間がかかるか使ってない人は分からない）
+
+
 次に進む場合sw.jsは`webpush.js`に変更して`resources/assets/js/webpush.js`に置く。
 
 ### オフライン
@@ -153,4 +209,6 @@ ServiceWorkerでキャッシュすると2回目の表示が速くなる。Chrome
 
 ## 終わり
 自分で触って記事にまとめたらService WorkerとPWAが少し分かってきた。
+バックグラウンド同期は使いそうにないので試してない。
+
 活かすならオフラインで動くものを作るしかないけどwebでもPCアプリでもオンライン前提のものばかり作ってきたので難しい。
