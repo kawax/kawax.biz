@@ -83,7 +83,7 @@ window.addEventListener('load', () => {
 })
 ```
 
-これだけでホームに追加まではできる。現状ではAndroidくらいでしか有効活用できないと思うけど。
+どこかからコピペしたようなコードだけでホームに追加まではできる。現状ではAndroidくらいでしか有効活用できないと思うけど。
 
 ## ウェブプッシュ通知
 Laravelの「通知」機能でウェブプッシュ通知が使えるので便利。
@@ -100,7 +100,7 @@ Vue.jsでの有効／無効とか
 https://github.com/cretueusebiu/laravel-web-push-demo/blob/master/resources/assets/js/components/NotificationsDemo.vue
 分かりにくいけど大体はそのまま使って自分のプロジェクト用に少し書き換えれば済む。
 
-次に進む場合sw.jsはwebpush.jsに変更して`resources/assets/js/webpush.js`に置く。
+次に進む場合sw.jsは`webpush.js`に変更して`resources/assets/js/webpush.js`に置く。
 
 ### オフライン
 これを使う。
