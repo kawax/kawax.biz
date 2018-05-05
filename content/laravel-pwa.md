@@ -146,6 +146,11 @@ OfflinePluginRuntime.install();
 
 Chromeでオフラインにしても表示できれば成功。
 
+## Server PushとServiceWorker
+Server Pushは初回の表示を速く。Chromeでは`Push`。
+ServiceWorkerでキャッシュすると2回目の表示が速くなる。Chromeでは`from ServiceWorker`。
+両方併用すれば良さそう。というか今後はこのくらい普通になっていく。
+
 ## 終わり
 自分で触って記事にまとめたらService WorkerとPWAが少し分かってきた。
 活かすならオフラインで動くものを作るしかないけどwebでもPCアプリでもオンライン前提のものばかり作ってきたので難しい。
