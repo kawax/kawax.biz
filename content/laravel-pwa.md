@@ -107,7 +107,7 @@ https://github.com/cretueusebiu/laravel-web-push-demo/blob/master/resources/asse
 https://github.com/NekR/offline-plugin
 
 ```
-yarn add -D offline-plugin
+yarn add offline-plugin -D
 ```
 
 ### webpack.mix.js
@@ -140,7 +140,7 @@ app.jsに追加。bootstrap.jsでもいいけど。
 ```
 import * as OfflinePluginRuntime from "offline-plugin/runtime";
 OfflinePluginRuntime.install();
-````
+```
 
 `navigator.serviceWorker.register('/sw.js')`はこれで行われるので自分で書いてた場合は消す。
 
