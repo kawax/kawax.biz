@@ -100,7 +100,7 @@ Vue.jsでの有効／無効とか
 https://github.com/cretueusebiu/laravel-web-push-demo/blob/master/resources/assets/js/components/NotificationsDemo.vue
 分かりにくいけど大体はそのまま使って自分のプロジェクト用に少し書き換えれば済む。
 
-テスト用の通知作っておいたほうのが良かった。事前準備さえできていればLaravelの通知としてシンプルに使える。結局面倒なのはLaravel以外の部分。
+テスト用の通知作っておいたほうが良かった。事前準備さえできていればLaravelの通知としてシンプルに使える。結局面倒なのはLaravel以外の部分。
 
 ```php
 <?php
@@ -154,6 +154,9 @@ class WebPushTest extends Notification implements ShouldQueue
 ```
 
 （当たり前にキュー使ってるけどこういう通知+キューをLaravel以外で作るとどれだけ無駄な手間がかかるか使ってない人は分からない）
+
+ウェブプッシュ通知は前からすでに使ってた事実が示してるようにLaravel的には通知が一番使いやすい。
+他はそもそもLaravelに限った情報でもない。WordPressでも大体同じ。
 
 
 次に進む場合sw.jsは`webpush.js`に変更して`resources/assets/js/webpush.js`に置く。
