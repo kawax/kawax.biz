@@ -212,3 +212,7 @@ ServiceWorkerでキャッシュすると2回目の表示が速くなる。Chrome
 バックグラウンド同期は使いそうにないので試してない。
 
 活かすならオフラインで動くものを作るしかないけどwebでもPCアプリでもオンライン前提のものばかり作ってきたので難しい。
+
+## Lighthouse100点
+Laravel新規プロジェクトで100点を目指したら1時間で終わってしまって新たに記事書くまでもないのでここに書いておく。
+https://github.com/kawax/laravel-lighthouse-project
