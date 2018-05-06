@@ -173,6 +173,7 @@ yarn add offline-plugin -D
 cacheはwebpackが生成したファイルを自動で追加するので指定なしでも十分。
 externalsでその他のページ。とりあえずトップページ。
 SPAかどうかに関わらず完全にオフラインで使えるサイトはあまり作らないので最低限の対応のみ。
+キャッシュが効きすぎる場合はresponseStrategyを`network-first`に。
 entryでwebpush.jsを追加。これでビルドするとsw.jsが生成されるけどそこにwebpush.jsの中身も含まれる。
 
 ```
@@ -182,6 +183,7 @@ mix.webpackConfig({
   plugins: [
     new OfflinePlugin({
       externals: ["/"],
+      responseStrategy: 'network-first',
       ServiceWorker: {
         entry: "./resources/assets/js/webpush.js",
         navigateFallbackURL: "/",
