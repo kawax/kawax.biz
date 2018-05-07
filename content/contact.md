@@ -35,7 +35,7 @@ draft: false
 - アプリを公開してそのサイトをPHPで作ってた時代。その後Mac OS Xへの変化もあり特定のOSでしか動かないアプリよりwebのほうがいいとなっていく。
 - 現Xcode。当時はProject Builder/Interface Builder。Objective-Cの頃。
 - Movable Type。ブログ誕生の頃。今考えるとPerl+PHPのシステム。
-- Zend Framework ver1。他PHPのフレームワーク。
+- Zend Framework ver1。他PHPのフレームワーク。昔Zendで作ったものは全部Laravelで作り直した。
 - AngularJS ver1。node.js登場後のフロント周りはgrunt、CoffeeScript時代から色々使って今はなるべくシンプルな方向に。
 - スマホアプリのサーバーサイド
 
