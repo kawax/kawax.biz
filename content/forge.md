@@ -5,7 +5,7 @@ categories: ["Laravel", "AWS"]
 draft: false
 ---
 
-Laravel を動かせるサーバーの管理を楽にするサービス。
+Forge=Laravel を動かせるサーバーのセットアップと管理を楽にするサービス。
 
 <!--more-->
 
@@ -15,9 +15,9 @@ https://forge.laravel.com/
 
 ## サーバーの用意
 
-AWS の Lightsail (普通の定額制VPS) に `Ubuntu 16.04` だけインストールしたインスタンスを起動。メモリ 1GB 以上を選んだほうがいいはず。Static IP を設定しておく。ssh でログインできる所まで確認できればOK。
+AWS の Lightsail (普通の定額制VPS) に `Ubuntu`(18.04等のバージョンはForgeで指定されてるので合わせる) だけインストールしたインスタンスを起動。メモリ 1GB 以上を選んだほうがいいはず。Static IP を設定しておく。ssh でログインできる所まで確認できればOK。
 
-前にアメリカのリージョンで手動で設定して使っていた。東京リージョンへの変更は簡単にはできないので今回は Forge を使ってみる。`Ubuntu 16.04` が使える VPS ならどこのでも使えるはず。
+前にアメリカのリージョンで手動で設定して使っていた。東京リージョンへの変更は簡単にはできないので今回は Forge を使ってみる。`Ubuntu` が使える VPS ならどこのでも使えるはず。
 
 ## 登録
 登録後最初の circle がどうこうの画面はスキップ。AWS の Lightsail だけど AWS も選択せずにとにかくスキップ。
@@ -30,7 +30,7 @@ AWS の Lightsail (普通の定額制VPS) に `Ubuntu 16.04` だけインスト�
 - Size(RAM): なんでも。2 としか入力されてないけど `2GB` の意味なはず…。
 - IP Address: サーバーのIP。Lightsail で設定した Static IP
 - Private IP Address (Optional): 不要
-- PHP Version: 最新。7.1
+- PHP Version: 最新。7.x
 - Database: 必要な DB を。MySQL(5.7)
 - Database Name: なんでも。forge
 
@@ -180,3 +180,8 @@ clone できれば後は同じ。GitLab CI でテストしてトリガー URL �
 
 ## 終わり
 結局 10 サイトくらい Forge 管理に移行した。Let's Encrypt がワイルドカードサブドメインに対応してないのでそれが必要なサイトだけ残してる。
+
+## その後(2018-05-08)
+- ワイルドカードサブドメインに対応。
+- Ubuntu 18.04に変更等。
+- Lightsailではなく普通にEC2使うことが多い。
