@@ -65,6 +65,7 @@ $albums = Photos::setService($photos)->listAlbums();
 ```
 
 今回は完全にLaravel用と割り切ってPhotosにsetAccessToken()用意したので最終的にはこのくらいで。
+tokenが期限切れの場合はsetAccessToken()内でrefresh。
 
 ```php
 $token = $request->user()->access_token;
@@ -122,6 +123,8 @@ class User extends Authenticatable
 ```
 
 `photosAccessToken()`でtokenを返す。abstractなので必須。
+ここでは`updated_at`使ってるけど厳密にやるなら`created`カラムを用意する。
+refresh後のtokenの保存もしてないので実際のアプリではそういう所まで必要。
 
 Userモデルから`photos()`が使えるようになる。
 
