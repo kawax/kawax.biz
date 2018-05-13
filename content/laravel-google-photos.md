@@ -46,9 +46,11 @@ $albums = Photos::listAlbums();
 ```
 
 実際にはGoogle API使う場合は
+
 - Google_Clientにtokenセット。
 - そのGoogle_ClientからGoogle_Serviceを作り直す。
 - Google_Serviceを使う。
+
 という流れなので
 Google Facade使ってもこのくらいになりがち。
 
