@@ -79,6 +79,8 @@ Photos::shouldReceive('setAccessToken')->once()->andReturn(m::self());
 Photos::shouldReceive('listAlbums')->once()->andReturn((object)['albums' => []]);
 ```
 
+一応Laravel以外でも使おうと思えば使えるはずだけどGoogleの公式ライブラリだけ使ったほうがいい。
+
 ## Trait
 Facadeでも普通にLaravelらしくていいんだけどそろそろ飽きてきたのでもうちょっと何かないかと考えて閃いた。
 
