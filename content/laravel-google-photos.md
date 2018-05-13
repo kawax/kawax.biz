@@ -136,6 +136,15 @@ $albums = $request->user()
 
 Notificationと大体同じ。
 「Traitで有効化してUserモデルから使う」をできるようにしたら非常にLaravelらしくなった。
+`photos()`なんていくらでも重複しそうなのであくまで自分でTrait追加して有効化。
+重複を解決したい場合は`as`で別名にすればいいはず。
+
+```php
+use PhotosLibrary {
+    PhotosLibrary::photos as googlephotos;
+}
+```
+
 
 やってることは同じなのでテスト時のモックも同じ。
 
