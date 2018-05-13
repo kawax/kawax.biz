@@ -64,8 +64,8 @@ $photos = Google::make('PhotosLibrary');
 $albums = Photos::setService($photos)->listAlbums();
 ```
 
-今回は完全にLaravel用と割り切ってPhotosにsetAccessToken()用意したので最終的にはこのくらいで。
-tokenが期限切れの場合はsetAccessToken()内でrefresh。
+今回は完全にLaravel用と割り切ってPhotosに`setAccessToken()`用意したので最終的にはこのくらいで。
+access_token以外も含めてarrayで渡してる場合、tokenが期限切れならsetAccessToken()内でrefresh。
 
 ```php
 $token = $request->user()->access_token;
