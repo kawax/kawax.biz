@@ -127,6 +127,10 @@ https://github.com/laravel/socialite/pull/27
 ## $defer = false
 後から気付いたけどServiceProviderで `$defer = false` にしておかないと複数の独自ドライバーを使ってる場合に最後に読み込まれたドライバーしか有効にならない。
 
+遅延プロバイダが使えるのはサービスコンテナへコンテナ結合を登録するだけの時のみ。Socialite::extend()してるので違うというドキュメントに書いてある通りの理由。
+https://readouble.com/laravel/5.6/ja/providers.html#deferred-providers
+デフォルトでfalseなのでそもそも書かなければいい。
+
 ## 使う時
 Laravel 5.5 以降なら ServiceProvider の登録は自動なので `composer require` でインストールして `config/services.php` と `.env` で設定すればすぐ使える。
 
