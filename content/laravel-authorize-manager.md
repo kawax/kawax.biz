@@ -315,6 +315,9 @@ if (Authorize::driver('custom')->login($credentials)) {
 ### composerパッケージにする場合
 ServiceProviderを作って…とSocialiteと同じなので省略。
 
+Google_ClientのDriver作ったのでこれを参考に。  
+https://github.com/kawax/authorize-google-api
+
 ### AuthorizeManager本体に入れたい場合
 GitHubでプルリク。
 
