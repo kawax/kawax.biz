@@ -321,6 +321,19 @@ https://github.com/kawax/authorize-google-api
 ### AuthorizeManager本体に入れたい場合
 GitHubでプルリク。
 
+## Laravel以外で使う
+Laravel ManagerではあるけどcomposerでインストールすればLaravel以外でも使えるはず。
+
+```php
+    use Revolution\Authorize\AuthorizeManager;
+
+    $manager = new AuthorizeManager(null);
+
+    if($manager->driver()->login()){
+        $client = $manager->driver()->client();
+    }
+```
+
 ## 終わり
 この説明書くのが一番大変なのでこの辺で一旦公開…。
 
