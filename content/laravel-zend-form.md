@@ -134,7 +134,7 @@ https://igotaprinter.com/blog/zf3-forms-standalone-plus-mustache-templates.html
 
 
 `{{ }}`でエスケープされないのは`Illuminate\Support\HtmlString`だから。
-render()だけで他は`{!! !!}`を使う必要がある。
+有効なのはrender()だけなので他は`{!! !!}`を使う必要がある。
 
 ```php
      /**
@@ -185,7 +185,10 @@ viewまで
 https://github.com/zendframework/zend-view/blob/master/src/Helper/AbstractHelper.php
 
 Form使うだけでもあちこちに依存している。
+composer.jsonではrequireで指定してないので追加でインストールが必要。
+
 久しぶりにZend見たけど設計の思想からしてよく分からない。
+いやまぁLaravelが特殊なだけでZendくらいが普通ではあるけど。
 
 ## バリデーション
 Laravel側の機能使えばいいのでFormでは完全に無視。
