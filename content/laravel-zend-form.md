@@ -248,3 +248,7 @@ class SettingController extends Controller
     }
 }
 ```
+
+## Symfony
+にもFormコンポーネントがあった。Laravelならこっちでもいいかもしれないけどどうも使い方が分かりにくい…。
+https://symfony.com/doc/current/components/form.html
