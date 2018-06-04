@@ -26,7 +26,7 @@ composer require revolution/laravel-zend-form
 ```
 
 最近はさすがにPHP7.0とLaravel5.5以降のみ対応。Laravel使っててPHP7が使えないとかありえんでしょ。
-LTSの5.5まで対応しておけば十分。
+LTSの5.5にはしばらく対応。
 
 
 artisanコマンドを用意してるのでmake:formで生成。
