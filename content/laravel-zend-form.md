@@ -25,6 +25,10 @@ https://github.com/kawax/laravel-zend-form
 composer require revolution/laravel-zend-form
 ```
 
+最近はさすがにPHP7.0とLaravel5.5以降のみ対応。Laravel使っててPHP7が使えないとかありえんでしょ。
+LTSの5.5まで対応しておけば十分。
+
+
 artisanコマンドを用意してるのでmake:formで生成。
 
 ```
@@ -36,7 +40,7 @@ php artisan make:form SampleForm
 https://github.com/kawax/laravel-zend-form-project/blob/master/app/Http/Forms/SampleForm.php
 
 Form classはZend Formのドキュメントをよく見て中身を組み立てる。
-https://docs.zendframework.com/zend-form/quick-start/#factory-backed-form-extension
+https://docs.zendframework.com/zend-form/quick-start/
 
 使う時はコントローラーで
 
@@ -191,7 +195,7 @@ echo $this->formInput($form->get('name'));
 ViewHelperも大分ややこしい。
 formから
 https://github.com/zendframework/zend-form/blob/master/src/View/Helper/AbstractHelper.php
-n18nに行って
+i18nに行って
 https://github.com/zendframework/zend-i18n/blob/master/src/View/Helper/AbstractTranslatorHelper.php
 viewまで
 https://github.com/zendframework/zend-view/blob/master/src/Helper/AbstractHelper.php
@@ -203,7 +207,7 @@ composer.jsonではrequireで指定してないので追加でインストール
 いやまぁLaravelが特殊なだけでZendくらいが普通ではあるけど。
 
 ## バリデーション
-Laravel側の機能使えばいいのでFormでは完全に無視。
+Laravel側の機能使えばいいので完全に無視。
 
 ## 実戦
 早速投入してみたけど`{{ $form->render() }}`で済むならビューもコントローラーも綺麗さっぱりですっきり。
@@ -240,7 +244,7 @@ class SettingController extends Controller
             'chatwork_token',
         ]))->save();
 
-        return back()->with('success', '保存しました。');
+        return back();
     }
 }
 ```
