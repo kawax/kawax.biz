@@ -146,6 +146,18 @@ https://igotaprinter.com/blog/zf3-forms-standalone-plus-mustache-templates.html
     }
 ```
 
+Laravelのe()ヘルパーがこうなってるから。いつからかページネーションが`{{ }}`でよくなったのもこの仕組み。Laravel内部にはまだまだ知らない機能が多いけど依存が少なくて便利に使えるものなら自作のclassでも使っていく。
+
+```php
+function e($value, $doubleEncode = true)
+{
+    if ($value instanceof Htmlable) {
+        return $value->toHtml();
+    }
+    return htmlspecialchars($value, ENT_QUOTES, 'UTF-8', $doubleEncode);
+}
+```
+
 ViewHelperはマジックメソッドで。
 
 ```php
@@ -192,3 +204,43 @@ composer.jsonではrequireで指定してないので追加でインストール
 
 ## バリデーション
 Laravel側の機能使えばいいのでFormでは完全に無視。
+
+## 実戦
+早速投入してみたけど`{{ $form->render() }}`で済むならビューもコントローラーも綺麗さっぱりですっきり。
+
+```php
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use App\Http\Forms\SettingForm;
+use App\Http\Requests\Setting\UpdateRequest;
+
+class SettingController extends Controller
+{
+    /**
+     * @param SettingForm $form
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(SettingForm $form)
+    {
+        return view('setting.edit')->with(compact('form'));
+    }
+
+    /**
+     * @param UpdateRequest $request
+     *
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function update(UpdateRequest $request)
+    {
+        $request->user()->fill($request->only([
+            'chatwork_room',
+            'chatwork_token',
+        ]))->save();
+
+        return back()->with('success', '保存しました。');
+    }
+}
+```
