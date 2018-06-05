@@ -249,6 +249,10 @@ class SettingController extends Controller
 }
 ```
 
+後はViewHelperを作れば好きなように表示できるかもしれないけど
+こんなhtmlを組み立てる複雑なHelperを自分で作ったら後からのメンテが面倒そう。
+https://gist.github.com/fabiopaiva/4820db170e62ffea66a6
+
 ## Symfony
 にもFormコンポーネントがあった。Laravelならこっちでもいいかもしれないけどどうも使い方が分かりにくい…。
 https://symfony.com/doc/current/components/form.html

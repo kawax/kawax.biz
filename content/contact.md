@@ -5,12 +5,20 @@ categories: ["Contact"]
 draft: false
 ---
 
+基本的にチャットのみ。
+
 - ChatWork https://www.chatwork.com/kawax
 - Slack
 - kawaxbiz@gmail.com
 
 こうやって公開してるとメールが来るけど「電話」や「常駐」は一発アウトのNGワード。
 もうずっとネット上だけで活動してるし会社に頼らず仕事してるのでわざわざ変な相手とは関わらない。
+
+以下はどうやっても不可能。
+
+- 直接会う
+- 電話（すでに通話機能自体ない）
+- Skype
 
 ## 今やりたいこと(2018)
 - Laravel
