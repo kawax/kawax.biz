@@ -253,6 +253,25 @@ class SettingController extends Controller
 こんなhtmlを組み立てる複雑なHelperを自分で作ったら後からのメンテが面倒そう。
 https://gist.github.com/fabiopaiva/4820db170e62ffea66a6
 
+## View Helper
+よく使いそうなBootstrap4とUIkit3のHorizontal用ViewHelperは作った。後から面倒にならないようになるべくシンプルに。
+https://github.com/kawax/laravel-zend-form/tree/master/src/View/Helper
+
+ユーザー側での拡張もできる。
+
+- プロジェクト内でViewHelperを作る
+- `php artisan vendor:publish`で`config/zend-form.php`を公開
+- https://github.com/kawax/laravel-zend-form/blob/master/src/config/zend-form.php などを参考にconfigを追加
+
+サービスプロバイダーでZendFormのViewHelperとマージしてるので他のViewHelperと同じように使える。
+https://github.com/kawax/laravel-zend-form/blob/master/src/Providers/ZendFormServiceProvider.php
+
+同じなので`{!! !!}`を使う。
+
+```php
+ {!! $form->bootstrap4horizon($form) !!}
+```
+
 ## Symfony
 にもFormコンポーネントがあった。Laravelならこっちでもいいかもしれないけどどうも使い方が分かりにくい…。
 https://symfony.com/doc/current/components/form.html
