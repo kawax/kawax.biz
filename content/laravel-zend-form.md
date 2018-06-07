@@ -272,6 +272,10 @@ https://github.com/kawax/laravel-zend-form/blob/master/src/Providers/ZendFormSer
  {!! $form->bootstrap4horizon($form) !!}
 ```
 
+ViewHelperではエスケープしてない。help-textでhtmlを使えるようにするため。
+基本的にはForm classで設定した項目を表示するだけなので問題ない想定。
+ユーザーからの入力はZendFormを通すのでエスケープされる。
+
 ## Symfony
 にもFormコンポーネントがあった。Laravelならこっちでもいいかもしれないけどどうも使い方が分かりにくい…。
 https://symfony.com/doc/current/components/form.html
