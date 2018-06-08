@@ -276,6 +276,12 @@ ViewHelperではエスケープしてない。help-textでhtmlを使えるよう
 基本的にはForm classで設定した項目を表示するだけなので問題ない想定。
 ユーザーからの入力はZendFormを通すのでエスケープされる。
 
+render()でViewHelperを指定してもいいようにした。最終的にはこれが一番良さそう。
+
+```php
+ {{ $form->render('bootstrap4horizon') }}
+```
+
 ## Symfony
 にもFormコンポーネントがあった。Laravelならこっちでもいいかもしれないけどどうも使い方が分かりにくい…。
 https://symfony.com/doc/current/components/form.html
