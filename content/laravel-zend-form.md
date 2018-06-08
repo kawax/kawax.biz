@@ -282,6 +282,15 @@ render()でViewHelperを指定してもいいようにした。最終的には�
  {{ $form->render('bootstrap4horizon') }}
 ```
 
+プロジェクト内でViewHelperを統一したいならconfigで設定してもいいし。
+
+```php
+ {{ $form->render(config('zend-form.helper')) }}
+```
+
+結局サービスコンテナとcall_user_func_arrayだけになってしまった。
+https://github.com/kawax/laravel-zend-form/blob/master/src/Form.php
+
 ## Symfony
 にもFormコンポーネントがあった。Laravelならこっちでもいいかもしれないけどどうも使い方が分かりにくい…。
 https://symfony.com/doc/current/components/form.html
