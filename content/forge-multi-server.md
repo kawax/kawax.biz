@@ -24,6 +24,8 @@ AWSのEC2(or lightsail)+RDSだけどVPSで1台にDBも入れてる環境でも�
 
 ## SSL
 Let's Encryptなら、`Clone Certificate`でserver-1から持ってくるだけで使える。  
+（ただしその後の様子を見るとCloneした証明書は自動更新されないかもしれない。Cloneして表示できるようにした後で再度新規に作る）  
+
 ACM+ELBの場合は不要。
 
 ## ネットワーク設定
@@ -55,6 +57,12 @@ MEMCACHED_HOST=
 ```
 
 RDSならDBは変更なし。
+
+## プライベートIP
+EC2間やLightsail間はプライベートIPで接続するとデータ転送料金が無料。
+なので許可するIPやenvではプライベートIPで設定すれば無料。
+
+LightsailとEC2/RDS間をプライベートIPで接続するにはVPC Peeringを有効にする。
 
 ## DNS
 あとは実際の表示時にサーバー2つに振り分けられるようにする。
