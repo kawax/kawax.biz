@@ -20,6 +20,8 @@ Forge側のMy Account→Server ProvidersでAmazonを追加。
 AWS側にログインせずにEC2を起動できる。
 最近は複数のAWSアカウント扱うようになってきたので楽かも。
 
+Custom VPSではセットアップ作業を手動で行っていたけどこの方法ならPHPやnginxのインストールまで自動。
+
 ## Security Group
 defaultが使われるのでforgeからのSSHを許可してないとサーバーのセットアップができない。
 
@@ -30,7 +32,7 @@ defaultが使われるのでforgeからのSSHを許可してないとサーバ�
 ssh-keygen -y -f forge.pem  
 ```
 
-pemから公開鍵を作りForgeのSSH Keysに設定する。
+pemから公開鍵を作りForgeのSSH Keysに設定。
 
 ## SSH config
 SSH接続時にはこのpemとユーザー名にforgeを指定する。
