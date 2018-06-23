@@ -69,6 +69,11 @@ Dockerを開発環境で使う気は全くない。あれは少しのバージ�
 https://readouble.com/laravel/5.6/ja/configuration.html
 configや.envの設定はお好みで。最初はtimezoneくらいしか変えることはないけど。
 
+### .env
+`php artisan migrate`をVagrantの外から実行できるようにするため`DB_HOST=`をHomestead.yamlのipと同じにする。
+ドキュメントには書いてない。  
+https://readouble.com/laravel/5.6/ja/migrations.html#running-migrations
+
 ## 認証
 https://readouble.com/laravel/5.6/ja/authentication.html
 デフォルトのviewはwelcomeしかないけど`php artisan make:auth`で作られるファイルまでがデフォルトと思っている。
