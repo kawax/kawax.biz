@@ -337,5 +337,5 @@ Laravel ManagerではあるけどcomposerでインストールすればLaravel�
 ## 終わり
 この説明書くのが一番大変なのでこの辺で一旦公開…。
 
-- https://github.com/kawax/authorize
+- https://github.com/kawax/authorize-manager
 - https://github.com/kawax/authorize-project
