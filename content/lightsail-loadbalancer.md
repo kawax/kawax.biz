@@ -39,3 +39,6 @@ Lightsailはデータ転送料金に一定の無料枠があるのが実は重�
 
 Lightsail間もLightsailとRDS間もプライベートIPで接続するとここが無料なので大事。
 ForgeのFirewallもプライベートIPで設定。
+
+## ドメイン
+Route53やLightsailのDNSならAレコードで設定。LightsailのドキュメントはAレコードとしか書いてないけど他のレジストラの場合はCNAMEで設定。
