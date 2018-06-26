@@ -1,0 +1,41 @@
+---
+title: "Lightsailでロードバランサーを使う"
+date: 2018-06-26T21:23:31+09:00
+categories: ["AWS"]
+draft: false
+---
+
+https://aws.amazon.com/jp/lightsail/features/load-balancing/
+
+- Lightsail x3
+- RDS。マルチAZ、リードレプリカ。VPCピアリングでLightsailと接続。
+
+某サイトがサーバー3台使う規模になってきたのでロードバランサー投入。
+使い方自体はここで書く必要ないくらい簡単。
+
+
+【速報】Amazon Lightsailでロードバランサが使えるようになりました #reinvent ｜ Developers.IO
+https://dev.classmethod.jp/cloud/aws/amazon-lightsail-2017-release/
+
+【AWS】Lightsail のロードバランサに証明書を設定する #reinvent ｜ Developers.IO
+https://dev.classmethod.jp/cloud/aws/lightsail-acm/
+
+## 効果
+ロードバランサー投入前はラウンドロビンでどのサーバーも負荷が上がる状態だったけど投入後はヘルスチェックで失敗したサーバーを外すので上手く分散されてる。ロードバランサーなんだから当たり前の効果ではあるけど。  
+負荷が上がるとしても1サーバーずつで順番に入れ替わってる。負荷が上がる時点でスペック足りてないけどそこはコスト的な都合。
+
+## 問題
+問題はこれが個人用途のサイトってことだけ…。このサイト一つでサーバー費用分は利益出てるからいいけど個人レベルでこれ以上はやりたくない域になってきた。  
+RDSも最初と比べるとマルチAZ、リードレプリカ、インスタンスタイプアップで6倍くらいの費用になりそう。
+様子を見て下げる予定。
+
+まぁ小さい会社だとここまでもやらないので個人のほうが難しいことやってるのはありがち。
+シングルAZだとバックアップ時に負荷が高すぎてサイトが落ちるのでバックアップを無効にするとか最近やった。
+
+## データ転送料金
+この規模ならDockerでECS使ったほうがスポットインスタンスも使えるし安いかもしれない。  
+LightsailだけでなくEC2も1台使って動かしてたけどAWSはデータ転送料金が意外と高くなるのでEC2からLightsailに戻した経緯がある。  
+Lightsailはデータ転送料金に一定の無料枠があるのが実は重要だったとやっと理解。1TBとか2TBなのでまだまだ余裕。
+
+Lightsail間もLightsailとRDS間もプライベートIPで接続するとここが無料なので大事。
+ForgeのFirewallもプライベートIPで設定。
