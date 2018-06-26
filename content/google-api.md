@@ -29,6 +29,10 @@ https://github.com/kawax/laravel-google-adsense-project
 ## 未公開
 GmailやSearchConsoleも使ってるけど公開してない。そのまま使っててパッケージに分離できるような状態ではないので作り直さないと無理。
 
+## SearchConsole
+プロジェクトだけ公開用に作り直した。  
+https://github.com/kawax/laravel-google-searchconsole-project
+
 ## ついでにGoogle APIの基本的な使い方
 まずDeveloper Consoleでプロジェクトを作ってAPIを有効化する。  
 https://console.developers.google.com/  
