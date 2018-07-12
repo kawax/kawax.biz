@@ -47,6 +47,11 @@ run_params:
 
 ```
 
+## ロール
+`ecsTaskExecutionRole`がないなら作る。  
+https://docs.aws.amazon.com/ja_jp/AmazonECS/latest/developerguide/task_execution_IAM_role.html  
+このドキュメントでは分かりにくいけど`信頼関係の編集`も必要だった。
+
 ## docker-compose.yml
 portsを`3000`での指定から`3000:3000`に変更。`awslogs-stream-prefix`が必要。
 
