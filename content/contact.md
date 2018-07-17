@@ -5,6 +5,8 @@ categories: ["Contact"]
 draft: false
 ---
 
+
+<!--
 基本的にチャットのみ。
 
 - ChatWork https://www.chatwork.com/kawax
@@ -60,8 +62,8 @@ draft: false
 - Mac
 - Windows
 - iOS (iPad Pro)
-- Android (Nexus)
-
+- Android (Nexus)(サポート期限終了と同時に壊れたので現在はなし)
+-->
 
 ## フォーム
 
@@ -86,7 +88,7 @@ draft: false
       <textarea name="message" class="textarea" required></textarea>
     </div>
   </div>
-  
+
   <div class="field">
     <div class="control">
         <button class="button is-primary">送信</button>
