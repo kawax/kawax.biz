@@ -5,6 +5,7 @@ categories: ["Contact"]
 draft: false
 ---
 
+終了。
 
 <!--
 基本的にチャットのみ。
