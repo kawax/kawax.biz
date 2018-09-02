@@ -63,7 +63,7 @@ draft: false
 - Windows
 - iOS (iPad Pro)
 - Android (Nexus)(サポート期限終了と同時に壊れたので現在はなし)
--->
+
 
 ## フォーム
 
@@ -96,3 +96,4 @@ draft: false
   </div>
 
 </form>
+-->
