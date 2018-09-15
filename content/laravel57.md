@@ -45,7 +45,9 @@ QUEUE_DRIVER→QUEUE_CONNECTION。アップデートなら変えなくてもい�
 app以下に変更されてるのでコピーしてくる。
 
 ## public/svg
-404ページ用とかの画像。
+404ページ用とかの画像。  
+エラーページ用のviewを変更してる場合はここを参考に。  
+https://github.com/laravel/framework/tree/5.7/src/Illuminate/Foundation/Exceptions/views
 
 ## resources/assets
 assetsがなくなってresources直下にjsとsass。  
