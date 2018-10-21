@@ -9,6 +9,7 @@ draft: false
 
 - ChatWork https://www.chatwork.com/kawax
 - Slack
+- Discord
 - kawaxbiz@gmail.com
 
 <!--
