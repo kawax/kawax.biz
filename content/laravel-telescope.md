@@ -42,3 +42,11 @@ php artisan migrate
 
 ## Mail
 他の機能も使ってる既存プロジェクトに追加して試したけどしっかり記録される。特にメールは今までMailHogなどを使ってたけどTelescopeに集約されるのでいいかもしれない。
+
+##　本番環境
+ローカルのみなので本番環境ではインストールされないけどTelescopeServiceProviderが残ってるのでエラーになる。  
+`config/app.php`のTelescopeServiceProviderをコメントにしておく。
+```
+//App\Providers\TelescopeServiceProvider::class,
+```
+この辺りはまだ出たばかりで問題が把握されてないんだろうから上手く解決されるのを待つ。
