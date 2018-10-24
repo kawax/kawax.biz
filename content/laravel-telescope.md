@@ -1,0 +1,41 @@
+---
+title: "Laravel Telescopeを試す"
+date: 2018-10-24T11:29:55+09:00
+categories: ["Laravel"]
+draft: false
+---
+
+ローカルでの開発時に役立つ情報を色々表示するツール  
+https://github.com/laravel/telescope
+
+## インストール
+新規のLaravelプロジェクトにインストールする前提。既存プロジェクトでも同じはず。  
+https://github.com/kawax/telescope-demo
+
+```
+composer require laravel/telescope --dev
+```
+
+```
+php artisan telescope:install
+```
+
+これで追加されるのはこんな感じ。  
+https://github.com/kawax/telescope-demo/commit/294e601b522901b1d82ce9fe5aab54b9eda2eb7c
+
+```
+php artisan migrate
+```
+
+データベースが必要なので`php artisan serve`では動かしにくい。Homesteadでのみ動作確認。ローカルのみなので本番環境のデータベースへの影響はない。
+
+後は`http://local/telescope`で表示するだけ。
+
+`/telescope`を変更したい場合などの設定は`config/telescope.php`
+
+## ダッシュボード認証
+ローカルで使うものなので基本的にはこの設定は不要。
+
+## Dumps
+新規プロジェクトだと簡単なことしか試せないけど気付いたことを残す。  
+`dd()`は使えない。`dump()`のみ。何も表示されずTelescopeにのみ表示される。Laravel5.7で追加されたdump-serverと同じ仕様。
