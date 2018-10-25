@@ -6,9 +6,11 @@ draft: false
 ---
 
 Wikiシステムを探してたけど結局MediaWikiが一番良さそう。最低でもgitとcomposer使ってないと選択肢にも入らない。  
+
 - https://github.com/wikimedia/mediawiki
 
 DokuWikiやPukiWikiはデータベース不要を売りにしてるけど逆に使いにくい。レンタルサーバーにFTPでアップしてた頃ならならともかくPush to Deployが当たり前な時代には辛い。遥か昔はPukiWiki使ってた記憶がある。アプリのヘルプページにはWikiがちょうどいい。
+
 - https://github.com/splitbrain/dokuwiki
 - https://pukiwiki.osdn.jp/
 
