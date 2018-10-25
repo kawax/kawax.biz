@@ -45,6 +45,14 @@ php artisan migrate
 
 ## 本番環境
 ローカルのみなので本番環境ではインストールされないけどTelescopeServiceProviderが残ってるのでエラーになる。  
+
+```
+use Laravel\Telescope\TelescopeApplicationServiceProvider;
+
+class TelescopeServiceProvider extends TelescopeApplicationServiceProvider
+```
+インストールしてないからTelescopeApplicationServiceProviderがないのに継承してる。
+
 `config/app.php`のTelescopeServiceProviderをコメントにしておく。
 ```
 //App\Providers\TelescopeServiceProvider::class,
