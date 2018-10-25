@@ -17,7 +17,7 @@ DokuWikiやPukiWikiはデータベース不要を売りにしてるけど逆に�
 ## 環境
 - AWS。EC2+RDS+S3
 - MediaWiki 1.31.1時点
-- Forge。https://forge.laravel.com/　LaravelやWordPressと全く同じように管理・運用できるようにするのが目的。
+- Forge。https://forge.laravel.com/ LaravelやWordPressと全く同じように管理・運用できるようにするのが目的。
 - Ubuntu16.04/PHP7.2/nginx/memcached
 
 ## ローカルで動かす
