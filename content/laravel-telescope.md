@@ -58,3 +58,25 @@ class TelescopeServiceProvider extends TelescopeApplicationServiceProvider
 //App\Providers\TelescopeServiceProvider::class,
 ```
 この辺りはまだ出たばかりで問題が把握されてないんだろうから上手く解決されるのを待つ。
+
+### とりあえずの解決方法
+- TelescopeServiceProvider.phpは残す
+- config/app.phpはコメント
+
+AppServiceProviderのboot()に追加。
+```php
+if ($this->app->environment('local')) {
+    $this->app->register(TelescopeServiceProvider::class);
+}
+```
+
+https://github.com/laravel/telescope/issues/154#issuecomment-432938123
+
+これでローカルでのみ有効。
+
+## アップデート時
+assetsが更新されてる場合はこれも。
+
+```
+php artisan vendor:publish --tag=telescope-assets --force
+```
