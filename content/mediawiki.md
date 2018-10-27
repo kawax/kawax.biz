@@ -91,5 +91,27 @@ https://www.mediawiki.org/wiki/Manual:Short_URL/ja
 いろいろ書いてあるし検索もしたけどこれ使うのが一番早かった。
 https://shorturls.redwerks.org/
 
+## Markdown
+何年も前で止まってるけど一応使えた。  
+https://github.com/bharley/mw-markdown  
+サブモジュールで追加+Parsedown.phpとParsedownExtra.phpはデプロイ時に移動。
+
+LocalSettings.php。古くて`wfLoadExtension()`は使えなかった。
+```php
+require_once("./extensions/Markdown/Markdown.php");
+
+$wgMarkdownExtra        = true;
+$wgMarkdownHighlight    = true;
+$wgMarkdownHighlightJs  = '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js';
+$wgMarkdownHighlightCss = '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css';
+```
+
+デフォルトでMarkdownが有効になるので最初からあるメインページは`{{WIKI}}`を追加して元のWiki記法に。
+
+表示がおかしくなることもあるので設定でデフォルトを逆にしてもいい。この場合はMarkdownを有効化したいページにだけ`{{MARKDOWN}}`を記入。
+```
+$wgMarkdownDefaultOn = false;
+```
+
 ## 終わり
 まだ試しに稼働させてみただけなので問題なく運用できるかやバージョンアップの手間の確認はこれから。
