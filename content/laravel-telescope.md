@@ -8,6 +8,10 @@ draft: false
 ローカルでの開発時に役立つ情報を色々表示するツール  
 https://github.com/laravel/telescope
 
+## 環境
+- Laravel 5.7
+- Telescope 0.1.3
+
 ## インストール
 新規のLaravelプロジェクトにインストールする前提。既存プロジェクトでも同じはず。  
 https://github.com/kawax/telescope-demo
