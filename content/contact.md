@@ -11,7 +11,6 @@ draft: false
 - Slack
 - kawaxbiz@gmail.com
 
-<!--
 
 ## 今やりたいこと(2018)
 - Laravel
@@ -46,14 +45,6 @@ draft: false
 - https://qiita.com/kawax
 - https://teratail.com/users/kawax
 
-## 使用OS
-基本的にはすべて最新バージョンだけどAndroidはNexusが終了してどうなるか分からない。
-
-- Mac
-- Windows
-- iOS (iPad Pro)
-- Android (Nexus)(サポート期限終了と同時に壊れたので現在はなし)
--->
 
 ## フォーム
 
