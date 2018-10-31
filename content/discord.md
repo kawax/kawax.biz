@@ -1,5 +1,5 @@
 ---
-title: "[WIP]Discord API"
+title: "[WIP]Laravel で Discord API"
 date: 2018-10-31T10:49:57+09:00
 categories: ["Laravel"]
 draft: false
