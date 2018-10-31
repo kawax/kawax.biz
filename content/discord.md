@@ -6,45 +6,56 @@ draft: false
 ---
 
 一応ゲーマー向けチャットのはずだけどいつの間にかLaravelやVue.jsの公式チャットもDiscordに移行していた。
+
 - https://readouble.com/laravel/5.7/ja/contributions.html
 - https://vue-land.js.org/
 
 APIを色々試してみる。  
+
 - https://github.com/kawax/discord-project
 
 ## テスト用チャット
 誰でも参加可能。ボイスチャットは不可。Laravelチャンネルも作ったので人が増えたら何か自動で情報流すかもしれないけど増えるとは思ってない。
+
 - https://discord.gg/bDnY8rk
 
 ## アプリケーションとBot
 作り方は他所にいくらでも書いてあるのでここでは書かない。
+
 - https://discordapp.com/developers/docs/intro
 
 CLIENT IDやBotのTOKENを控えておく。
 
 ## メッセージ送信制限
 一度だけWebSocketで接続する必要がある。
+
 - https://discordapp.com/developers/docs/resources/channel#create-message
 
 ## ライブラリ
 WebSocketと非同期なDiscord APIはPHPには向いてない。どれが一番メジャーなのかは知らないけどおそらくnode.jsが向いてる。
+
 - https://discord.js.org/
 
 リアルタイムなやり取りとか苦手なことはひとまず置いておいてLaravelが得意なことをやる。
 
 DiscordPHPは死んでる。
+
 - https://github.com/teamreflex/DiscordPHP
 
 DiscordPHPに依存してるBotManも停止したまま。
+
 - https://github.com/botman/driver-discord
 
 PHPでもnode.jsのように使うならたぶんこれ。
+
 - https://github.com/CharlotteDunois/Yasmin
 
 基本的なREST API
+
 - https://github.com/restcord/restcord
 
 最終的に一番参考になったのはなんとLaravel Notificationsだった。サーバーへのBotの追加やWebSocketへの接続を`php artisan discord:setup`一つで解決してるのが一番スマート。
+
 - https://github.com/laravel-notification-channels/discord
 
 Laravel NotificationsとRestCordを使う。
