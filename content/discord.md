@@ -127,3 +127,59 @@ public function handle()
 ```
 
 `php artisan discord:test`で送信できてたら成功。
+
+## RestCord
+次はRestCordの準備。Laravel用のラッパーもあるけど中身見た上で使わない。
+
+```
+composer require restcord/restcord
+```
+
+必要なのはBotのtokenだけなのでNotificationsと同じtokenを使う。
+
+毎回`new DiscordClient(['token' => config('services.discord.token')])`とはしたくないのでServiceProviderを作る。
+```
+php artisan make:provider RestCordServiceProvider
+```
+
+```
+public function register()
+{
+    $this->app->singleton(DiscordClient::class, function ($app) {
+        return new DiscordClient([
+            'token'  => config('services.discord.token'),
+            'logger' => $app['log']->channel()->getLogger(),
+        ]);
+    });
+}
+```
+
+これでDIか`app(DiscordClient::class)`でtokenセット済のDiscordClientが得られる。Facadeは使ってない。
+
+RestCordのテスト。
+GuildCommand。APIでのGuild=サーバー。Guildの中に複数のチャンネルがある。
+```
+public function handle(DiscordClient $client)
+{
+    $guild = $client->guild->getGuild([
+        'guild.id' => config('services.discord.guild'),
+    ]);
+
+    dump($guild);
+
+    $channels = $client->guild->getGuildChannels([
+        'guild.id' => config('services.discord.guild'),
+    ]);
+
+    dump($channels);
+
+    $members = $client->guild->listGuildMembers([
+        'guild.id' => config('services.discord.guild'),
+        'limit'    => 5,
+    ]);
+
+    dump($members);
+}
+```
+
+ここまで問題なければ通常必要なAPIはすべて使える。
