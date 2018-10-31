@@ -183,3 +183,15 @@ public function handle(DiscordClient $client)
 ```
 
 ここまで問題なければ通常必要なAPIはすべて使える。
+
+RestCordでのメッセージ送信。
+PostCommand
+```
+public function handle(DiscordClient $client)
+{
+    $client->channel->createMessage([
+        'channel.id' => (int)config('services.discord.channel'),
+        'content'    => 'RestCord test',
+    ]);
+}
+```
