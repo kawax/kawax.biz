@@ -243,4 +243,10 @@ There was an error executing the addGuildMemberRole command: Client error: `PUT 
 Yasminでメンションへの返信。これもartisanコマンドで作っておく。  
 https://github.com/kawax/discord-project/blob/master/app/Console/Commands/ServeCommand.php
 
-ローカルで動かす時は`php artisan discord:serve`で起動、終了はCtrl+C。サーバー上で動かす時はSupervisorでデーモン化。デプロイ時に`supervisorctl restart all`でいいはず。まだ確認前。
+ローカルで動かす時は`php artisan discord:serve`で起動、終了はCtrl+C。サーバー上で動かす時はSupervisorでデーモン化。デプロイ時に`sudo supervisorctl restart all`でいいはず。
+エラーになる時はパスワードなしで実行できるように設定。
+```
+echo "forge ALL=NOPASSWD: /usr/bin/supervisorctl restart all" > /etc/sudoers.d/supervisorctl
+```
+
+リアルタイムなやり取りもできるようになった。DiscordにはOutgoing WebHookがないのでこの方法しかなさそう。
