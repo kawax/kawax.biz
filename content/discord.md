@@ -110,7 +110,7 @@ Your bot has been identified by Discord and can now send API requests!
 ここまでで送信はできるのでテスト。artisanコマンドからNotificationを呼ぶ簡単なテスト。
 
 TestNotification
-```
+```php
 public function toDiscord($notifiable)
 {
     return DiscordMessage::create("test");
@@ -118,7 +118,7 @@ public function toDiscord($notifiable)
 ```
 
 TestCommand
-```
+```php
 public function handle()
 {
     \Notification::route('discord', config('services.discord.channel'))
@@ -142,7 +142,7 @@ composer require restcord/restcord
 php artisan make:provider RestCordServiceProvider
 ```
 
-```
+```php
 public function register()
 {
     $this->app->singleton(DiscordClient::class, function ($app) {
@@ -158,7 +158,7 @@ public function register()
 
 RestCordのテスト。
 GuildCommand。APIでのGuild=サーバー。Guildの中に複数のチャンネルがある。
-```
+```php
 public function handle(DiscordClient $client)
 {
     $guild = $client->guild->getGuild([
@@ -186,12 +186,50 @@ public function handle(DiscordClient $client)
 
 RestCordでのメッセージ送信。
 PostCommand
-```
+```php
 public function handle(DiscordClient $client)
 {
     $client->channel->createMessage([
         'channel.id' => (int)config('services.discord.channel'),
         'content'    => 'RestCord test',
     ]);
+}
+```
+
+## 役職(Role)
+想定してるAPIの使い方としてプライベートチャンネルに対してユーザーが参加できるかどうかを管理したい。Discordの場合役職で決まるので役職の付け外しを自動化できればいい。
+
+RoleCommand
+```php
+public function handle(DiscordClient $client)
+{
+    //Roleリスト。RoleのIDはここから調べるしかないかも。
+    $roles = $client->guild->getGuildRoles([
+        'guild.id' => config('services.discord.guild'),
+    ]);
+
+    dump($roles);
+
+    //Role追加
+    $client->guild->addGuildMemberRole([
+        'guild.id' => config('services.discord.guild'),
+        'user.id'  => config('services.discord.bot'),
+        'role.id'  => config('services.discord.role'),
+    ]);
+
+    //プライベートチャンネルへ投稿
+    $client->channel->createMessage([
+        'channel.id' => (int)config('services.discord.private'),
+        'content'    => 'private test',
+    ]);
+
+    //Role削除
+    $client->guild->removeGuildMemberRole([
+        'guild.id' => config('services.discord.guild'),
+        'user.id'  => config('services.discord.bot'),
+        'role.id'  => config('services.discord.role'),
+    ]);
+
+    //削除後プライベートチャンネルへの投稿は失敗
 }
 ```
