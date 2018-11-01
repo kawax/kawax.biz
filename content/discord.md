@@ -96,7 +96,7 @@ What is your Discord app client ID?:
 Add the bot to your server by visiting this link: https://discordapp.com/oauth2/authorize?&client_id=...&scope=bot&permissions=0
 ```
 
-URLをブラウザで開いてBotをサーバーに追加。
+URLをブラウザで開いてBotをサーバーに追加。最後の`permissions=0`でBotの権限が決まるので今後APIでエラーになる時はここを変更してセットアップし直す。
 
 ```
 Continue? (yes/no) [yes]:
@@ -233,3 +233,14 @@ public function handle(DiscordClient $client)
     //削除後プライベートチャンネルへの投稿は失敗
 }
 ```
+
+役職を変更できるかどうかはBotのpermissionsや役職の順番の影響を受けるのでエラーになる時はその辺りを見直す。上位の役職を持ったユーザーしか下位の役職を変更できない。
+```
+There was an error executing the addGuildMemberRole command: Client error: `PUT https://discordapp.com/api/v6/guilds/.../members/.../roles/...` resulted in a `403 FORBIDDEN` response:
+```
+
+## Yasmin
+Yasminでメンションへの返信。これもartisanコマンドで作っておく。  
+https://github.com/kawax/discord-project/blob/master/app/Console/Commands/ServeCommand.php
+
+ローカルで動かす時は`php artisan discord:serve`で起動、終了はCtrl+C。サーバー上で動かす時はSupervisorでデーモン化。デプロイ時に`supervisorctl restart all`でいいはず。まだ確認前。
