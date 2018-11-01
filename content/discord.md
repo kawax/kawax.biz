@@ -19,6 +19,11 @@ APIを色々試してみる。
 
 - https://discord.gg/bDnY8rk
 
+## 環境
+- Laravel 5.7
+- Forge
+- ローカルサーバーはなし。artisanコマンドしか使ってない。
+
 ## アプリケーションとBot
 作り方は他所にいくらでも書いてあるのでここでは書かない。
 
@@ -243,7 +248,7 @@ There was an error executing the addGuildMemberRole command: Client error: `PUT 
 Yasminでメンションへの返信。これもartisanコマンドで作っておく。  
 https://github.com/kawax/discord-project/blob/master/app/Console/Commands/ServeCommand.php
 
-ローカルで動かす時は`php artisan discord:serve`で起動、終了はCtrl+C。サーバー上で動かす時はSupervisorでデーモン化。デプロイ時に`sudo supervisorctl restart all`でいいはず。
+ローカルで動かす時は`php artisan discord:serve`で起動、終了はCtrl+C。サーバー上で動かす時はSupervisorでデーモン化。Forgeならデプロイ時に`sudo supervisorctl restart all`でいいはず。
 エラーになる時はパスワードなしで実行できるように設定。
 ```
 echo "forge ALL=NOPASSWD: /usr/bin/supervisorctl restart all" > /etc/sudoers.d/supervisorctl
