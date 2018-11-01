@@ -254,4 +254,4 @@ https://github.com/kawax/discord-project/blob/master/app/Console/Commands/ServeC
 echo "forge ALL=NOPASSWD: /usr/bin/supervisorctl restart all" > /etc/sudoers.d/supervisorctl
 ```
 
-リアルタイムなやり取りもできるようになった。DiscordにはOutgoing WebHookがないのでこの方法しかなさそう。
+リアルタイムなやり取りもできるようになったので普通にBotと言えるレベルのことが可能に。DiscordにはOutgoing WebHookがないのでこの方法しかなさそう。
