@@ -118,5 +118,8 @@ https://www.mediawiki.org/wiki/VisualEditor/Portal/ja
 
 Markdownよりもこっちに対応のほうがいいかも。ただし導入は結構難しい。拡張機能を追加だけでは動かない。Parsoidも必要。
 
+Ubuntuならaptでインストールできたので多少楽。  
+https://www.mediawiki.org/wiki/Parsoid/Setup
+
 ## 終わり
 まだ試しに稼働させてみただけなので問題なく運用できるかやバージョンアップの手間の確認はこれから。
