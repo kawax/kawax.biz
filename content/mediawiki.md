@@ -113,5 +113,10 @@ $wgMarkdownHighlightCss = '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/
 $wgMarkdownDefaultOn = false;
 ```
 
+## VisualEditor
+https://www.mediawiki.org/wiki/VisualEditor/Portal/ja
+
+Markdownよりもこっちに対応のほうがいいかも。ただし導入は結構難しい。拡張機能を追加だけでは動かない。Parsoidも必要。
+
 ## 終わり
 まだ試しに稼働させてみただけなので問題なく運用できるかやバージョンアップの手間の確認はこれから。
