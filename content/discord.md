@@ -17,7 +17,9 @@ APIを色々試してみる。
 ## テスト用チャット
 誰でも参加可能。ボイスチャットは不可。Laravelチャンネルも作ったので人が増えたら何か自動で情報流すかもしれないけど増えるとは思ってない。
 
-- https://discord.gg/bDnY8rk
+- https://discord.gg/XukjEsV
+
+<iframe src="https://discordapp.com/widget?id=506978290934874132&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 
 ## 環境
 - Laravel 5.7
