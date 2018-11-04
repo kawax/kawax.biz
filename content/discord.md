@@ -7,8 +7,12 @@ draft: false
 
 一応ゲーマー向けチャットのはずだけどいつの間にかLaravelやVue.jsの公式チャットもDiscordに移行していた。
 
-- https://readouble.com/laravel/5.7/ja/contributions.html
+- https://laravel.com/docs/5.7/contributions
 - https://vue-land.js.org/
+
+Reactがメンバー多すぎてDiscordに移行したのが最初？
+
+- https://reactjs.org/blog/2015/10/19/reactiflux-is-moving-to-discord.html
 
 APIを色々試してみる。  
 
