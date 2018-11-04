@@ -254,13 +254,15 @@ There was an error executing the addGuildMemberRole command: Client error: `PUT 
 Yasminでメンションへの返信。これもartisanコマンドで作っておく。  
 https://github.com/kawax/discord-project/blob/master/app/Console/Commands/ServeCommand.php
 
-ローカルで動かす時は`php artisan discord:serve`で起動、終了はCtrl+C。サーバー上で動かす時はSupervisorでデーモン化。Forgeならデプロイ時に`sudo supervisorctl restart all`でいいはず。
+ローカルで動かす時は`php artisan discord:serve`で起動、終了はCtrl+C。コードの変更後は終了して再起動。本番環境で動かす時はSupervisorでデーモン化。本番でもデプロイ後に再起動が必要。Forgeならデプロイ時に`sudo supervisorctl restart all`でいいはず。
 エラーになる時はパスワードなしで実行できるように設定。
 ```
 echo "forge ALL=NOPASSWD: /usr/bin/supervisorctl restart all" > /etc/sudoers.d/supervisorctl
 ```
 
 リアルタイムなやり取りもできるようになったので普通にBotと言えるレベルのことが可能に。DiscordにはOutgoing WebHookがないのでこの方法しかなさそう。
+
+簡単なサンプルならYasminと素のPHPやnode.jsでもいいけどここから機能を増やそうとするとLaravelで作るメリットが出てくる。
 
 ## Socialite
 ついでにSocialiteも作っておいた。  
