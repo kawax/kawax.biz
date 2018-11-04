@@ -261,3 +261,10 @@ echo "forge ALL=NOPASSWD: /usr/bin/supervisorctl restart all" > /etc/sudoers.d/s
 ```
 
 リアルタイムなやり取りもできるようになったので普通にBotと言えるレベルのことが可能に。DiscordにはOutgoing WebHookがないのでこの方法しかなさそう。
+
+## Socialite
+ついでにSocialiteも作っておいた。  
+https://github.com/kawax/socialite-discord
+
+これとほとんど同じだけどイベントを使うSocialiteProvidersはやはり好きになれない。  
+https://github.com/SocialiteProviders/Discord
