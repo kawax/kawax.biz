@@ -5,23 +5,19 @@ categories: ["Laravel"]
 draft: false
 ---
 
-一応ゲーマー向けチャットのはずだけどいつの間にかLaravelやVue.jsの公式チャットもDiscordに移行していた。
+一応ゲーマー向けチャットのはずだけどいつの間にかLaravelやVue.jsの公式チャットもDiscordに移行していた。  
+https://laravel.com/docs/5.7/contributions  
+https://vue-land.js.org/
 
-- https://laravel.com/docs/5.7/contributions
-- https://vue-land.js.org/
-
-Reactがメンバー多すぎてDiscordに移行したのが最初？
-
-- https://reactjs.org/blog/2015/10/19/reactiflux-is-moving-to-discord.html
+Reactがメンバー多すぎてDiscordに移行したのが最初？  
+https://reactjs.org/blog/2015/10/19/reactiflux-is-moving-to-discord.html
 
 APIを色々試してみる。  
-
-- https://github.com/kawax/discord-project
+https://github.com/kawax/discord-project
 
 ## テスト用チャット
-誰でも参加可能。ボイスチャットは不可。Laravelチャンネルも作ったので人が増えたら何か自動で情報流すかもしれないけど増えるとは思ってない。
-
-- https://discord.gg/XukjEsV
+誰でも参加可能。ボイスチャットは不可。Laravelチャンネルも作ったので人が増えたら何か自動で情報流すかもしれないけど増えるとは思ってない。  
+https://discord.gg/XukjEsV
 
 <iframe src="https://discordapp.com/widget?id=506978290934874132&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 
@@ -31,43 +27,35 @@ APIを色々試してみる。
 - ローカルサーバーはなし。artisanコマンドしか使ってない。
 
 ## アプリケーションとBot
-作り方は他所にいくらでも書いてあるのでここでは書かない。
-
-- https://discordapp.com/developers/docs/intro
+作り方は他所にいくらでも書いてあるのでここでは書かない。  
+https://discordapp.com/developers/docs/intro
 
 CLIENT IDやBotのTOKENを控えておく。
 
 ## メッセージ送信制限
-一度だけWebSocketで接続する必要がある。
-
-- https://discordapp.com/developers/docs/resources/channel#create-message
+一度だけWebSocketで接続する必要がある。これが一番厄介そうだった。  
+https://discordapp.com/developers/docs/resources/channel#create-message
 
 ## ライブラリ
-WebSocketと非同期なDiscord APIはPHPには向いてない。どれが一番メジャーなのかは知らないけどおそらくnode.jsが向いてる。
-
-- https://discord.js.org/
+WebSocketと非同期なDiscord APIはPHPには向いてない。どれが一番メジャーなのかは知らないけどおそらくnode.jsが向いてる。  
+https://discord.js.org/
 
 リアルタイムなやり取りとか苦手なことはひとまず置いておいてLaravelが得意なことをやる。
 
-DiscordPHPは死んでる。
+DiscordPHPは死んでる。  
+https://github.com/teamreflex/DiscordPHP
 
-- https://github.com/teamreflex/DiscordPHP
+DiscordPHPに依存してるBotManも停止したまま。  
+https://github.com/botman/driver-discord
 
-DiscordPHPに依存してるBotManも停止したまま。
+PHPでもnode.jsのように使うならたぶんこれ。  
+https://github.com/CharlotteDunois/Yasmin
 
-- https://github.com/botman/driver-discord
+基本的なREST API  
+https://github.com/restcord/restcord
 
-PHPでもnode.jsのように使うならたぶんこれ。
-
-- https://github.com/CharlotteDunois/Yasmin
-
-基本的なREST API
-
-- https://github.com/restcord/restcord
-
-最終的に一番参考になったのはなんとLaravel Notificationsだった。サーバーへのBotの追加やWebSocketへの接続を`php artisan discord:setup`一つで解決してるのが一番スマート。
-
-- https://github.com/laravel-notification-channels/discord
+最終的に一番参考になったのはなんとLaravel Notificationsだった。サーバーへのBotの追加やWebSocketへの接続を`php artisan discord:setup`一つで解決してるのが一番スマート。  
+https://github.com/laravel-notification-channels/discord
 
 Laravel NotificationsとRestCordを使う。
 
@@ -293,3 +281,10 @@ https://github.com/kawax/socialite-discord
 
 これとほとんど同じだけどイベントを使うSocialiteProvidersはやはり好きになれない。  
 https://github.com/SocialiteProviders/Discord
+
+## Advent Calendar 2018
+もう一つついでにAdvent Calendarにも参加。最近はQiitaに書くのはやめてるので外部URLで登録。
+https://qiita.com/advent-calendar/2018/laravel  
+https://qiita.com/advent-calendar/2018/laravel-2
+
+Laravel Notificationsがあるからもう少し誰か使ってるかと思ったけどLaravelでしっかり使ってる情報は意外となかった。
