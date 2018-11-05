@@ -254,6 +254,22 @@ There was an error executing the addGuildMemberRole command: Client error: `PUT 
 Yasminでメンションへの返信。これもartisanコマンドで作っておく。  
 https://github.com/kawax/discord-project/blob/master/app/Console/Commands/ServeCommand.php
 
+```php
+//チャンネルでのメンション
+if ($message->mentions->members->has(config('services.discord.bot'))) {
+    $message->reply('Hi! ' . $message->author->username)->done(null, function ($error) {
+        echo $error . PHP_EOL;
+    });
+}
+
+//DMの場合
+if ($message->channel->type === 'dm') {
+    $message->reply('Hi! DM')->done(null, function ($error) {
+        echo $error . PHP_EOL;
+    });
+}
+```
+
 ローカルで動かす時は`php artisan discord:serve`で起動、終了はCtrl+C。コードの変更後は終了して再起動。本番環境で動かす時はSupervisorでデーモン化。本番でもデプロイ後に再起動が必要。Forgeならデプロイ時に`sudo supervisorctl restart all`でいいはず。
 エラーになる時はパスワードなしで実行できるように設定。
 ```
@@ -263,6 +279,13 @@ echo "forge ALL=NOPASSWD: /usr/bin/supervisorctl restart all" > /etc/sudoers.d/s
 リアルタイムなやり取りもできるようになったので普通にBotと言えるレベルのことが可能に。DiscordにはOutgoing WebHookがないのでこの方法しかなさそう。
 
 簡単なサンプルならYasminと素のPHPやnode.jsでもいいけどここから機能を増やそうとするとLaravelで作るメリットが出てくる。
+
+## コマンド
+特定の入力に対して反応を返す。`$client->on('message'`内で長々と書きたくはないのでコマンドごとに別ファイルにする。  
+コマンドの読み込みはartisanコマンドと大体同じ仕組み。まだとりあえずな作りだけどコマンドクラスを増やせば自動で増えていく所までは実現。  
+https://github.com/kawax/discord-project/tree/master/app/Discord
+
+botへのメンションのみ反応／メンション以外でも反応／DMでも、とかは`$client->on('message'`で適当に調整すればいい。
 
 ## Socialite
 ついでにSocialiteも作っておいた。  
