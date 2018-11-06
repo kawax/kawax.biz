@@ -287,4 +287,4 @@ https://github.com/SocialiteProviders/Discord
 https://qiita.com/advent-calendar/2018/laravel  
 https://qiita.com/advent-calendar/2018/laravel-2
 
-Laravel Notificationsがあるからもう少し誰か使ってるかと思ったけどLaravelでしっかり使ってる情報は意外となかった。
+Laravel Notificationsがあるからもう少し誰か使ってるかと思ったけどLaravelでしっかり使ってる情報は意外となかった。海外でも。
