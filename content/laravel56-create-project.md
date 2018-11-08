@@ -78,6 +78,18 @@ https://readouble.com/laravel/5.6/ja/migrations.html#running-migrations
 https://readouble.com/laravel/5.6/ja/authentication.html
 デフォルトのviewはwelcomeしかないけど`php artisan make:auth`で作られるファイルまでがデフォルトと思っている。
 https://github.com/laravel/framework/tree/5.6/src/Illuminate/Auth/Console/stubs/make
+app.jsの`#app`は
+```
+const app = new Vue({
+  el: "#app"
+});
+```
+`layouts/app.blade.php`の`id="app"`のこと
+```
+<div id="app">
+</div>
+```
+`php artisan make:auth`しないと`layouts/app.blade.php`がないのでVue.jsを表示する部分がない。make:authしなかったせいでLaravelでのVueの使い方を間違えてる事例をよく見る。
 
 ユーザー登録機能とかを使わないつもりでもここまではやる。
 
@@ -116,10 +128,22 @@ Laravel+Vue.jsはここから始めればいい。最初からSPAなんて目指
 `barryvdh/laravel-debugbar`とか`barryvdh/laravel-ide-helper`とかいつも使ってるものの追加。
 この辺はもはやコピペ。
 
+ide-helperのREADMEにはcomposer.jsonの`post-update-cmd`に書いて自動実行させるように書いてあるけどこれは別に無視していい。自動実行させると本番環境へのデプロイ時に困るので必要な時に手動で実行。  
+自分の場合は`package.json`に書いてる。PhpStormではこっちのほうがすぐに実行できる。
+```
+"scripts": {
+  "ide-helper:meta": "php artisan ide-helper:meta",
+  "ide-helper:generate": "php artisan ide-helper:generate",
+  "ide-helper:models": "php artisan ide-helper:models -N"
+},
+```
+
 ## .editorconfig
 https://github.com/laravel/framework/blob/5.6/.editorconfig
 Laravelを参考にするなりして好みで。
 これもコピペで同じファイル使い回すだけ。
+
+【追記】その後デフォルトで追加された。
 
 ## StyleCI
 GitHubで公開してる場合のみ。
