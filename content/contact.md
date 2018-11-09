@@ -5,7 +5,7 @@ categories: ["Contact"]
 draft: false
 ---
 
-基本的にチャット以外は一切受け付けない。電話や直接会うことは何があろうと拒否。
+基本的にチャット以外は一切受け付けない。電話やSkypeや直接会うことは何があろうと拒否。
 
 - ChatWork https://www.chatwork.com/kawax
 - Slack
