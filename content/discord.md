@@ -21,6 +21,8 @@ https://discord.gg/XukjEsV
 
 <iframe src="https://discordapp.com/widget?id=506978290934874132&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 
+Discordで有料コミュニティー+管理システムみたいなことをやると面白そうなので一緒にやりたい人がいれば上記チャットまで。
+
 ## 環境
 - Laravel 5.7
 - Forge
