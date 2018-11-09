@@ -66,4 +66,6 @@ webpack.mix.jsも`assets`削除。
 後からアップグレードガイドに追記されると困る。  
 ファイルキャッシュ用に`storage/framework/cache/data/`作るように追記されたけどこの変更はそもそも5.7じゃないような…。  
 configはここで変更されてるので5.4。  
-https://github.com/laravel/laravel/commit/402b12f9159498e9be25e2a77939281fb35f6e13
+https://github.com/laravel/laravel/commit/402b12f9159498e9be25e2a77939281fb35f6e13  
+.gitignoreの変更が5.7。5.4からこれで問題なかったんだからやっぱり影響はあまりない。  
+https://github.com/laravel/laravel/commit/76369205c8715a4a8d0d73061aa042a74fd402dc
