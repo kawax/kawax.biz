@@ -64,4 +64,6 @@ webpack.mix.jsも`assets`削除。
 
 ## さらにその後
 後からアップグレードガイドに追記されると困る。  
-ファイルキャッシュ用に`storage/framework/cache/data/`作るように追記されたけど`data`は自動で作られるので実際の影響はあまりないかも。
+ファイルキャッシュ用に`storage/framework/cache/data/`作るように追記されたけどこの変更はそもそも5.7じゃないような…。  
+configはここで変更されてるので5.4。  
+https://github.com/laravel/laravel/commit/402b12f9159498e9be25e2a77939281fb35f6e13
