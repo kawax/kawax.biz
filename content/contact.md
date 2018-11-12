@@ -10,7 +10,6 @@ draft: false
 - ChatWork https://www.chatwork.com/kawax
 - Slack
 - Discord https://discord.gg/XukjEsV
-- kawaxbiz@gmail.com
 
 
 ## 今やりたいこと(2018)
@@ -48,7 +47,9 @@ draft: false
 
 
 ## フォーム
+スパムが多いので停止。
 
+<!--
 <form name="contact" netlify>
   <div class="field">
     <label class="label">名前</label>
@@ -78,3 +79,4 @@ draft: false
   </div>
 
 </form>
+-->
