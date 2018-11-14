@@ -11,7 +11,7 @@ draft: false
 - Slack
 - Discord https://discord.gg/XukjEsV
 
-
+<!--
 ## 今やりたいこと(2018)
 - Laravel
 - AWSを全力で使える規模のシステムの運用
@@ -39,6 +39,7 @@ draft: false
 - AngularJS ver1。node.js登場後のフロント周りはgrunt、CoffeeScript時代から色々使って今はなるべくシンプルな方向に。
 - スマホアプリのサーバーサイド
 
+-->
 色々なサービスにバラバラなIDで登録してるのでkawax名義での活動記録はGitHubに登録した2012年以降くらいしかない。今でもメインのIDは別。
 
 - https://github.com/kawax
