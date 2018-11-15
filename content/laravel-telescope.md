@@ -67,16 +67,22 @@ class TelescopeServiceProvider extends TelescopeApplicationServiceProvider
 - TelescopeServiceProvider.phpは残す
 - config/app.phpはコメント
 
-AppServiceProviderのboot()に追加。
-```php
-if ($this->app->environment('local')) {
-    $this->app->register(TelescopeServiceProvider::class);
-}
-```
-
 https://github.com/laravel/telescope/issues/154#issuecomment-432938123
 
 これでローカルでのみ有効。
+
+### さらにその後
+1.0.0リリースで公式ドキュメントに入ってServiceProviderでの登録方法も書かれたのでこれで解決。  
+https://readouble.com/laravel/5.7/ja/telescope.html
+
+```
+public function register()
+{
+    if ($this->app->isLocal()) {
+        $this->app->register(TelescopeServiceProvider::class);
+    }
+}
+```
 
 ## アップデート時
 assetsが更新されてる場合はこれも。
