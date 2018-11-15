@@ -47,6 +47,13 @@ php artisan migrate
 ## Mail
 他の機能も使ってる既存プロジェクトに追加して試したけどしっかり記録される。特にメールは今までMailHogなどを使ってたけどTelescopeに集約されるのでいいかもしれない。
 
+## アップデート時
+assetsが更新されてる場合はこれも。
+
+```
+php artisan vendor:publish --tag=telescope-assets --force
+```
+
 ## 本番環境
 ローカルのみなので本番環境ではインストールされないけどTelescopeServiceProviderが残ってるのでエラーになる。  
 
@@ -84,9 +91,9 @@ public function register()
 }
 ```
 
-## アップデート時
-assetsが更新されてる場合はこれも。
+本番でもインストールした上でenvで無効にする方法も用意。でもこれだとDBへの影響がありそう。
+```
+'enabled' => env('TELESCOPE_ENABLED', true),
+```
 
-```
-php artisan vendor:publish --tag=telescope-assets --force
-```
+使わないのにインストールは無駄なのでServiceProvider使うだろうけど別の問題が発生したので一旦外してしまった。
