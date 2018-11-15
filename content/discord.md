@@ -288,6 +288,7 @@ https://github.com/SocialiteProviders/Discord
 ## Advent Calendar 2018
 もう一つついでにAdvent Calendarにも参加。最近はQiitaに書くのはやめてるので外部URLで登録。  
 （Qiitaに書かなくなったのはスカウトメールがうざいのとKobito終了で修正しにくいから。）  
+（1に空きが出来てたので結局Qiitaにも書いた。）  
 https://qiita.com/advent-calendar/2018/laravel  
 https://qiita.com/advent-calendar/2018/laravel-2
 
