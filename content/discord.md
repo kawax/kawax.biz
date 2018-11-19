@@ -278,6 +278,8 @@ https://github.com/kawax/discord-project/tree/master/app/Discord
 
 botへのメンションのみ反応／メンション以外でも反応／DMでも、とかは`$client->on('message'`で適当に調整すればいい。
 
+ここまで来るとパッケージ化してcomposerでインストールするだけでさっと使えるようにしてもいいけど別のbotでは違う作りしてて結局bot毎に微調整が必要になるのでまだ汎用的に使える仕様が固まってない。
+
 ## Socialite
 ついでにSocialiteも作っておいた。サイト側で先にOAuth認証→Discordに追加等のユーザー管理ができるかも。その場合はpermissionsやscopeの調整が必要なはず。  
 https://github.com/kawax/socialite-discord
