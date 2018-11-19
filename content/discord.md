@@ -21,8 +21,6 @@ https://discord.gg/XukjEsV
 
 <iframe src="https://discordapp.com/widget?id=506978290934874132&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 
-Discordで有料コミュニティー+管理システムみたいなことをやると面白そうなので一緒にやりたい人がいれば上記チャットまで。とはいえすでにいくつか話が進んでるのでここでやる余裕はなさそう。
-
 ## 環境
 - Laravel 5.7
 - AWS
@@ -291,7 +289,7 @@ https://github.com/SocialiteProviders/Discord
 
 ## Advent Calendar 2018
 もう一つついでにAdvent Calendarにも参加。最近はQiitaに書くのはやめてるので外部URLで登録。  
-（Qiitaに書かなくなったのはスカウトメールがうざいのとKobito終了で修正しにくいから。Laravelならいくらでも手伝うけど会わないことだけが条件。）  
+（Qiitaに書かなくなったのはスカウトメールがうざいのとKobito終了で修正しにくいから。Laravelならいくらでも手伝うのに全部のメールがいきなり会おうとしてくるから会わないことだけが条件というたった一つの地雷を見事に踏み抜いて来る。）  
 （1に空きが出来てたので結局Qiitaにも書いた。直後にTelescopeが1.0.0になったけど修正はしない。）  
 https://qiita.com/advent-calendar/2018/laravel  
 https://qiita.com/advent-calendar/2018/laravel-2
