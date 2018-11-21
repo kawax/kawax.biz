@@ -74,11 +74,4 @@ wget -q -O - https://mackerel.io/file/script/setup-all-apt-v2.sh | MACKEREL_APIK
 
 ## apt upgrade
 
-たまに更新の途中で確認画面が出るのでRecipeからの実行は避けたほうがいいかもしれない。lockファイルの削除など面倒なことになる。
-
-User : root
-
-```bash
-apt update
-apt upgrade -y
-```
+ForgeでPHPのパッチバージョンアップはできるようになっていたのでこれはもう削除。
