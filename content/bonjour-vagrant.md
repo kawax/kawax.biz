@@ -21,7 +21,7 @@ https://ja.wikipedia.org/wiki/Avahi
 やることはVagrant box内でavahiをインストールするだけ。`after.sh`に書いてもいい。
 
 ```
-sudo apt install avahi-utils
+sudo apt install avahi-utils -y
 ```
 
 avahi-browseでMac側が出てくる。
