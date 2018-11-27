@@ -18,7 +18,7 @@ https://ja.wikipedia.org/wiki/Bonjour
 ## Avahi
 https://ja.wikipedia.org/wiki/Avahi
 
-やることはVagrant box内でavahiをインストールするだけ。
+やることはVagrant box内でavahiをインストールするだけ。`after.sh`に書いてもいい。
 
 ```
 sudo apt install avahi-utils
