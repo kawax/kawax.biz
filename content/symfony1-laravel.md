@@ -1,8 +1,8 @@
 ---
 title: "Symfony 1.0 で作られたシステムを Laravel 5.4 で作り直した話"
-date: 2018-10-09T02:34:21+09:00
+date: 2018-08-09T02:34:21+09:00
 categories: ["Laravel"]
-draft: true
+draft: false
 ---
 （Qiita/Kobitoからサルベージ。元は2017/01）
 

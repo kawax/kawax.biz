@@ -1,8 +1,8 @@
 ---
 title: "Laravel 5.4へアップグレードと未対応ライブラリの一時的対応"
-date: 2018-10-09T02:29:47+09:00
+date: 2018-08-09T02:29:47+09:00
 categories: ["Laravel"]
-draft: true
+draft: false
 ---
 
 （Qiita/Kobitoからサルベージ。2017/01/29）
