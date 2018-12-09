@@ -277,6 +277,12 @@ https://readouble.com/laravel/5.7/ja/blade.html#blade-and-javascript-frameworks
 ## 発展的内容
 入門時点では気にしなくていい。
 
+### Webpack
+Laravel Mixを使ってるのでWebpackのことは深く知らなくてもいいけどどうしても知りたいなら。
+https://webpack.js.org/
+
+昔はGrunt、gulpなどで複雑なタスクを実行してたけどそういうのはもう全部捨てた。css/jsのビルド以外のことは何もしない。
+
 ### ブロードキャスト
 通知を例にしたのはLaravelのブロードキャストを使えばリアルタイムで通知を受け取れるようになるから。SPAまでやらなくてもVueコンポーネント一つでそのくらいはできる。
 https://readouble.com/laravel/5.7/ja/broadcasting.html
