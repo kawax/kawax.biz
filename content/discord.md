@@ -290,7 +290,7 @@ https://github.com/SocialiteProviders/Discord
 ## Advent Calendar 2018
 もう一つついでにAdvent Calendarにも参加。最近はQiitaに書くのはやめてるので外部URLで登録。  
 （Qiitaに書かなくなったのはスカウトメールがうざいのとKobito終了で修正しにくいから。Laravelならいくらでも手伝うのに全部のメールがいきなり会おうとしてくるから会わないことだけが条件というたった一つの地雷を見事に踏み抜いて来る。）  
-（1に空きが出来てたので結局Qiitaにも書いた。直後にTelescopeが1.0.0になったけど修正はしない。）  
+（1に空きが出来てたので結局Qiitaにも書いた。直後にTelescopeが1.0.0になったけど修正はしない。Laravel Mixも3.0と4.0betaが出て1ヶ月も経たずに2つ古くなった。）  
 https://qiita.com/advent-calendar/2018/laravel  
 https://qiita.com/advent-calendar/2018/laravel-2
 
