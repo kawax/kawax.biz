@@ -32,10 +32,6 @@ url = "/contact/"
 fa_icon = "fa-envelope-o"
 
 [[params.social]]
-url = "/price/"
-fa_icon = "fa-bars"
-
-[[params.social]]
 url = "https://github.com/kawax"
 fa_icon = "fa-github"
 
