@@ -14,9 +14,7 @@ sudo apt install google-chrome-stable
 
 日本語フォント
 ```
-wget --content-disposition IPAfont00303.zip http://ipafont.ipa.go.jp/old/ipafont/IPAfont00303.php
-sudo unzip IPAfont00303.zip -d /usr/share/fonts/
-fc-cache -fv
+sudo apt install fonts-ipafont-gothic
 ```
 
 ChromeDriverはDuskに含まれてるのでLaravel Console Duskと合わせると本番環境でDuckが使える。
