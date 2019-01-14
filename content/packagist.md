@@ -34,3 +34,10 @@ Laravelそのままではなく一部だけ使ってるのでLaravel系と言っ
 packagistのファイルが20万以上あるので今から始めるには最初の準備が大変。
 
 動かし方は必要な人がいたら書くことにする。
+
+## 続き
+- Docker用意したので動かし方の説明はしやすくなった。
+- Dockerでのcronは色々厄介。[Laravel News](https://laravel-news.com/laravel-scheduler-queue-docker)でさえsleep 60で実行してるけど他にないんだろうか。別のイメージならcrond -fで動いたけど。
+- パッケージが削除されてもミラー側では気付けない。実用上は問題ないので無視。年に1回くらいは全部削除して取得し直してもいいかもしれない。
+- MacとLinux(Ubuntu18.04)でduコマンドのオプションが違う。
+- ファイル数のカウントはPHPのStorage::allFiles()より`find . -type f -name "*.json" | wc -l`のほうが速い。Docker内で実行すると遅い。
