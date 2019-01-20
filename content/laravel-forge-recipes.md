@@ -73,5 +73,10 @@ wget -q -O - https://mackerel.io/file/script/setup-all-apt-v2.sh | MACKEREL_APIK
 ```
 
 ## apt upgrade
+ForgeでPHPのパッチバージョンアップはできるようになっていたのでこれはもう不要そう。
 
-ForgeでPHPのパッチバージョンアップはできるようになっていたのでこれはもう削除。
+```
+export DEBIAN_FRONTEND=noninteractive
+apt-get update
+apt-get upgrade -yqf
+```
