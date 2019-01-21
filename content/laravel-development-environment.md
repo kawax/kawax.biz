@@ -43,17 +43,22 @@ Homestead内に何がインストールされてるかはこれで分かる。
 https://github.com/laravel/settler
 
 ## レベル3
-DockerだけどLaraDockは使わない。Laravelと関係ないものまで入れすぎてて過剰。複数プロジェクトで使いにくい。
-ここまでの過程を経ずにいきなりLaraDock勧めてる人の話は無視したほうがいい。初心者向けではない。
+DockerだけどLaradockは使わない。Laravelと関係ないものまで入れすぎてて過剰。複数プロジェクトで使いにくい。
+ここまでの過程を経ずにいきなりLaradock勧めてる人の話は無視したほうがいい。初心者向けではない。
 
 Docker使いたい段階になったらどうするかというと自分で一から作る。
 Homesteadの経験があれば必要なものは分かるのでnginx, php, mysql, redis辺りの公式イメージからdocker-compose.ymlを自分で作れるようになる。
+作れないならDocker使うのは早いのでHomesteadに戻ったほうがいい。
 
 日本語での「DockerでLaravel開発環境作ってみた記事」はPHPとMySQL程度しか使ってなくて全く役に立たないので検索しても無駄。
 cronもキューも使えないLaravel開発環境に価値はない。
 
 Laravel公式にDocker扱う気はなさそう。
 https://twitter.com/taylorotwell/status/849739001812725760
+Docker使いたい人ならもう自力でどうにかできるだろう。
+はっきり言ってLaravelで何か作るのは誰にでもできる簡単なこと。
+Dockerやインフラの深淵のほうが遥かに難しい。
+公式にHomesteadを用意してるのは難しい部分を省略してすぐに開発始められるようにするためなのでそれが必要なくなった段階の人へのサポートはない。
 
 
 ## XAMPPは使ってはいけない
