@@ -23,7 +23,7 @@ Valet
 https://laravel.com/docs/master/valet
 https://readouble.com/laravel/5.7/ja/valet.html
 
-Macのみなので省略するけどウェブサーバー+データベースなので`php artisan serve`の次の段階としては一番ちょうどいい。
+Macのみなので省略するけどウェブサーバー+データベースなので`php artisan serve`の次の段階としては一番ちょうどいい。どっちにしろすぐに足りなくなるので次へ。
 
 ## レベル2
 Homestead

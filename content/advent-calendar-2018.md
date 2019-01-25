@@ -2,7 +2,7 @@
 title: "Advent Calendar 2018 / Laravelの小ネタ25連"
 date: 2018-11-13T11:27:54+09:00
 categories: ["Laravel"]
-draft: true
+draft: false
 ---
 
 誰か抜けたのか1の枠が空いてたので久しぶりにQiitaに書く。2には最近Qiitaに書いてないと書いてるけど。
