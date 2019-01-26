@@ -43,7 +43,6 @@ Laravel以外ならcomposerで`illuminate/console`をインストール。
 ```php
 use Illuminate\Console\Parser;
 
-use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputDefinition;
 use Symfony\Component\Console\Input\ArgvInput;
 
