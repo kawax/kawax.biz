@@ -72,6 +72,7 @@ Symfonyは`$_SERVER['argv']`で取得してる部分なので。
 https://github.com/symfony/console/blob/c195108dddab91f51b9c57f63e8b184d0a257a54/Input/ArgvInput.php#L50
 
 注意点としては$argvの最初にコマンド名が来るようにする。入力の時点で`<user> /cmd test`のような関係ない部分が含まれてる場合は事前に取り除く。
+そのコマンド名も`array_shift($argv)`ですぐに取り除かれるけど。
 
 ## 実際の使用例
 Discord botのコマンドで使ってる。traitにして必要なコマンドでのみ有効化。
