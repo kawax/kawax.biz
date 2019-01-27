@@ -17,6 +17,24 @@ Laravelの新規プロジェクト作成ができてる=PHPとcomposerが動く�
 **データベースを使わない** 範囲ならこれで十分。
 （一応SQLite使えばデータベースも使えるけど）
 
+```
+laravel new my-project && cd $_
+```
+
+`.env`変更。DB_DATABASEは使わないのでコメント。
+```
+DB_CONNECTION=sqlite
+#DB_DATABASE=homestead
+```
+
+```
+touch database/database.sqlite
+php artisan make:auth
+php artisan migrate
+php artisan serve
+```
+これでユーザー登録までできる初期Laravelのできあがり。
+
 
 初心者と極めすぎてartisanコマンドしか使わなくなった人向け。
 
