@@ -15,6 +15,8 @@ https://readouble.com/laravel/5.7/ja/installation.html
 Laravelの新規プロジェクト作成ができてる=PHPとcomposerが動くなら確実に動くので最初はこれだけでいい。
 
 **データベースを使わない** 範囲ならこれで十分。
+（一応SQLite使えばデータベースも使えるけど）
+
 
 初心者と極めすぎてartisanコマンドしか使わなくなった人向け。
 
