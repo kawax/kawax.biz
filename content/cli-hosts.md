@@ -5,6 +5,8 @@ categories: [""]
 draft: false
 ---
 
+VagrantならBonjour使えばhosts設定不要になるけどDockerだと難しそうだったのでhostsに戻って設定を楽にできる方法がないか探したら見つけた。
+
 使うもの
 https://github.com/cbednarski/hostess
 
