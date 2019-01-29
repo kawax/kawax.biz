@@ -37,29 +37,10 @@ mkdir my-project && cd $_
 ```
 composerでHomesteadだけインストール。
 ```
-composer init
-```
-色々聞かれるけどなんでもいい。
-最終的にこういうcomposer.jsonができればいい。
-ここからコピーしてきてもいい。
-https://github.com/kawax/homestead-rails/blob/master/composer.json
-```
-{
-    "name": ".../my-project",
-    "type": "project",
-    "require-dev": {
-        "laravel/homestead": "^8.0"
-    },
-    "license": "MIT",
-    "require": {}
-}
+composer require laravel/homestead --dev
 ```
 
-```
-composer install
-```
-
-これでHomestead.ymlとVagrantfileなどが作られる。
+以下のコマンドでHomestead.ymlとVagrantfileなどが作られる。
 この辺りはプロジェクトごとにインストールの手順。
 https://readouble.com/laravel/5.7/ja/homestead.html#per-project-installation
 
