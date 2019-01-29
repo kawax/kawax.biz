@@ -35,7 +35,7 @@ node.js・MySQL・PostgreSQL・Redis・memcached・supervisor…。Railsで使�
 ```
 mkdir my-project && cd $_
 ```
-composerでHomesteadだけインストール。
+composerでHomesteadだけインストール。空のディレクトリ内でいきなりこれでいい。
 ```
 composer require laravel/homestead --dev
 ```
