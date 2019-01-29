@@ -19,6 +19,7 @@ Laravel用のHomesteadだけど実はRubyとRailsもインストール済なの�
 Laravel公式のVagrant box。
 https://laravel.com/docs/master/homestead
 https://readouble.com/laravel/5.7/ja/homestead.html
+https://github.com/laravel/homestead
 
 Railsの開発環境はこれさえ使えばいいというものがなくて初心者はホスト側で`rails server`してることが多いと思う。
 少し進んでもぐぐって誰かが作ったVagrantやDockerを使う。
