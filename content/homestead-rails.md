@@ -143,7 +143,7 @@ development:
 rails server
 ```
 
-ホスト側でhttp://localhost:3000/が表示できれば成功。
+ホスト側で http://localhost:3000/ が表示できれば成功。
 
 後は普通のRails。
 
