@@ -76,7 +76,7 @@ cd code/
 以降はvagrant内での操作。
 
 ## Railsプロジェクトの作成
-ここは普通。`rails`はグルーバルにインストール済なので`bundle install`もグローバルでもいいとは思う。好みで。
+ここは普通。`rails`はグローバルにインストール済なので`bundle install`もグローバルでもいいとは思う。好みで。
 ```
 rails new . -B -d mysql --skip-turbolinks --skip-test
 bundle install --path vendor/bundle
