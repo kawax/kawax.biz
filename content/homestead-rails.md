@@ -76,13 +76,10 @@ cd code/
 以降はvagrant内での操作。
 
 ## Railsプロジェクトの作成
-ここは普通。
+ここは普通。`rails`はグルーバルにインストール済なので`bundle install`もグローバルでもいいとは思う。好みで。
 ```
-bundle init
-#Gemfileの編集。railsのコメントだけ外す。
+rails new . -B -d mysql --skip-turbolinks --skip-test
 bundle install --path vendor/bundle
-bundle exec rails new . -B -d mysql --skip-turbolinks --skip-test
-bundle install
 ```
 MySQL使う場合はエラーになるので追加インストール。ここはnative extensionがあるRailsならではの苦労しそうな所。
 ```
@@ -91,7 +88,7 @@ sudo apt-get install libmysqlclient-dev --fix-missing
 ```
 再開
 ```
-bundle install
+bundle install --path vendor/bundle
 ```
 
 データベースの設定。
