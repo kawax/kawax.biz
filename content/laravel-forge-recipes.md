@@ -78,5 +78,5 @@ ForgeでPHPのパッチバージョンアップはできるようになってい
 ```
 export DEBIAN_FRONTEND=noninteractive
 apt-get update
-apt-get upgrade -yqf
+apt-get upgrade --yes --quiet --fix-broken
 ```
