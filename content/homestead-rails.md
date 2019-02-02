@@ -41,7 +41,7 @@ composerでHomesteadだけインストール。空のディレクトリ内でい
 composer require laravel/homestead --dev
 ```
 
-以下のコマンドでHomestead.ymlとVagrantfileなどが作られる。
+以下のコマンドでHomestead.yamlとVagrantfileなどが作られる。
 この辺りはプロジェクトごとにインストールの手順。
 https://readouble.com/laravel/5.7/ja/homestead.html#per-project-installation
 
@@ -52,7 +52,7 @@ php vendor/bin/homestead make
 vendor\bin\homestead make
 ```
 
-Homestead.ymlだけ編集。Vagrantfileは触らなくていい。
+Homestead.yamlだけ編集。Vagrantfileは触らなくていい。
 ipは各自の環境に合わせて。backupでvagrant destroy時に自動でDBをバックアップ。
 portsはrails serverの3000。homestead.testとかのドメイン名はRailsでは使わないので無視していい。
 ```
@@ -72,7 +72,7 @@ vagrant ssh
 
 cd code/
 ```
-ホストのプロジェクトディレクトリとvagrant内の`/home/vagrant/code`が同じ。Homestead.ymlで設定してるだけなのでcdが面倒なら変更すればいい。
+ホストのプロジェクトディレクトリとvagrant内の`/home/vagrant/code`が同じ。Homestead.yamlで設定してるだけなのでcdが面倒なら変更すればいい。
 
 以降はvagrant内での操作。
 
