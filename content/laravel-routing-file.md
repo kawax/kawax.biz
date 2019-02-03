@@ -14,7 +14,7 @@ https://www.hypertextcandy.com/vue-laravel-tutorial-authentication
 例えば後から何も知らない人が参加して気付けるか？と考えると難しい。それどころか変更した本人でさえ数ヶ月後には忘れる。
 
 ではどうすればいいのか。（web.phpに書けば終わるけど他の方法）
-RouteServiceProvider::map()の`//` このたった2文字がヒントだけどルーティングファイルは好きに増やしてカスタマイズしろってこと。
+RouteServiceProvider::map()の`//` このたった2文字がヒントだけどルーティングファイルは好きなように増やしてカスタマイズしろってこと。
 
 ```php
     /**
@@ -94,11 +94,13 @@ routesを最初と考えると間違える。完全に逆で認証から考え�
 ```
 
 一番普通なブラウザでログインしてるのはSessionGuard
+→webガード
 →セッション使うのでwebミドルウェア
 →web.php
 認証の指定は`auth`。省略してるだけなので正確には`auth:web`
 
 APIはTokenGuard（デフォルトなのにドキュメントには何も書かれてない）
+→apiガード
 →セッションは使わないのでapiミドルウェア
 →api.php
 認証の指定は`auth:api`
