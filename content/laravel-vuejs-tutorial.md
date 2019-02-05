@@ -16,7 +16,7 @@ draft: false
 - Vue.js 2.5.x
 - ローカルサーバー php artisan serve
 - node.js 11.1 / npm 6.4
-- Laravel Mix 3.0
+- Laravel Mix 4.0
 
 バージョンが変われば当然使い方も変わるので丸暗記ではなく考え方を覚える。
 
@@ -114,11 +114,17 @@ api.phpに書くなら本来は認証も含めてこう書く。
 Route::middleware('auth:api')->get('/notifications',
 ```
 
-api用の認証方法を気にする必要がある。api_token渡したりPassport使ったり。今回のように同じサイトでブラウザから使用するだけであればweb.phpに書いてweb用の認証=セッションに任せれば何も気にしなくていいはず。
+api用の認証方法を気にする必要がある。api_token渡したりPassport使ったり。今回のように同じサイトでブラウザから使用するだけであればweb.phpに書いてweb用の認証=セッションに任せれば何も気にしなくていい。
 
 ```php
 Route::middleware('auth')->get('/api/notifications',
 ```
+
+もう少し書くと同一オリジンだから。
+Vue.jsからAPIを使う場合はオリジンの理解が重要。ここで引っかかってる人は多い。  
+https://developer.mozilla.org/ja/docs/Web/Security/Same-origin_policy
+
+SPAはクロスオリジンなことが多いからネットの情報は難しいことをしてるけど同一オリジンならあまり関係ない。Laravel+Vue.jsを同一オリジンで動かしてるのに無駄に難しいことしてる記事はオリジンの理解が足りてない。
 
 ## Vue.js側でVueコンポーネント
 ‎`resources⁩/js/components/`に`NotificationsComponent.vue`を作る。APIで取得して表示してるだけの簡単なもの。
@@ -162,8 +168,8 @@ Route::middleware('auth')->get('/api/notifications',
 app.jsで登録。example-componentと同じ場所。
 
 ```
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
-Vue.component('notifications-component', require('./components/NotificationsComponent.vue'));
+Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('notifications-component', require('./components/NotificationsComponent.vue').default);
 ```
 
 `npm run dev`でビルド。public内に出力される。
