@@ -155,9 +155,6 @@ class WebPushTest extends Notification implements ShouldQueue
 
 （当たり前にキュー使ってるけどこういう通知+キューをLaravel以外で作るとどれだけ無駄な手間がかかるか使ってない人は分からない）
 
-ウェブプッシュ通知は前からすでに使ってた事実が示してるようにLaravel的には通知が一番使いやすい。
-他はそもそもLaravelに限った情報でもない。WordPressでも大体同じ。
-
 
 次に進む場合sw.jsは`webpush.js`に変更して`resources/assets/js/webpush.js`に置く。
 
