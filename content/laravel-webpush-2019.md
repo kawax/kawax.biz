@@ -13,6 +13,9 @@ draft: false
 - PHP 7.2
 - Chrome
 
+対応ブラウザもたぶん変わってない。
+https://caniuse.com/#feat=push-api
+
 ## プロジェクト作成
 いつものとパッケージのインストール。
 https://github.com/laravel-notification-channels/webpush
