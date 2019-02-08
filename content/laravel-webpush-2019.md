@@ -111,14 +111,14 @@ WebPushのメイン部分だけどこれも使うだけならscript部分は気�
 app.jsにコンポーネント追加。
 
 ```
-Vue.component('notification-component', require('./components/NotificationsDemo').default);
+Vue.component('notification-component', require('./components/NotificationsDemo.vue').default);
 ```
 
 JSのビルド
 
 ```
 yarn install
-yarn dev
+yarn prod
 ```
 
 ### viewの変更
