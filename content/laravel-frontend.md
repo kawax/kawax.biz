@@ -52,13 +52,13 @@ npm run prod
 ビルド後のファイルがpublicに生成される。読み込むのはこのファイル。
 それ以外のJS/CSSファイルは直接publicに置かない。
 
-CSSはhead
+CSSはhead内
 
 ```
 <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 ```
 
-JSは</body>前。
+JSは/body前。
 
 ```
 <script src="{{ mix('/js/app.js') }}"></script>
