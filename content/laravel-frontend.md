@@ -23,6 +23,12 @@ npmで追加したライブラリもここで読み込めばいい。
 読み込む方法は`require`でも`import`でもどっちでもいい。
 webpackが上手いことやってくれることであり詳細は気にしなくていい。
 
+同じように真似すればいいという意図で例示されている。
+
+```
+window.$ = window.jQuery = require('jquery');
+```
+
 ダウンロードしてきたファイルをpublicに置いてscriptで読み込むなんて使い方はしない。
 
 ## resources/js/app.js
