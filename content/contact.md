@@ -5,32 +5,34 @@ categories: ["Contact"]
 draft: false
 ---
 
-基本的にチャット以外は一切受け付けない。電話やSkypeや直接会うことは何があろうと拒否（ここを要求してくる人はとにかく文章が読めない・何を言っても理解できない）。
+基本的にチャット以外は一切受け付けない。
 
 - ChatWork https://www.chatwork.com/kawax
 - Slack
 - Discord https://discord.gg/XukjEsV
+- Twitter https://twitter.com/kawaxbiz
 
 <script async src="//elements.ooapp.co/stable/oo-button.js"></script>
 <oo-button data-iam="nBHhi4j3XVA7V07mMUSEOObg"></oo-button>
 <oo-button data-iam="nBHhi4j3XVA7V07mMUSEOObg" data-type="offer" data-scope="private"></oo-button>
 
+色々なサービスにバラバラなIDで登録してるのでkawax名義での活動記録はGitHubに登録した2012年以降くらいしかない。今でもメインのIDは別。
+
+- https://github.com/kawax
+- https://qiita.com/kawax
+- https://teratail.com/users/kawax
+
+
+## 最近の業務内容
+- Laravel
+- Vue.js
+- AWS
+- 大量のWordPressの運用
+- 小さい企業の技術顧問
+
+「技術顧問」が一番近そう。小さい企業だとスキルのある人が全くいないので全分野に対してアドバイスすることになる。
 
 <!--
-## 今やりたいこと(2018)
-- Laravel
-- AWSを全力で使える規模のシステムの運用
-- Vue.js
-- Golang
-
-## 今やってること
-- Laravel（2013〜）
-- Vue.js（2016〜）
-- AWS（2012〜）一人で管理してるので全部自力で調査。誰かに言われた通りのことをやってるだけではない。
-- 大量のWordPressの運用
-- Railsアプリの運用
-
-2015頃からはLaravel+AWSで開発と運用。今でもバージョンアップを継続中。依頼で作ったシステムは非公開のGitLabに置いてるので公開できない。
 
 ## 昔やってたこと
 - C。大学で習っただけなので当時は理解はしてなかったけど基礎としてずっと役に立ってる。
@@ -45,11 +47,6 @@ draft: false
 - スマホアプリのサーバーサイド
 
 -->
-色々なサービスにバラバラなIDで登録してるのでkawax名義での活動記録はGitHubに登録した2012年以降くらいしかない。今でもメインのIDは別。
-
-- https://github.com/kawax
-- https://qiita.com/kawax
-- https://teratail.com/users/kawax
 
 
 ## フォーム
