@@ -47,3 +47,7 @@ config/app.phpの`aliases`に追加。
 ```
 
 ヘルパー使わないならこれ。
+
+## その後
+誰かプルリク送ってくれないかなと思ってたら5.8リリース前にやってくれた。
+https://github.com/laravel/laravel/pull/4951
