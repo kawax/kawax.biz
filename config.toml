@@ -46,8 +46,3 @@ fa_icon = "fa-twitter"
 [[params.social]]
 url = "/index.xml"
 fa_icon = "fa-rss"
-
-[sitemap]
-  changefreq = "monthly"
-  filename = "sitemap.xml"
-  priority = 0.5
