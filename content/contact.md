@@ -5,25 +5,17 @@ categories: ["Contact"]
 draft: false
 ---
 
-webでもPCアプリでも一人で作って一人で売るってことをずっと続けてきた。
-いつの間にか企業の手伝いできるくらいのスキルになっていたので手伝ってるけどあくまで手伝い程度。
-「一度も会わないことだけが条件」でその条件さえ満たせば別に安くてもいいとしか言ってない。
-小さい企業ならそれでいいと言ってくれる。
 
-## 連絡先
-基本的にチャット以外は一切受け付けない。
 
-- ChatWork https://www.chatwork.com/kawax
-- Slack
-- Discord https://discord.gg/XukjEsV
-- Twitter https://twitter.com/kawaxbiz
+Laravel開発サポートプラン
+https://www.pixiv.net/fanbox/creator/762638/post/312165
+手伝って欲しいという依頼は多いものの広く浅く手伝いたいのでこういう形でのみ受け付けることにする。
+pixivFANBOXは10000が上限なのでこれ以上の時間手伝うには他の方法を用意するしかない。
 
-<script async src="//elements.ooapp.co/stable/oo-button.js"></script>
-<oo-button data-iam="nBHhi4j3XVA7V07mMUSEOObg"></oo-button>
-<oo-button data-iam="nBHhi4j3XVA7V07mMUSEOObg" data-type="offer" data-scope="private"></oo-button>
-
+<!--
 色々なサービスにバラバラなIDで登録してるのでkawax名義での活動記録はGitHubに登録した2012年以降くらいしかない。今でもメインのIDは別。
 
+- Twitter https://twitter.com/kawaxbiz
 - https://github.com/kawax
 - https://qiita.com/kawax
 - https://teratail.com/users/kawax
@@ -50,7 +42,7 @@ webでもPCアプリでも一人で作って一人で売るってことをずっ
 - Zend Framework ver1。他PHPのフレームワーク。昔Zendで作ったものは全部Laravelで作り直した。
 - AngularJS ver1。node.js登場後のフロント周りはgrunt、CoffeeScript時代から色々使って今はなるべくシンプルな方向に。道具自体に詳しくなっても意味はない。
 - スマホアプリのサーバーサイド。スマホアプリに行かなかったのは個人で気軽に公開できないからだけどスマホでも結局サーバーサイドが必要だった。
-
+-->
 
 
 ## フォーム
