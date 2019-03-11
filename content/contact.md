@@ -5,14 +5,13 @@ categories: ["Contact"]
 draft: false
 ---
 
-
-
 Laravel開発サポートプラン
 https://www.pixiv.net/fanbox/creator/762638/post/312165
 手伝って欲しいという依頼は多いものの広く浅く手伝いたいのでこういう形でのみ受け付けることにする。
-pixivFANBOXは10000が上限なのでこれ以上の時間手伝うには他の方法を用意するしかない。
+pixivFANBOXは10000が上限なのでfantia版も用意。
+https://fantia.jp/fanclubs/3322/plans
 
-<!--
+
 色々なサービスにバラバラなIDで登録してるのでkawax名義での活動記録はGitHubに登録した2012年以降くらいしかない。今でもメインのIDは別。
 
 - Twitter https://twitter.com/kawaxbiz
@@ -20,6 +19,7 @@ pixivFANBOXは10000が上限なのでこれ以上の時間手伝うには他の�
 - https://qiita.com/kawax
 - https://teratail.com/users/kawax
 
+<!--
 
 ## 最近の業務内容
 - Laravel
