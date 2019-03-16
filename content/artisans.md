@@ -55,6 +55,9 @@ https://buefy.org/documentation/taginput/
 
 CSSは最近Bulmaが増えてるけどJSは含まれてないのでNavbarでさえ自分で書かないと動かない。
 https://bulma.io/documentation/components/navbar/
+コピペしたJSでbulma.jsでも作ってapp.jsからは`require('./bulma')`で読み込めばいい。
+Bladeで直接JS書いてる例の多さを見るとたったこれだけのことも知らない人が多い…？
+
 
 ページネーション用のファイル作ったので置いておく。
 https://github.com/kawax/laravel-pagination-bulma
