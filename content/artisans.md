@@ -27,7 +27,7 @@ https://github.com/erusev/parsedown
 LaravelでMarkdown表示するならこれをそのまま使うのが早い。
 https://github.com/laravel/framework/blob/94cc6a46dc7b000fb1774da9ca4c8610f31392b0/src/Illuminate/Mail/Markdown.php#L88
 
-Bladeで。
+Bladeで。（メールで使う時は自分が書いたMarkdownなのでエスケープ不要だけどユーザーからの入力を使うならエスケープ必須）
 
 ```php
 {{ Illuminate\Mail\Markdown::parse(e($text)) }}
@@ -59,5 +59,5 @@ https://bulma.io/documentation/components/navbar/
 Bladeで直接JS書いてる例の多さを見るとたったこれだけのことも知らない人が多い…？
 
 
-ページネーション用のファイル作ったので置いておく。
+ページネーション用のファイル作ったので置いておく。すでに作ってる人は多いけどsimple用はなかった。
 https://github.com/kawax/laravel-pagination-bulma
