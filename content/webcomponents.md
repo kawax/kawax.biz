@@ -14,7 +14,12 @@ WebComponentsなのでJSファイル一つ読み込めばどこでも使える�
 ```html
 <script src="https://widget.kawax.biz/artisans.js" defer></script>
 <artisans-user limit="5"></artisans-user>
+<artisans-post limit="5"></artisans-post>
 ```
+
+<script src="https://widget.kawax.biz/artisans.js" defer></script>
+<artisans-user limit="5"></artisans-user>
+<artisans-post limit="5"></artisans-post>
 
 WebComponentsはこのくらいの使い方がちょうどいい。ReactやVue.jsを捨てて全部置き換えるなんて未来はたぶんない。
 
