@@ -27,19 +27,20 @@ https://github.com/erusev/parsedown
 LaravelでMarkdown表示するならこれをそのまま使うのが早い。
 https://github.com/laravel/framework/blob/94cc6a46dc7b000fb1774da9ca4c8610f31392b0/src/Illuminate/Mail/Markdown.php#L88
 
-Bladeで。（メールで使う時は自分が書いたMarkdownなのでエスケープ不要だけどユーザーからの入力を使うならエスケープ必須）
+Bladeで。（追記：`Illuminate\Mail\Markdown::parse(e($text))`だと期待する表示にならないのでParsedown使う方法に変更）
 
 ```php
-{{ Illuminate\Mail\Markdown::parse(e($text)) }}
+{!! (new Parsedown)->setSafeMode(true)->text($text) !!}
 ```
 
 さらにカスタムディレクティブ`@markdown()`で使えるようにするならServiceProviderで登録。
 
 ```php
 use Illuminate\Support\Facades\Blade;
+use Parsedown;
 
 Blade::directive('markdown', function ($text) {
-    return "<?php echo Illuminate\Mail\Markdown::parse(e($text)); ?>";
+    return "<?php echo (new Parsedown)->setSafeMode(true)->text($text); ?>";
 });
 ```
 
