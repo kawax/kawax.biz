@@ -5,19 +5,24 @@ categories: ["Contact"]
 draft: false
 ---
 
-Laravel開発サポートプラン
-https://www.pixiv.net/fanbox/creator/762638/post/312165
-手伝って欲しいという依頼は多いものの広く浅く手伝いたいのでこういう形でのみ受け付けることにする。
-pixivFANBOXは10000が上限なのでfantia版も用意。
-https://fantia.jp/fanclubs/3322/plans
+## スキル
+LAPRASがちょうど良かったので貼る。
+![LAPRAS](/img/lapras.jpg)
 
 
-色々なサービスにバラバラなIDで登録してるのでkawax名義での活動記録はGitHubに登録した2012年以降くらいしかない。今でもメインのIDは別。
+色々なサービスにバラバラなIDで登録してるのでkawax名義での活動記録はGitHubに登録した2012年以降くらいしかない。今でもメインのIDは別。LAPRASでもメインIDは見つけられてないので繋がってない。
 
 - Twitter https://twitter.com/kawaxbiz
 - https://github.com/kawax
 - https://qiita.com/kawax
 - https://teratail.com/users/kawax
+
+## リモートが何よりも最優先
+「エンジニアになってリモートを希望している」ではなく「ネットだけでできることをやっていたらエンジニアとして手伝えるレベルになっていた」なのでリモートなことを一番重視している。
+あくまでも依頼されたらこちらの条件を満たす場合に限り手伝ってる立場。
+それでもいいと言ってくれる会社はあるのでそれ以外は手伝えない。
+
+https://artisans.kawax.biz/@kawax
 
 <!--
 
