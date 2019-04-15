@@ -5,6 +5,12 @@ categories: ["Contact"]
 draft: false
 ---
 
+## 連絡手段
+SlackかDiscordのテキストチャットのみ。
+電話やビデオ通話は不可能。
+
+ChatWorkは最近終了した。自分で使うだけならいいけどフリープランの改悪で他者に使用を要求できなくなった。
+
 ## スキル
 LAPRASがちょうど良かったので貼る。3.0が平均。3.5以上で上位4%らしい。
 ![LAPRAS](/img/lapras.jpg)
