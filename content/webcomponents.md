@@ -29,8 +29,10 @@ WebComponentsはこのくらいの使い方がちょうどいい。ReactやVue.j
 Mac/Windows/iOSとChrome/Firefox/Safari/Edgeで表示できることは確認した。  
 EdgeではまだPolyfillが必要。
 
+Android端末は少し前に壊れたので検証不能。
+
 ## CSSの扱い
-WebComponents的には<style></style>内で書くのが一番良いんだろうけどCSSだけはもう自分で書きたくないのでscssから作ったcssを読み込んでる。
+WebComponents的には`<style></style>`内で書くのが一番良いんだろうけどCSSだけはもう自分で書きたくないのでscssから作ったcssを読み込んでる。
 
 ```javascript
 import { html } from 'lit-html'
