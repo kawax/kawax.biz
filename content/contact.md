@@ -6,7 +6,7 @@ draft: false
 ---
 
 ## スキル
-LAPRASがちょうど良かったので貼る。
+LAPRASがちょうど良かったので貼る。3.0が平均。3.5以上で上位4%らしい。
 ![LAPRAS](/img/lapras.jpg)
 
 
