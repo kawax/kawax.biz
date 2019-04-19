@@ -33,9 +33,9 @@ Webエンジニアは一人でもなんとかなる。
 
 
 ## 最近の業務内容
-- Laravel
+- Laravel(2013~)
 - Vue.js
-- AWS
+- AWS(2012~)
 - WordPressの運用
 - Golang（少し）
 - 小さい企業で技術顧問的なこと。
@@ -52,7 +52,7 @@ Webエンジニアは一人でもなんとかなる。
 - クロスプラットフォームツールでのMac/Windowsアプリ開発。まだ残ってるけど頻繁に名前が変わって今は読み方もよく分からないものに。
 - 現Xcode。当時はProject Builder/Interface Builder。Objective-Cの頃。
 - Movable Type。ブログ誕生の頃。今考えるとPerl+PHPのシステム。
-- アプリを公開してそのサイトをPHPで作ってた時代。その後Mac OS Xへの変化もあり特定のOSでしか動かないアプリよりwebのほうがいいとなっていく。
+- アプリを公開してそのサイトをPHPで作ってた時代。その後OSの移行やスマホ普及もあり特定のOSでしか動かないアプリよりwebのほうがいいとなっていく。
 - Zend Framework ver1。他PHPのフレームワーク。昔Zendで作ったものは全部Laravelで作り直した。
 - 過去の遺産は気にする必要ないので以降はLaravelに全力。
 - AngularJS ver1。node.js登場後のフロント周りはgrunt、CoffeeScript時代から色々使ってきて今はなるべくシンプルな方向に。道具自体に詳しくなっても意味はない。
