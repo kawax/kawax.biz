@@ -5,7 +5,7 @@ categories: ["Laravel"]
 draft: false
 ---
 
-なぜか何度説明して納得しない人が多い。
+なぜか何度説明しても納得しない人が多い。
 
 ## ドキュメント
 日本語訳だと若干分かりにくい。
@@ -91,5 +91,7 @@ Laravelでcakeのパッケージなんてインストールしないと思うだ
 ```php
 use Illuminate\Support\Env;
 
-Env::get('APP_ENV');
+return [
+  'env' => Env::get('APP_ENV');
+]
 ```
