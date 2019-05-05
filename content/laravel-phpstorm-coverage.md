@@ -69,7 +69,7 @@ public function testBasicTest()
 ```
 
 ## PhpStormの設定
-日本語のドキュメントがあるので詳細は省略。
+日本語のドキュメントがあるので詳細は省略。ドキュメント読んでも分かりにくいので実際に触ってみるしかないけど。
 
 ### リモートインタープリター
 まずVagrant内のPHPで実行するように設定。
@@ -93,6 +93,10 @@ box7.2.1時点ではPHP7.3とXdebugのバグのせいかデフォルトでは無
 リモートPHPインタープリターを使うので手動での設定が必要。
 https://pleiades.io/help/phpstorm/using-phpunit-framework.html
 
+### カバレッジの設定
+「アクティブなスイートを新しいものに置き換える」
+https://pleiades.io/help/phpstorm/configuring-code-coverage-measurement.html
+
 ### テスト構成
 Vagrant内のPHPを使わない場合と同じ。
 https://pleiades.io/help/phpstorm/creating-run-debug-configuration-for-tests.html
@@ -102,5 +106,5 @@ https://pleiades.io/help/phpstorm/creating-run-debug-configuration-for-tests.htm
 https://pleiades.io/help/phpstorm/running-test-with-coverage.html
 
 ## 終わり
-自分で一から作ったプロジェクトなら必要ないけど他人のプロジェクトを見るなら必要。
+自分で一から作ったプロジェクトではあまり必要ないけど他人のプロジェクトを見るなら必要。
 テストもないようなプロジェクトならまずテスト書いてカバレッジで問題ない範囲を修正していくことになる。
