@@ -69,6 +69,23 @@ Facadeはstaticに見えてstaticじゃないしテストできるので問題�
 Guzzleの非同期通信とかReactPHPとかのPromiseはどうテストすればいいのか未だに分かってない。
 http://docs.guzzlephp.org/en/stable/quickstart.html
 
+```php
+$pool = resolve(Pool::class, [
+    'client'   => $client,
+    'requests' => $requests($urls),
+    'config'   => $config,
+]);
+
+$pool->promise()->wait();
+```
+
+これなら？`resolve()`の第二引数はLaravel5.8の途中で追加された。`app()`では5.4で追加されてた。
+
+```php
+$pool = Mockery::mock(Pool::class);
+$pool->shouldReceive('promise->wait');
+```
+
 ## 参考
 Laravel関連で唯一役に立った本。
 
