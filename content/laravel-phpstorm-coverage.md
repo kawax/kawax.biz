@@ -108,3 +108,32 @@ https://pleiades.io/help/phpstorm/running-test-with-coverage.html
 ## 終わり
 自分で一から作ったプロジェクトではあまり必要ないけど他人のプロジェクトを見るなら必要。
 テストもないようなプロジェクトならまずテスト書いてカバレッジで問題ない範囲を修正していくことになる。
+
+## 追記 Travis+Code Climateで表示
+ローカルでの表示はいらないけど外部サービスを使って表示する場合。
+
+https://docs.codeclimate.com/docs/travis-ci-test-coverage
+
+1. Code Climateで`TEST REPORTER ID`を調べる。
+2. TravisのEnvironment Variablesで`CC_TEST_REPORTER_ID`を設定。
+3. 以下をそれぞれ追加
+
+.travis.yml
+
+```yml
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+after_script:
+  - ./cc-test-reporter after-build -t clover --exit-code $TRAVIS_TEST_RESULT
+```
+
+phpunit.xml
+
+```xml
+<logging>
+    <log type="coverage-clover" target="build/logs/clover.xml"/>
+</logging>
+```
