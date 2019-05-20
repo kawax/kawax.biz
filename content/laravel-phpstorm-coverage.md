@@ -87,7 +87,7 @@ Vagrantが正しく起動していればPHPのpath等が表示される。
 https://pleiades.io/help/phpstorm/configuring-xdebug.html
 
 box7.2.1時点ではPHP7.3とXdebugのバグのせいかデフォルトでは無効。
-別バージョンで元から有効ならここは不要。
+別バージョンで元から有効ならここは不要。もしくは無効化してからオンデマンドモードの設定。
 
 ### テスト・フレームワーク設定
 リモートPHPインタープリターを使うので手動での設定が必要。
@@ -137,3 +137,31 @@ phpunit.xml
     <log type="coverage-clover" target="build/logs/clover.xml"/>
 </logging>
 ```
+
+## 追記2 MacローカルのPHPでXdebugの有効化
+Vagrantの起動が必須なのも面倒なのでローカルPHPでも可能にする。
+
+https://xdebug.org/docs/install
+
+PHPはbrewでインストールでもxdebugはpecl使えということなので
+
+```
+pecl install xdebug
+```
+
+エラー出る場合は検索。
+
+最後にここまで出れば成功。
+```
+Extension xdebug enabled in php.ini
+```
+
+ただしローカルのPHPで直接有効化はしない。
+普通にインストール成功した場合php.iniの一番上に`zend_extension=xdebug.so`が追加されてるのでまずこれを消す。
+
+↑で書いたPhpStormのオンデマンドモードでのみ有効化と同じように「Debugger extension」を設定。
+`/usr/local/Cellar/php/`以下辺りを探す。
+
+これでカバレッジ付きでテストを実行した時のみXdebugが有効。普段のartisanやcomposer updateなどが遅くならない。
+
+昔Xdebug使った時は常に有効で遅くなってたけどこれならVagrant使わなくてもいいかも。
