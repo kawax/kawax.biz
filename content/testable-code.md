@@ -1,5 +1,5 @@
 ---
-title: "[WIP]テストしにくいコード"
+title: "テストしにくいコード"
 date: 2019-05-13T11:26:38+09:00
 categories: ["Laravel"]
 draft: false
