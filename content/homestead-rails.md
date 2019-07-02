@@ -15,6 +15,9 @@ Laravel用のHomesteadだけど実はRubyとRailsもインストール済なの�
 - 基本的には全部Homestead内で作業。開発とブラウザはホスト側。
 - Rails対応はまだ作業途中なので将来のバージョンでは簡単な設定するだけで使えるようになるかもしれない。その場合は公式ドキュメントを参照。この記事はHomestead8.0時点での情報。
 
+### 追記
+Homestead9.0で逆にRailsサポートは消されたので使えない記事になった。自分でインストールすれば一応使えるはずだけど。
+
 ## Homesteadとは
 Laravel公式のVagrant box。
 https://laravel.com/docs/master/homestead
