@@ -29,3 +29,4 @@ https://github.com/aws-samples/amazon-efs-tutorial/tree/master/in-cloud-transfer
 
 
 東京リージョンでEFS使えるようになったのが2018年、DataSyncでEFS-to-EFSの転送できるようになったのが2019年5月末なのでリージョン間転送を実際にやった人がいなくて情報はほとんどない。AWS側の仕様も途中で少し変わってる。
+https://aws.amazon.com/jp/about-aws/whats-new/2019/05/aws-datasync-now-supports-efs-to-efs-transfer/
