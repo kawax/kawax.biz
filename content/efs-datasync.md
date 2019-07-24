@@ -26,3 +26,6 @@ https://github.com/aws-samples/amazon-efs-tutorial/tree/master/in-cloud-transfer
 
 この後マウントして必要ならパーミッションなどの変更。これも時間かかる。  
 いきなり数百GBのEFSを転送しようとせず小さいEFSで練習したほうがいい。
+
+
+東京リージョンでEFS使えるようになったのが2018年、DataSyncでEFS-to-EFSの転送できるようになったのが2019年5月末なのでリージョン間転送を実際にやった人がいなくて情報はほとんどない。AWS側の仕様も途中で少し変わってる。
