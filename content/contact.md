@@ -5,15 +5,16 @@ categories: ["Contact"]
 draft: false
 ---
 
-SlackかDiscordのテキストチャットのみ。
-電話やビデオ通話は不可。
+SlackやDiscordのテキストチャットのみ。
+会うことや電話やビデオ通話は不可。
+性格ではなくそういう「障害」なので絶対に変更不可能。
 
 ChatWorkは終了。
 
 ## スキル
 LAPRASがちょうど良かったので貼る。3.0が平均。3.5以上で上位4%らしい。
 [タグとスコアについて](https://talent-help.lapras.com/lapras-%E3%83%98%E3%83%AB%E3%83%97/%E7%94%BB%E9%9D%A2%E3%81%A8%E3%82%B9%E3%82%B3%E3%82%A2%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/%E3%82%BF%E3%82%B0%E3%81%A8%E3%82%B9%E3%82%B3%E3%82%A2%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
-![LAPRAS](/img/lapras.jpg)
+![LAPRAS](/img/lapras2.png)
 
 
 色々なサービスにバラバラなIDで登録してるのでkawax名義での活動記録はGitHubに登録した2012年以降くらいしかない。今でもメインのIDは別。LAPRASでもメインIDは見つけられてないので繋がってない。
