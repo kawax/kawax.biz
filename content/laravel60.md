@@ -48,6 +48,10 @@ Laravelはバージョンアップでどんどん変わるから古い知識の�
 `Input::get()`は`Request::input()`呼んでるだけなので単純に互換のためだけに残されてた。
 https://github.com/laravel/framework/blob/7ae3aaaa00f8ab9298104456a59a4154edd5c395/src/Illuminate/Support/Facades/Input.php
 
+## Queue Retry Limit
+失敗したジョブ用のテーブルが必須になったらしい。
+キュー使ってるなら`config/queue.php`の変更箇所など確認。
+
 ## Redis
 Redis使うにはPhpRedisをインストール。
 https://github.com/phpredis/phpredis
