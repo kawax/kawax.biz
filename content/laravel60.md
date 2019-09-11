@@ -44,6 +44,7 @@ Inputなんてもう誰も使ってないはずなので非推奨を経ずいき
 実際には今でも使ってる人がいてびっくり。
 もう使ってないと教えても一切話を聞かない。
 Laravelはバージョンアップでどんどん変わるから古い知識のままでは使えないってことが理解できてない。
+6.0にするには大量のInputを修正することになる。
 
 `Input::get()`は`Request::input()`呼んでるだけなので単純に互換のためだけに残されてた。
 https://github.com/laravel/framework/blob/7ae3aaaa00f8ab9298104456a59a4154edd5c395/src/Illuminate/Support/Facades/Input.php
