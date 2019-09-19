@@ -87,6 +87,9 @@ php artisan ui vue --auth
 これ6.0.0リリース後に変更されてる。こういうのが一番困る。
 https://github.com/laravel/laravel/pull/5091
 
+その後さらに削除されて元に戻された。
+https://github.com/laravel/laravel/pull/5107
+
 ## パッケージ作者の対応
 Laravel用パッケージではcomposer.jsonに`"illuminate/support": "^5.5",`とか書いてることが多い。
 今までは^5.5で5.8まで対応不要でインストールできた。
