@@ -49,6 +49,17 @@ Laravelはバージョンアップでどんどん変わるから古い知識の�
 `Input::get()`は`Request::input()`呼んでるだけなので単純に互換のためだけに残されてた。
 https://github.com/laravel/framework/blob/7ae3aaaa00f8ab9298104456a59a4154edd5c395/src/Illuminate/Support/Facades/Input.php
 
+## ルートURLジェネレータと追加のパラメータ
+大きな影響あるようには書いてないけど意外とある。気付きにくいので厄介。
+
+```
+// Laravel5.8: http://example.com/profile/active
+echo route('profile', ['status' => 'active']);
+
+// Laravel6.0: http://example.com/profile?status=active
+echo route('profile', ['status' => 'active']);
+```
+
 ## Queue Retry Limit
 失敗したジョブ用のテーブルが必須になったらしい。
 キュー使ってるなら`config/queue.php`の変更箇所など確認。
