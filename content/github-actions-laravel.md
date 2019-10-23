@@ -14,6 +14,8 @@ GitHub Actionsはまだベータなのでこれからいくらでも変更され
 GitHubにLaravelプロジェクトを用意してActionsを選べばすぐにLaravel用のテンプレートが出てくるのでこれでセットアップするだけ。
 準備も何もない。
 
+デフォルトではこのyamlファイルが`.github/workflows/laravel.yml`に作られる。
+
 ```yaml
 name: Laravel
 
