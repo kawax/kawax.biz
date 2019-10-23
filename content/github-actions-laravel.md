@@ -50,6 +50,16 @@ SQLite使うように設定されてるので普通のLaravelの使い方して�
 ドキュメント見て好きなように変更すればいい。
 https://help.github.com/ja/github/automating-your-workflow-with-github-actions/about-github-actions
 
+## 環境変数
+もちろんyamlファイルには直接書かない。
+GitHubのSettings→Secretsで設定。
+こうやって使用。
+
+```yaml
+env:
+    TOKEN: ${{ secrets.TOKEN }}
+```
+
 ## cron
 今の所は分まで指定して自由に使えるっぽい。タイムゾーンはUTCで指定。
 
