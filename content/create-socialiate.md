@@ -77,20 +77,13 @@ Package discover 用に追加。
 ```php
 namespace My\Socialite\Line;
 
-use Laravel\Socialite\SocialiteServiceProvider;
+use Illuminate\Support\ServiceProvider;
 use Laravel\Socialite\Contracts\Factory;
 
 use Laravel\Socialite\Facades\Socialite;
 
-class LineServiceProvider extends SocialiteServiceProvider
+class LineServiceProvider extends ServiceProvider
 {
-    /**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
-    protected $defer = false;
-
     /**
      * Bootstrap the service provider.
      *
