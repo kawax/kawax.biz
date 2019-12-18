@@ -25,7 +25,7 @@ https://github.com/freee/freee-accounting-sdk-php
 ## Laravelプロジェクト内に作る
 一番シンプルに既存のプロジェクト内に作る方法。
 
-`app/Socialite/FooProviver.php`を作る。
+`app/Socialite/FooProvider.php`を作る。
 
 ```php
 namespace App\Socialite;
@@ -34,7 +34,7 @@ use Laravel\Socialite\Two\AbstractProvider;
 use Laravel\Socialite\Two\ProviderInterface;
 use Laravel\Socialite\Two\User;
 
-class FooProviver extends AbstractProvider implements ProviderInterface
+class FooProvider extends AbstractProvider implements ProviderInterface
 {
     //
 }
@@ -48,7 +48,7 @@ https://github.com/laravel/socialite/tree/4.0/src/Two
 ```php
 use Illuminate\Support\ServiceProvider;
 use Laravel\Socialite\Facades\Socialite;
-use App\Socialite\FooProviver;
+use App\Socialite\FooProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -57,7 +57,7 @@ class AppServiceProvider extends ServiceProvider
         Socialite::extend(
             'foo',
             function ($app) {
-                return Socialite::buildProvider(FooProviver::class, config('services.foo'));
+                return Socialite::buildProvider(FooProvider::class, config('services.foo'));
             }
         );
     }
@@ -67,7 +67,7 @@ class AppServiceProvider extends ServiceProvider
 PHP7.4なら1行で書けるかも。
 
 ```php
-Socialite::extend('foo', fn($app) => Socialite::buildProvider(FooProviver::class, config('services.foo')));
+Socialite::extend('foo', fn($app) => Socialite::buildProvider(FooProvider::class, config('services.foo')));
 ```
 
 後は`config/services.php`と`.env`で設定。
@@ -82,17 +82,17 @@ Socialite::extend('foo', fn($app) => Socialite::buildProvider(FooProviver::class
 
 これで`Socialite::driver('foo')`で使えるようになる。
 
-作ったのはFooProviverの1ファイルだけ。
+作ったのはFooProviderの1ファイルだけ。
 SocialiteProvidersのなぜかイベント使ってるような箇所は不要。
 
 ## composerパッケージに分離
 最低限必要なファイルは3つ。
 
-- FooProviver.php
-- FooServiceProviver.php
+- FooProvider.php
+- FooServiceProvider.php
 - composer.json
 
-FooServiceProviverが前は少し間違ってた。複数の独自ドライバーを同時に使った時のみ発生するので気付きにくかった。
+FooServiceProviderが前は少し間違ってた。複数の独自ドライバーを同時に使った時のみ発生するので気付きにくかった。
 LaravelやSocialiteのバージョンの影響も受けるけど現時点のLaravel6とSocialite4.3.1ならこれでいい。
 
 ```php
