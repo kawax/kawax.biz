@@ -6,6 +6,7 @@ draft: false
 ---
 
 Laravel v6.10.0でparsedownから`league/commonmark`に変わったので再度。
+https://github.com/thephpleague/commonmark
 
 `Illuminate\Mail\Markdown::parse()`はLaravel内でのMail用なのでそのまま使うとhtmlがエスケープされずに危険。これを元に自分のプロジェクト用に作ればいい。
 
@@ -49,7 +50,7 @@ class Markdown
             'allow_unsafe_links' => false,
         ], $environment);
 
-        return new HtmlString($converter->convertToHtml($text));
+        return new HtmlString($converter->convertToHtml($text ?? ''));
     }
 }
 ```
