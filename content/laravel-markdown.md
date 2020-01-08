@@ -65,3 +65,5 @@ use App\Support\Markdown;
 
 $html = Markdown::parse($markdown);
 ```
+
+HtmlStringなのでviewでは`{{ $html }}`でもそのまま表示される。入力されたhtmlはエスケープ済なので変換後のhtmlは安全な前提。
