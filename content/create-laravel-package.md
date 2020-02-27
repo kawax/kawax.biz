@@ -36,6 +36,12 @@ PHPもLaravelもサポート期限ははっきり決まってるので旧バー�
 意外と非公式なものを公式と思い込んでる人は多い。GitHubにあるものだけが公式。
 https://github.com/laravel
 
+## ConcernsとTraits
+フレームワーク内でclassを分割する目的にはConcerns。Laravelプロジェクトで別のclassに機能を追加する目的にはTraitsで使い分けてるように見える。
+同じtraitなのでそこまで厳密に考える必要はないけど。
+Traitsのつもりで作ったら安易に変更しない。
+Concernsは内部のみなので変更していい。
+
 ## composer.jsonのバージョン指定
 ここは各自の方針で決める所。
 Laravel用パッケージなら大抵requireに`illuminate/support`を指定する。
