@@ -46,6 +46,23 @@ Concernsは内部のみなので変更していい。
 「ライブラリには含めない。プロジェクトには含める」composer開発者による公式見解なのでこれがルール。
 プロジェクト用のテンプレートはどっちでもいい。含めなくてもcomposer installしてすぐに生成される。
 
+## 不要なファイルは.gitattributesで指定
+`.gitignore`はよく知られてるだろうけど`.gitattributes`も地味に重要。
+
+`composer install`時に不要なファイルは`.gitattributes`でexport-ignore指定。
+無駄なファイルがダウンロードされずインストールが少し早くなる。
+正確にはzipでダウンロード時にも含まれなくなるのでダウンロードして使う人がいると困るかもしれないけどcomposerパッケージなら関係ないだろう。
+
+```
+/tests export-ignore
+.editorconfig export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
+.styleci.yml export-ignore
+.travis.yml export-ignore
+phpunit.xml export-ignore
+```
+
 ## composer.jsonのバージョン指定
 ここは各自の方針で決める所。
 Laravel用パッケージなら大抵requireに`illuminate/support`を指定する。
