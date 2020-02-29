@@ -42,6 +42,10 @@ https://github.com/laravel
 Traitsのつもりで作ったら安易に変更しない。
 Concernsは内部のみなので変更していい。
 
+## composer.lockは含めない
+「ライブラリには含めない。プロジェクトには含める」composer開発者による公式見解なのでこれがルール。
+プロジェクト用のテンプレートはどっちでもいい。含めなくてもcomposer installしてすぐに生成される。
+
 ## composer.jsonのバージョン指定
 ここは各自の方針で決める所。
 Laravel用パッケージなら大抵requireに`illuminate/support`を指定する。
