@@ -76,6 +76,16 @@ Laravel用パッケージなら大抵requireに`illuminate/support`を指定す�
 ```
 ただし`*`を使うのはあまり良くないのでどうするかは各自で決める。
 
+## 外部サービスを活用する
+- CI : https://travis-ci.com/ / GitHub Actions
+- コードクオリティ＆テストカバレッジ : https://codeclimate.com/
+- コーディングスタイル : https://styleci.io/
+
+OSSなら無料で使える。
+使うサービスは別になんでもいい。
+
+プロジェクト内でPHP-CS-Fixerでがんばるより外部サービスに任せたほうがいい。
+
 ## TravisでPHP8.0(開発版)のテスト
 たぶん2020年中にしか役に立たない。
 
