@@ -16,6 +16,12 @@ https://github.com/thephpleague/commonmark
 composer require league/commonmark-ext-autolink
 ```
 
+その後、Laravel側で`commonmark-ext-table`が削除されたので一応自分でも全部インストールしておいたほうがいいかもしれない。
+```json
+    "league/commonmark": "^1.3",
+    "league/commonmark-ext-table": "^2.1",
+```
+
 `app/Support/Markdown.php`を作る。
 
 ```php
