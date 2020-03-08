@@ -61,11 +61,11 @@ ymlにこれさえ書けばいい。
 2回に分けて実行。
 
 ```yml
-      - name: composer update action step
+      - name: 1st
         uses: kawax/composer-update-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: two
+      - name: 2nd
         uses: kawax/composer-update-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
