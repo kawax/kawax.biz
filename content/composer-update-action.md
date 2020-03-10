@@ -72,6 +72,28 @@ ymlにこれさえ書けばいい。
           COMPOSER_PATH: /subdir
 ```
 
+envは上位で設定してもいい。
+
+```yml
+jobs:
+  composer_update_job:
+    runs-on: ubuntu-latest
+    name: composer update
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GIT_NAME: cu
+      GIT_EMAIL: cu@composer-update
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: 1st
+        uses: kawax/composer-update-action@v1
+      - name: 2nd
+        uses: kawax/composer-update-action@v1
+        env:
+          COMPOSER_PATH: /subdir
+```
+
 ## コミットユーザー
 
 ```yml
