@@ -64,3 +64,33 @@ $middlewarePriorityはいつの間にか増えてたけどよく分からない�
 
 ## 終わり
 なにか気付いたら後で追記。
+
+## Date Serialization
+
+7に上げた後しばらくしてから気付いたけどこれは確かに「影響の可能性：高」
+6までは`2019-12-02 20:01:00`だけど7からは`2019-12-02T20:01:00.283041Z`の形式。
+影響があるのはAPI Resources使わずに直接Eloquentを返してjson化してるような所。
+Laravelの便利な機能ではあるけどこれを使ってると日時の形式が変わる。
+
+```php
+return $posts;
+```
+
+6までと同じ形式に戻すならEloquentモデルにserializeDate()追加。
+
+```php
+/**
+ * Prepare a date for array / JSON serialization.
+ *
+ * @param  \DateTimeInterface  $date
+ * @return string
+ */
+protected function serializeDate(\DateTimeInterface $date)
+{
+    return $date->format('Y-m-d H:i:s');
+}
+```
+
+jsonを受け取った側でそのまま表示してるだけなら見た目が変わるだけで影響は少ない。
+serializeDate()を追加せず新形式のままJavaScript側で解析して好きな形式で表示する手もある。
+Laravel公式としてはこの使い方を想定。
