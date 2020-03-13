@@ -32,7 +32,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: composer update action step
+      - name: composer update action
         uses: kawax/composer-update-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -61,34 +61,28 @@ ymlにこれさえ書けばいい。
 2回に分けて実行。
 
 ```yml
-      - name: 1st
-        uses: kawax/composer-update-action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: 2nd
-        uses: kawax/composer-update-action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COMPOSER_PATH: /subdir
-```
 
-envは上位で設定してもいい。
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GIT_NAME: cu
+  GIT_EMAIL: cu@composer-update
 
-```yml
 jobs:
-  composer_update_job:
+  composer_1st_job:
     runs-on: ubuntu-latest
-    name: composer update
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      GIT_NAME: cu
-      GIT_EMAIL: cu@composer-update
+    name: composer update 1
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: 1st
+      - name: composer update
         uses: kawax/composer-update-action@v1
-      - name: 2nd
+  composer_2nd_job:
+    runs-on: ubuntu-latest
+    name: composer update 2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: composer update
         uses: kawax/composer-update-action@v1
         env:
           COMPOSER_PATH: /subdir
