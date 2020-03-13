@@ -49,7 +49,11 @@ configは後でまとめて。
 Blade::component()から`Blade::aliasComponent()`に変更。
 ここでは使ってないけど他で使ってるので後で。
 
-Bladeコンポーネントは全部作り直されて`Blade::component()`も新コンポーネント用にそのまま残ってるので旧コンポーネントを使うならしっかり`aliasComponent()`に変更しないと壮大に壊れる。
+Bladeコンポーネントは全部作り直されて`Blade::component()`も新コンポーネント用にそのまま残ってるので旧コンポーネントを使うならしっかり`aliasComponent()`に変更しないと壮大に壊れる。6で`Blade::component()`使ってなくて`@component`だけなら何もしなくても壊れない。
+
+6のコンポーネントは7ではAnonymous Components(無名コンポーネント)としてそのまま使えそう。`resources/views/components`に置いてviewでは`<x-***/>`で書く。6のコンポーネントならslot使ってるだろうから`<x-slot>`に置き換えればそのまま。7のコンポーネントらしく属性使うなら`@props`を使う。後はドキュメントをよく読む。
+https://laravel.com/docs/7.x/blade
+https://readouble.com/laravel/7.x/ja/blade.html
 
 ## プロジェクト側
 `composer update`さえ通ればフレームワーク側はあまり変更ないかも。
