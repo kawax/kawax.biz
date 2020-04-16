@@ -17,6 +17,8 @@ https://readouble.com/laravel/7.x/ja/http-client.html
 ## 例としてQiita用を作る
 https://qiita.com/api/v2/docs
 
+https://github.com/kawax/qiita
+
 ## ServiceProvider
 一番の肝はServiceProvider。AppServiceProviderでもいいしQiitaServiceProviderを作ってもいい。
 Macroableで自由に拡張できるので`qiita()`メソッドを作ってトークンとbaseUrlを設定済のHttpクライアントを返す。
