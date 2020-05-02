@@ -10,16 +10,9 @@ https://github.com/thephpleague/commonmark
 
 `Illuminate\Mail\Markdown::parse()`はLaravel内でのMail用なのでそのまま使うとhtmlがエスケープされずに危険。これを元に自分のプロジェクト用に作ればいい。
 
-まずオートリンク用に`league/commonmark-ext-autolink`をインストール。その他の必要なパッケージは6.10以降ならLaravel側でインストールされている。
-
-```
-composer require league/commonmark-ext-autolink
-```
-
-その後、Laravel側で`commonmark-ext-table`が削除されたので一応自分でも全部インストールしておいたほうがいいかもしれない。
+Laravel側で急に`league/commonmark`が消えてもいいように一応自分のプロジェクトでもインストール。
 ```json
-    "league/commonmark": "^1.3",
-    "league/commonmark-ext-table": "^2.1",
+    "league/commonmark": "^1.4",
 ```
 
 `app/Support/Markdown.php`を作る。
@@ -30,10 +23,7 @@ composer require league/commonmark-ext-autolink
 namespace App\Support;
 
 use Illuminate\Support\HtmlString;
-use League\CommonMark\CommonMarkConverter;
-use League\CommonMark\Environment;
-use League\CommonMark\Ext\Table\TableExtension;
-use League\CommonMark\Ext\Autolink\AutolinkExtension;
+use League\CommonMark\GithubFlavoredMarkdownConverter;
 
 class Markdown
 {
@@ -46,15 +36,10 @@ class Markdown
      */
     public static function parse($text)
     {
-        $environment = Environment::createCommonMarkEnvironment();
-
-        $environment->addExtension(new TableExtension());
-        $environment->addExtension(new AutolinkExtension());
-
-        $converter = new CommonMarkConverter([
+        $converter = new GithubFlavoredMarkdownConverter([
             'html_input'         => 'escape',
             'allow_unsafe_links' => false,
-        ], $environment);
+        ]);
 
         return new HtmlString($converter->convertToHtml($text ?? ''));
     }
@@ -73,3 +58,6 @@ $html = Markdown::parse($markdown);
 ```
 
 HtmlStringなのでviewでは`{{ $html }}`でもそのまま表示される。入力されたhtmlはエスケープ済なので変換後のhtmlは安全な前提。
+
+## 追記
+league/commonmark1.3以降用に`GithubFlavoredMarkdownConverter`使うように変更。
