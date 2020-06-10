@@ -13,6 +13,7 @@ googleanalytics = "UA-103456590-1"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+      hardWraps = true
 
 [params]
 
