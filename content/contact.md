@@ -35,7 +35,7 @@ LAPRASがちょうど良かったので貼る。
 
 ## フォーム
 
-<form name="contact" netlify>
+<form name="contact" method="POST" data-netlify="true">
   <div class="field">
     <label class="label">名前</label>
     <div class="control">
