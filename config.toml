@@ -9,6 +9,11 @@ hasCJKLanguage = true
 description = ""
 googleanalytics = "UA-103456590-1"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
 
 
