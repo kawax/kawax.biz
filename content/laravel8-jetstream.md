@@ -131,4 +131,8 @@ JavaScriptを書きたくないならLivewire。
 LivewireもInertiaもどっちも使いたくない…。
 
 「竹」で十分。
-使ったほうがいい状況になれば使う。
+ただし`laravel/ui`も今後は使うなってことなので
+https://github.com/laravel/ui
+今後の様子見て使ったほうがいい状況になれば使う。
+
+新規作成はJetstream使うけどその後は今まで通りの使い方できるか調べたほうが良さそう。
