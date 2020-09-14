@@ -41,6 +41,8 @@ Route::get('/user', 'UserController@index');
 
 `UserController`だけ書いても`App\Http\Controllers`が追加されて`App\Http\Controllers\UserController`となる。
 
+（そもそも名前空間を省略できるようにしてるのは名前空間使ってなかったLaravel4頃の名残り？）
+
 例外はarrayでの指定時。
 
 ```php
