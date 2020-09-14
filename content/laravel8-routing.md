@@ -73,6 +73,8 @@ Route::get('/user', [UserController::class, '__invoke']);
 Route::get('/user', 'UserController');
 ```
 
+Laravel8で`'UserController`だけ書いても`App\Http\Controllers`が追加されないのでクラスが存在しないエラーとなる。
+
 ## Laravel8でどうしても旧バージョンの書き方したい場合
 アップグレードガイドに書かれてるように`RouteServiceProvider`で$namespace使うように変更すればいい。
 
