@@ -10,7 +10,7 @@ Laravel8ではルーティングの書き方が若干変更されている。
 慣れてる人や旧バージョンからアップグレードした環境では影響は少ないけど
 Laravel8リリース後に使い始めた初心者は大混乱している。
 
-旧バージョンの情報は使えなくなってるので新しい書き方を覚える必要がある。
+旧バージョン時の情報は使えなくなってるので新しい書き方を覚える必要がある。
 
 ## 読むところ
 - https://laravel.com/docs/8.x/releases
@@ -43,7 +43,7 @@ Route::get('/user', 'UserController@index');
 
 （そもそも名前空間を省略できるようにしてるのは名前空間使ってなかったLaravel4頃の名残り？）
 
-例外はarrayでの指定時。
+例外はarrayでの指定時。callable syntax。
 
 ```php
 use App\Http\Controllers\UserController;
@@ -131,3 +131,15 @@ Route::resource('photos', PhotoController::class);
 
 `'UserController'`だとうっかりtypoすることもあるだろうし`UserController::class`のほうがミスは少ない。
 IDEフレンドリー。
+
+## ついで
+Laravel8からクロージャを使ったルーティングも`php artisan route:cache`できるようになっている。
+デフォルトのこれのままでもキャッシュできる。
+
+```php
+Route::get('/', function () {
+    return view('welcome');
+});
+```
+
+`routes/web.php`は修正してもapi.phpを忘れてて最初のデプロイ後に修正、が定番だったけどそれもなくなる。
