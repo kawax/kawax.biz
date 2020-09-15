@@ -117,6 +117,8 @@ class RouteServiceProvider extends ServiceProvider
 旧バージョンからのアップグレード時はRouteServiceProviderを変更しなければそのまま使える。
 新しい書き方に変えるかどうかは自由。
 
+逆に、Laravel7以前でもRouteServiceProviderからnamespaceを削除すればLaravel8の書き方ができる。Laravel6(LTS)使ってるけど今後のためにLaravel8に合わせるのはあり。
+
 ## 変更した理由？
 不明なもののJetstreamで使うLivewireのため？
 https://laravel-livewire.com/docs/2.x/upgrading
