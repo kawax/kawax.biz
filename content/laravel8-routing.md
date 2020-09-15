@@ -22,6 +22,7 @@ Laravel8リリース後に使い始めた初心者は大混乱している。
 
 ## Laravel7までは
 こう書けた。
+
 ```php
 Route::get('/user', 'UserController@index');
 ```
@@ -126,6 +127,7 @@ https://laravel-livewire.com/docs/2.x/upgrading
 シングルアクションコントローラーが便利になったのは偶然な気がする。
 毎度同じだけど個人的には「リソースコントローラー以外は全部シングルアクションコントローラーで作る」が推奨。
 これならarrayもなく全部`::class`の指定のみになる。
+
 ```php
 Route::get('user/{id}', ShowProfile::class);
 Route::resource('photos', PhotoController::class);
