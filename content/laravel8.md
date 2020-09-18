@@ -130,5 +130,8 @@ CSSが変わったのも使い方が大きく変わったように感じる原�
 開発途中では名前空間も変わっていたのでこれで戻されなければ大惨事になっていた…。
 https://github.com/laravel/framework/pull/33108
 
+### パッケージ開発者向け
+`illuminate/support`にcollectionsもmacroableも含まれてるので今まで通り`"^6.0||^7.0||^8.0"`でいい。
+
 ## 終わり
 とにかくJetstreamでなにもかも変わってしまったので「Laravelの普通の使い方」をまた模索していくことに。
