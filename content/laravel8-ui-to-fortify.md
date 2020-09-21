@@ -171,3 +171,5 @@ register,loginが変わってなければ問題ない。
 
 ## 終わり
 uiからfortifyに移行はできる。uiを使い続けなくていいと分かって安心。
+
+https://github.com/kawax/laravel8-ui-to-fortify
