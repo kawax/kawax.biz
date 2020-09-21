@@ -120,6 +120,10 @@ https://github.com/laravel/ui/blob/29335934ee4dee248ec128d938682a14d6ee3dc4/auth
 これでlaravel/uiの機能をlaravel/fortifyに置き換えられた。
 
 今回はuiのviewを使ったけど完全に独自のviewを使う場合も同じ。
+Fortify単体+独自viewでいろいろ作って欲しいのがLaravel開発者の想定？
+JetstreamはLaravel公式が用意したview。
+という所まで分かってくるとJetstreamの立ち位置が分かる。
+Fortifyのためのviewを提供するcomposerパッケージも作れるな。
 
 ## 不要な機能をオフ
 `config/fortify.php`で使わない機能をオフ。
