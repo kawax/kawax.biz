@@ -1,6 +1,6 @@
 ---
 title: "Laravel8 laravel/uiからlaravel/fortifyに移行は可能"
-date: 2020-09-21T21:03:01+09:00
+date: 2020-09-22T08:03:01+09:00
 categories: ["Laravel"]
 draft: false
 ---
