@@ -114,6 +114,7 @@ Laravel7以降の新しいBladeコンポーネントの理解が必須。
 厄介なことにLivewireの使うAlpine.jsでも`x-`が使われるので一部の`x-`は違うと覚えておく必要がある。
 https://github.com/alpinejs/alpine
 一つのbladeファイル内で両方の`x-`が使われてるので後から読むと辛さしかないな。
+タグはBladeコンポーネント、属性はalpineなので慣れれば大丈夫そうだけど。
 
 調べ方は分かったので終了。
 
