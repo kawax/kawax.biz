@@ -7,7 +7,10 @@ draft: false
 
 終了。
 
+- https://github.com/kawax
 - https://lapras.com/public/R4VYMSP
+- https://qiita.com/kawax
+- https://zenn.dev/kawax
 
 <!--
 

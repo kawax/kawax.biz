@@ -42,10 +42,6 @@ url = "https://github.com/kawax"
 fa_icon = "fa-github"
 
 [[params.social]]
-url = "https://qiita.com/kawax"
-fa_icon = "fa-quora"
-
-[[params.social]]
 url = "https://twitter.com/kawaxbiz"
 fa_icon = "fa-twitter"
 
