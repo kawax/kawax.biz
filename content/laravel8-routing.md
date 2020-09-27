@@ -60,7 +60,7 @@ use App\Http\Controllers\UserController;
 Route::get('/user', [UserController::class, 'index']);
 ```
 
-RouteServiceProviderの$namespaceが消えたので常に名前空間まで含むクラス名で指定。
+RouteServiceProviderの$namespaceがコメントアウトされたので常に名前空間まで含むクラス名で指定。
 「コントローラーをuseして`::class`で指定」と覚えておけばいいのでは。
 
 この変更によりシングルアクションコントローラーはこう書けるようになった。
