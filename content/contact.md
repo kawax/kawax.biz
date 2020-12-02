@@ -5,14 +5,17 @@ categories: ["Contact"]
 draft: false
 ---
 
-終了。
+現在はスタートアップからの依頼のみ受け付けてます。「一人で開発」が条件。途中参加はしません。
+- エンジニア0人でこれからプロトタイプを作ろうとしている段階。
+
+
+
 
 - https://github.com/kawax
 - https://lapras.com/public/R4VYMSP
 - https://qiita.com/kawax
 - https://zenn.dev/kawax
 
-<!--
 
 ## フォーム
 
@@ -45,4 +48,3 @@ draft: false
   </div>
 
 </form>
--->
