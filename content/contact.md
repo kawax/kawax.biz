@@ -5,8 +5,9 @@ categories: ["Contact"]
 draft: false
 ---
 
-現在はスタートアップからの依頼のみ受け付けてます。「一人で開発」が条件。途中参加はしません。
-- エンジニア0人でこれからプロトタイプを作ろうとしている段階。
+仕事の依頼はチームから受け付けてます。  
+https://invokable.github.io/
+
 
 <!--
 - https://github.com/kawax
@@ -15,6 +16,7 @@ draft: false
 - https://zenn.dev/kawax
 -->
 
+<!--
 ## フォーム
 
 <form name="contact" method="POST" data-netlify="true">
@@ -46,3 +48,4 @@ draft: false
   </div>
 
 </form>
+-->
