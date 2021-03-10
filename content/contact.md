@@ -5,8 +5,7 @@ categories: ["Contact"]
 draft: false
 ---
 
-仕事の依頼はチームから受け付けてます。  
-https://invokable.github.io/
+https://invokable.net/
 
 
 <!--
