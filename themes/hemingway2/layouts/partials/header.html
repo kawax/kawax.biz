@@ -17,4 +17,7 @@
           integrity="sha256-Zd1icfZ72UBmsId/mUcagrmN7IN5Qkrvh75ICHIQVTk=" crossorigin="anonymous"/>
     {{ end }}
     <link href="/index.xml" rel="alternate" type="application/atom+xml" title="kawax.biz">
+    {{ if .Site.GoogleAnalytics }}
+    {{ template "_internal/google_analytics.html" . }}
+    {{ end }}
 </head>
