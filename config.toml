@@ -7,7 +7,7 @@ copyright = "© kawax"
 canonifyurls = true
 hasCJKLanguage = true
 description = ""
-googleanalytics = "UA-103456590-1"
+googleanalytics = "G-3Y931TX0CD"
 
 [markup]
   [markup.goldmark]
